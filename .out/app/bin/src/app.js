@@ -1,14 +1,16 @@
 import React from '../node_modules/react/index.js';
-import { View, Text } from '../node_modules/magic-script-components/src/components.js';
+import Data from './data.js';
+import { View, Text, Model } from '../node_modules/magic-script-components/src/components.js';
 
 //
 class MyApp extends React.Component {
   constructor(props) {
     super(props);
+    let fakeData = new Data();
     this.state = {
-      currentTemp: props.temperature,
-      currentCity: props.city,
-      currentCondition: props.condition
+      currentTemp: fakeData.temperature.Friday,
+      currentCity: fakeData.city,
+      currentCondition: fakeData.condition.Sunny
     };
   }
 
@@ -30,7 +32,10 @@ class MyApp extends React.Component {
       localPosition: [0.1, 0.2, 0],
       weight: "medium",
       textAlignment: 'center'
-    }, this.state.currentCondition));
+    }, this.state.currentCondition), React.createElement(Model, {
+      modelPath: "res/model.fbx",
+      localScale: [0.0015, 0.0015, 0.0015]
+    }));
   }
 
 }

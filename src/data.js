@@ -1,24 +1,21 @@
-import React from "react";
-import { View, Text } from "magic-script-components";
-
-export default class Data extends React.Component {
-    constructor(props) {
-        super(props);
-        this.props = props;
-    }
-
-    render () {
-
-        const data = {
-            temperature: 89,
-            city: 'Plantation', 
-            conditions: 'Sunny'
+export default class Data {
+    constructor() {
+        this.temperature = {
+            Monday: 90,
+            Tuesday: 90,
+            Wednesday: 90,
+            Thursday: 90,
+            Friday: 90,
+            Saturday: 90,
+            Sunday: 90
         }
-
-        return (
-
-        );
+        this.city = 'Miami';
+        this.condition = {
+            Sunny: 'Sunny'
+        };
     }
-
-
 }
+
+
+
+

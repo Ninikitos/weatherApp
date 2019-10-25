@@ -3,6 +3,30 @@ var _ = (function (React) {
 
     React = React && React.hasOwnProperty('default') ? React['default'] : React;
 
+    class Data {
+      constructor() {
+        this.temperature = {
+          Monday: 90,
+          Tuesday: 90,
+          Wednesday: 90,
+          Thursday: 90,
+          Friday: 90,
+          Saturday: 90,
+          Sunday: 90
+        };
+        this.city = 'Miami';
+        this.condition = {
+          Sunny: 'Sunny'
+        };
+      }
+
+    }
+
+    function Model (props) {
+        // return (<model {...props} />);
+        return React.createElement('model', props);
+    }
+
     function Text (props) {
         // return (<text {...props} />);
         return React.createElement('text', props);
@@ -17,10 +41,11 @@ var _ = (function (React) {
     class MyApp extends React.Component {
       constructor(props) {
         super(props);
+        let fakeData = new Data();
         this.state = {
-          currentTemp: props.temperature,
-          currentCity: props.city,
-          currentCondition: props.condition
+          currentTemp: fakeData.temperature.Friday,
+          currentCity: fakeData.city,
+          currentCondition: fakeData.condition.Sunny
         };
       }
 
@@ -42,7 +67,10 @@ var _ = (function (React) {
           localPosition: [0.1, 0.2, 0],
           weight: "medium",
           textAlignment: 'center'
-        }, this.state.currentCondition));
+        }, this.state.currentCondition), React.createElement(Model, {
+          modelPath: "res/model.fbx",
+          localScale: [0.0015, 0.0015, 0.0015]
+        }));
       }
 
     }
