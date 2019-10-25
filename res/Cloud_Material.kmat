@@ -1,0 +1,34 @@
+{
+  "global": {
+    "shaderName": "pbr",
+    "ambience": 0.1,
+    "color": [
+      1,
+      1,
+      1,
+      1
+    ]
+  },
+  "materials": [
+    {
+      "name": "Cloud_Mat",
+      "opaque": true,
+	"color": [
+      .8,
+      .8,
+      .8,
+      1
+    ]
+    },
+    {
+      "name": "Rain_Mat", 
+      "opaque": true,
+	"color": [
+      0,
+      0,
+      1,
+      1
+    ]
+    }
+  ]
+}

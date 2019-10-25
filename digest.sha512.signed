@@ -14,7 +14,7 @@ cc8107d363e4d3a271d6bcd4b0032c5d8b6b6c7b6bfa3a4a105924fc418c3e1d4f4473978669612c
 f0f57dcf8128194c2d9496f3ab64667dcc9eba013e55c815e4ec2f204664f7567bff09e1e61ab5939d099dac45002ce5ecd33f3df3fdfe587c310523bf68c894  bin/_virtual/scheduler.development.js
 ec1e67e8f349cedef600ab4d404c0bda49c0c298a929d1fb730fdc209d28997437c2e3a4d4bb5446d1f065a1d6af9ebc51a7a0a7d0da5c60565431a595045aac  bin/_virtual/scheduler.production.min.js
 9ee08bfe7e9564b0eeae3e6c4d9d974d3e930b012f091f409b1d165065a7bda627aab42135a55756cdf5bbedc40fcf014d4e653064a7a1cc5f564b0454ffeee4  bin/_virtual/tracing.js
-bf510575414779cdb4e4a60690bf8e2fa526003a561e6cd16c20703d502d1167362e6e88b7604eb393b7f9338797a3eb85cdb65d79eeb1698bb884ea01451f45  bin/bundle.js
+2bcb2dc16115d5c0643b361ae2073881525ef479809f07ca371f490d03298e911ffc1a788d78c5fdf388e01bd4afc6463e0309712fd78f68dd2bd7be6f4bbfcc  bin/bundle.js
 bb2b7b516c7370bc1db88055185cc09b88e335d5a6e8d015d11dbddc4cfcb4f24406ac349e22afbab7489ef9da6b03b278025335e6ecafe374f3b8134083f41d  bin/index.js
 73baf20e46939924f70d668c769896be6bb1f80981f2a899061d53911b092ca8a58452dbfd780177401ee83ef25b1c5f76827f057665993d27533aadfa4aeeb4  bin/node_modules/magic-script-components-lumin/index.js
 bc6b18035eb769d572f71177a24c569fbfc3919fd828a0e14b5bccf8e4698ee34a8b66474affe93ba4de9e004ceb7b7b8393768781d5bdc5a57298e247d8f7f6  bin/node_modules/magic-script-components-lumin/src/configuration.js
@@ -185,11 +185,12 @@ b1d9647528bd491f42cfdd7be9298ec2a265d87ca3d7f44e5a98043a4cb98ef3782f3895c78ebdfc
 8202209af7121092739300bf10771a94dd58e579c6bb8f226c6f18a2269092f972708465c9453e75ece7a657e23b6aef22ac30c9ddd2d159d9f4bc8dc5b22e61  bin/node_modules/scheduler/cjs/scheduler.production.min.js
 68e2e1f000416c50f37a3428a11e6f51b2804d3eea6bc8b5962ad44739a8c846dcb7f48a6b2b33e21e4e3e924c582481d83a8fd584055513ded0db812f467fec  bin/node_modules/scheduler/index.js
 f9d50f92dd77c8bafbd4860a48228648dc86e6606cec1e46457b87bb6d4dd9e97ca672f7605b7cac292dd8ab6da79f0b27cc7d59fae563af93e440cdb5a7f288  bin/node_modules/scheduler/tracing.js
-c823b886c2006c0c690530f852a2d4f3879f1d429c78115afcc217721c17c5355d7529e26275db6f956aa2f42bb0e4f5b83dbb019c91975b486fdb87231bd2f9  bin/src/app.js
-25385e31c81b8faa1591ca9f5b21ec3589e3cba7cc7126eac99eaa1538c981cd724f15513229ddcf50d5a9fe18161fb00b56e9a256dcee03f0a9f48260d7e115  bin/src/data.js
+b2f167713b6d1ce2f45ac78978d8b17917f666494465cda55c0518174adfde683837d2753d5757831baad9c9da0da26a4a6bfa3259bbb4227d106a3b199dfafa  bin/src/app.js
+154a11ae17b4577f3386df2c8570901281d570e9869ddba8858f495c72be06c3c035ba2f8dfa88e01e8734c5851a6d2ebc3f3a4c9eb6b97a14b5eec8a808d2f6  bin/src/data.js
 7fb17c55901fcb763b232012a636bf773533683495d9a494c910fc654a1071d4a9f8aaf96728c016cdd4e2dcb39d570f0b3f239bd287c6c2aca47a2638cd59e4  bin/src/global-scope.js
 87afa582f71ec0035c4e3e2318055cdae32ac3b0fc11021fe3e10a95efea7ee38117a2735a103e2908d557586414e95be06cddecc5936cc15c55dce802eb8e16  bin/src/main.js
 #     USER                                                                       TAILDATA0‚>	*†H†÷ ‚/0‚+10	`†He0	*†H†÷1‚0‚0_0R10	UUS10UFlorida10U
 
-Magic Leap10UMagic Leap Internal	 ˆö‚*Ù’‡0	`†He0	*†H†÷ ‚€Š ·cŞ¿ë$íßåB×¾¹—v$=<5	vÓ.CÎF–³J(3âÓÀ b¥µ%»WQ`XË36»øËÍª%Õ°»eÜ`ı};`xµÈrUg¤2QÓƒps‘Y«GÄKÒoª&PÃQÜ%Éİvú›kd½ÉßaÃ]LÒıÆ%\"‚%2$‰¶Ñ¥S?è‚®7­©ƒúE,)a#B¤DÄŠÚfÊM„í¿BAŠ4èjìôUp¸²öºÆİÃ,k ÜñºwÓ?¦$ançÅ9k	ù"•I¹’ÃÕ=RR<¯x³Â+@Òßmí–TvR&;¡µÑù¹»Ø`6X÷++¼áÜëf¤}O%Ãªß™î…DhÇyx?Kqù¶ÿÖp[,æı:T•¸®BÏy‡’ÆéóR·²6çÌ_­=`¯*Õº¿O$g¢è'¿(ú@@Ì×¹³‚1©Í7FšwŠ¾…·6áTV™ªğ±ò=( ë]ÁMœ
-¬Ñ:         B~Module signature appended~
+Magic Leap10UMagic Leap Internal	 ˆö‚*Ù’‡0	`†He0	*†H†÷ ‚€
+úŞøË™ø$s.ôjU"¬[LÇO[¢Wë5 õVôI÷Ûèn2¦Èş—µiøDlØ™ìğ’Âr…ŞY5+é®Å7{Å{„A»ñvAÆ_Áã`^FŸct›i~Bë)æ¹Ùøô§&İŒ*¼r§M¿hŞdï}×®HÕNÖÈ4´¸hw—¹b¾ë\0ºfA$¶ıqÓy°2š(‡õÅ5ÓÜìİ–¼‹N¹ªK6Ó™ÑLhkdëyZ
+.ÛŒ—`ı>ªVN»s´½PÄu·¹NëìOš™;ağ}EĞ/¾Íë×uTj§h–¢ÙôËÛÏï]('…EÍšQwåÈX|Ş[ˆK¢¹€ÇÖäNh€¶N¦^®Ú˜¦Ò‹×±áÉµ·Ô.›¾À0GµÂtüº İÑ\]]~ÂA>ËpÑav@B'8pÙ„]at™H—SÎÅ³]=VãjvnX2SÉÏ±â›ÿ›Èe¥Üí–Z¨?         B~Module signature appended~

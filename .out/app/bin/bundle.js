@@ -16,7 +16,10 @@ var _ = (function (React) {
         };
         this.city = 'Miami';
         this.condition = {
-          Sunny: 'Sunny'
+          Sunny: 'Sunny',
+          Rainy: 'Rainy',
+          Cloudy: 'Cloudy',
+          Snow: 'Snow'
         };
       }
 
@@ -68,8 +71,9 @@ var _ = (function (React) {
           weight: "medium",
           textAlignment: 'center'
         }, this.state.currentCondition), React.createElement(Model, {
-          modelPath: "res/model.fbx",
-          localScale: [0.0015, 0.0015, 0.0015]
+          modelPath: "res/Clouds.fbx",
+          materialPath: "res/Cloud_Material.kmat",
+          localScale: [0.0020, 0.0020, 0.0020]
         }));
       }
 

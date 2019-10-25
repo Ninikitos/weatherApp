@@ -107,9 +107,9 @@
   },
   {
    "compression": 8,
-   "hash": "51691ebc21a313ae6d307e943cfc59cc9ee9e91d",
+   "hash": "6b8b1ce9eb472fb1a9cd71b152cec998f847ba99",
    "pkgpath": "bin/bundle.js",
-   "size": 2044,
+   "size": 2174,
    "src": "C:/Users/nilin/Downloads/weatherApp/bin/bundle.js"
   },
   {
@@ -1304,16 +1304,16 @@
   },
   {
    "compression": 8,
-   "hash": "3596855a289e20b02d3a5f1f7a1b8f73ee1b3e29",
+   "hash": "ea5ef689eeacd352e4564b0f796d5986093371a5",
    "pkgpath": "bin/src/app.js",
-   "size": 1200,
+   "size": 1248,
    "src": "C:/Users/nilin/Downloads/weatherApp/bin/src/app.js"
   },
   {
    "compression": 8,
-   "hash": "b663cebeedf834e2516436644d7341dffac74bc0",
+   "hash": "72d02c62e6560ae059ff74836d6b01f7a0fc2b32",
    "pkgpath": "bin/src/data.js",
-   "size": 301,
+   "size": 367,
    "src": "C:/Users/nilin/Downloads/weatherApp/bin/src/data.js"
   },
   {
@@ -1332,17 +1332,45 @@
   },
   {
    "compression": 8,
-   "hash": "2b09af7c0830c992ebf550b837d1e96fc2f80703",
+   "hash": "8065fcb114c52b8c9fcd38855b26936f303952b7",
    "pkgpath": "./digest.sha512.signed",
    "size": 42094,
    "src": "C:/Users/nilin/Downloads/weatherApp/digest.sha512.signed"
   },
   {
    "compression": 8,
+   "hash": "f994114bd7b804d7e83f4cfa315ffe9fca5f0333",
+   "pkgpath": "res/Cloud_Material.kmat",
+   "size": 412,
+   "src": "C:/Users/nilin/Downloads/weatherApp/res/Cloud_Material.kmat"
+  },
+  {
+   "compression": 8,
+   "hash": "0706f416921a1dc94a44f010ec6be972759851cd",
+   "pkgpath": "res/Clouds.fbx",
+   "size": 60396,
+   "src": "C:/Users/nilin/Downloads/weatherApp/res/Clouds.fbx"
+  },
+  {
+   "compression": 8,
+   "hash": "a005ea646f0c8433fda77ef4ff8a41ace9bac7a9",
+   "pkgpath": "res/Earth.fbx",
+   "size": 707088,
+   "src": "C:/Users/nilin/Downloads/weatherApp/res/Earth.fbx"
+  },
+  {
+   "compression": 8,
+   "hash": "1ad3ec6d08920ad867cb140f440c8173c61b6504",
+   "pkgpath": "res/rainy.fbx",
+   "size": 1018256,
+   "src": "C:/Users/nilin/Downloads/weatherApp/res/rainy.fbx"
+  },
+  {
+   "compression": 8,
    "hash": "53f67a08607959bf3fe4729159dfa91496628aa1",
-   "pkgpath": "res/model.fbx",
+   "pkgpath": "res/sunny.fbx",
    "size": 366848,
-   "src": "C:/Users/nilin/Downloads/weatherApp/res/model.fbx"
+   "src": "C:/Users/nilin/Downloads/weatherApp/res/sunny.fbx"
   },
   {
    "compression": 8,

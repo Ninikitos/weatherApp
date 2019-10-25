@@ -1,7 +1,7 @@
 //
 import React from "react";
 import Data from "./data.js";
-import { View, Text, Model } from "magic-script-components";
+import { View, Text, Model, ScrollView, ScrollBar } from "magic-script-components";
 
 export default class MyApp extends React.Component {
   constructor(props) {
@@ -24,9 +24,9 @@ export default class MyApp extends React.Component {
         <Text textSize={0.06}   localPosition={[0.1, 0.3, 0]} weight='medium' textAlignment={'center'}>{this.state.currentCity}</Text>
         <Text textSize={0.06}   localPosition={[0.1, 0.2, 0]} weight='medium' textAlignment={'center'}>{this.state.currentCondition}</Text>
         <Model
-          modelPath={"res/model.fbx"}
-          localScale={[0.0015, 0.0015, 0.0015]}
-          
+          modelPath={"res/Clouds.fbx"}
+          materialPath={"res/Cloud_Material.kmat"}
+          localScale={[0.0020, 0.0020, 0.0020]}
         ></Model>
       </View>
     );

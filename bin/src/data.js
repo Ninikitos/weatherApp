@@ -11,7 +11,10 @@ class Data {
     };
     this.city = 'Miami';
     this.condition = {
-      Sunny: 'Sunny'
+      Sunny: 'Sunny',
+      Rainy: 'Rainy',
+      Cloudy: 'Cloudy',
+      Snow: 'Snow'
     };
   }
 
