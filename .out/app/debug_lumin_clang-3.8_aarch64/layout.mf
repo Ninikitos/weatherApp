@@ -758,5 +758,9 @@
  {
   "dest": "bin/src/main.js",
   "src": "/Users/mykytailin/Documents/weatherApp/bin/src/main.js"
+ },
+ {
+  "dest": "bin/src/realData.js",
+  "src": "/Users/mykytailin/Documents/weatherApp/bin/src/realData.js"
  }
 ]

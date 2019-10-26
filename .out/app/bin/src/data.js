@@ -36,7 +36,7 @@ class Data {
       twelvePm: 12
     }];
     this.city = 'Miami';
-    this.condition = {
+    this.conditions = {
       Sunny: 'Sunny',
       Rainy: 'Rainy',
       Cloudy: 'Cloudy',

@@ -1,7 +1,8 @@
 //
 import React from "react";
 import Data from "./data.js";
-import { View, Text, Model, ScrollView, ScrollBar, LinearLayout } from "magic-script-components";
+import RealData from "./realData.js";
+import { View, Text, Model, ScrollView, ScrollBar, LinearLayout, Button } from "magic-script-components";
 
 export default class MyApp extends React.Component {
   constructor(props) {
@@ -10,13 +11,12 @@ export default class MyApp extends React.Component {
     let fakeData = new Data();
 
     this.state = {
-      currentTemp:      fakeData.temperature.Friday,
-      currentCity:      fakeData.city,
-      currentCondition: fakeData.condition.Sunny,
-      currentTime:      fakeData.hours[0],
-      currentDay:       fakeData.days[5]
+      currentTemp:          fakeData.temperature.Friday,
+      currentCity:          fakeData.city,
+      currentCondition:     fakeData.conditions.Sunny,
+      currentTime:          fakeData.hours[0],
+      currentDay:           fakeData.days[5]
     };
-    
   }
 
   render() {
@@ -25,9 +25,7 @@ export default class MyApp extends React.Component {
       min: [-0.45, -0.15, -0.1],
       max: [0.45, 0.15, 0.1]
     };
-
-    print(this.state.currentTime);
-
+    const realData = (<RealData/>);
     const time = ['1pm', '2pm', '3pm', '4pm', '5pm', '6pm', '7pm', '8pm', '9pm', '10pm', '11pm', '12pm'];
 
     return (
@@ -36,6 +34,7 @@ export default class MyApp extends React.Component {
         <Text textSize={0.03}   localPosition={[0.2, 0.285, 0]} weight='medium' textAlignment={'center'}>{this.state.currentCity}</Text>
         <Text textSize={0.03}   localPosition={[0.2, 0.225, 0]} weight='medium' textAlignment={'center'}>{this.state.currentCondition}</Text>
         <Text textSize={0.13}   localPosition={[-0.250, -0.150, 0]} weight='medium' textAlignment={'center'}>{this.state.currentDay}</Text>
+        <Button>Get Weather</Button>
         <Model
           modelPath={"res/Clouds.fbx"}
           localScale={[0.0020, 0.0020, 0.0020]}
@@ -57,6 +56,7 @@ export default class MyApp extends React.Component {
             ))}
           </LinearLayout>
         </ScrollView>
+        {realData}
       </View>
     );
   }

@@ -1,4 +1,4 @@
-var _ = (function (React) {
+var _ = (function (React, lumin) {
     'use strict';
 
     React = React && React.hasOwnProperty('default') ? React['default'] : React;
@@ -41,7 +41,7 @@ var _ = (function (React) {
           twelvePm: 12
         }];
         this.city = 'Miami';
-        this.condition = {
+        this.conditions = {
           Sunny: 'Sunny',
           Rainy: 'Rainy',
           Cloudy: 'Cloudy',
@@ -49,6 +49,24 @@ var _ = (function (React) {
         };
       }
 
+    }
+
+    const API_KEY = '0f4670104e656aa457f158cbe7631c18';
+    const Plantation_City_code = 4168782;
+
+    async function getData() {
+      let api_call = await fetch(`api.openweathermap.org/data/2.5/weather?q=${Plantation_City_code},US&appid=${API_KEY}`); // if (!api_call.ok) {
+      //     throw new Error("HTTP error, status = " + api_call.status);
+      // }
+
+      let json = await api_call.json();
+      print(JSON.stringify(json)); //   let string = "basicFetch - Success:\n";
+      //   string += JSON.stringify(json);
+    }
+
+    function Button (props) {
+        // return (<button {...props} />);
+        return React.createElement('button', props);
     }
 
     function Model (props) {
@@ -89,7 +107,7 @@ var _ = (function (React) {
         this.state = {
           currentTemp: fakeData.temperature.Friday,
           currentCity: fakeData.city,
-          currentCondition: fakeData.condition.Sunny,
+          currentCondition: fakeData.conditions.Sunny,
           currentTime: fakeData.hours[0],
           currentDay: fakeData.days[5]
         };
@@ -100,7 +118,7 @@ var _ = (function (React) {
           min: [-0.45, -0.15, -0.1],
           max: [0.45, 0.15, 0.1]
         };
-        print(this.state.currentTime);
+        const realData = React.createElement(getData, null);
         const time = ['1pm', '2pm', '3pm', '4pm', '5pm', '6pm', '7pm', '8pm', '9pm', '10pm', '11pm', '12pm'];
         return React.createElement(View, {
           name: "main-view"
@@ -124,7 +142,7 @@ var _ = (function (React) {
           localPosition: [-0.250, -0.150, 0],
           weight: "medium",
           textAlignment: 'center'
-        }, this.state.currentDay), React.createElement(Model, {
+        }, this.state.currentDay), React.createElement(Button, null, "Get Weather"), React.createElement(Model, {
           modelPath: "res/Clouds.fbx",
           localScale: [0.0020, 0.0020, 0.0020],
           localPosition: [-0.180, 0.050, 0]
@@ -145,11 +163,11 @@ var _ = (function (React) {
           textSize: 0.07,
           key: index,
           text: `${hour}`
-        })))));
+        })))), realData);
       }
 
     }
 
     return MyApp;
 
-}(React));
+}(React, lumin));
