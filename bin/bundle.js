@@ -14,6 +14,32 @@ var _ = (function (React) {
           Saturday: 90,
           Sunday: 90
         };
+        this.days = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
+        this.hours = [{
+          onePm: 1
+        }, {
+          twoPm: 2
+        }, {
+          threePm: 3
+        }, {
+          fourPm: 4
+        }, {
+          fivePm: 5
+        }, {
+          sixPm: 6
+        }, {
+          sevenPm: 7
+        }, {
+          eightPm: 8
+        }, {
+          ninePm: 9
+        }, {
+          tenPm: 10
+        }, {
+          elevenPm: 11
+        }, {
+          twelvePm: 12
+        }];
         this.city = 'Miami';
         this.condition = {
           Sunny: 'Sunny',
@@ -40,6 +66,21 @@ var _ = (function (React) {
         return React.createElement('view', props);
     }
 
+    function ScrollBar (props) {
+        // return (<scrollBar {...props} />);
+        return React.createElement('scrollBar', props);
+    }
+
+    function ScrollView (props) {
+        // return (<scrollView {...props} />);
+        return React.createElement('scrollView', props);
+    }
+
+    function LinearLayout (props) {
+        // return (<linearLayout {...props} />);
+        return React.createElement('linearLayout', props);
+    }
+
     //
     class MyApp extends React.Component {
       constructor(props) {
@@ -48,33 +89,63 @@ var _ = (function (React) {
         this.state = {
           currentTemp: fakeData.temperature.Friday,
           currentCity: fakeData.city,
-          currentCondition: fakeData.condition.Sunny
+          currentCondition: fakeData.condition.Sunny,
+          currentTime: fakeData.hours[0],
+          currentDay: fakeData.days[5]
         };
       }
 
       render() {
+        const aabb = {
+          min: [-0.45, -0.15, -0.1],
+          max: [0.45, 0.15, 0.1]
+        };
+        print(this.state.currentTime);
+        const time = ['1pm', '2pm', '3pm', '4pm', '5pm', '6pm', '7pm', '8pm', '9pm', '10pm', '11pm', '12pm'];
         return React.createElement(View, {
           name: "main-view"
         }, React.createElement(Text, {
-          textSize: 0.13,
-          localPosition: [0.1, 0.4, 0],
+          textSize: 0.15,
+          localPosition: [0, 0.2, 0],
           weight: "bold",
           textAlignment: 'center'
         }, this.state.currentTemp), React.createElement(Text, {
-          textSize: 0.06,
-          localPosition: [0.1, 0.3, 0],
+          textSize: 0.03,
+          localPosition: [0.2, 0.285, 0],
           weight: "medium",
           textAlignment: 'center'
         }, this.state.currentCity), React.createElement(Text, {
-          textSize: 0.06,
-          localPosition: [0.1, 0.2, 0],
+          textSize: 0.03,
+          localPosition: [0.2, 0.225, 0],
           weight: "medium",
           textAlignment: 'center'
-        }, this.state.currentCondition), React.createElement(Model, {
+        }, this.state.currentCondition), React.createElement(Text, {
+          textSize: 0.13,
+          localPosition: [-0.250, -0.150, 0],
+          weight: "medium",
+          textAlignment: 'center'
+        }, this.state.currentDay), React.createElement(Model, {
           modelPath: "res/Clouds.fbx",
-          materialPath: "res/Cloud_Material.kmat",
-          localScale: [0.0020, 0.0020, 0.0020]
-        }));
+          localScale: [0.0020, 0.0020, 0.0020],
+          localPosition: [-0.180, 0.050, 0]
+        }), React.createElement(ScrollView, {
+          scrollBarVisibility: "always",
+          scrollBounds: aabb,
+          localPosition: [0, -0.3, 0],
+          scrollDirection: "horizontal"
+        }, React.createElement(ScrollBar, {
+          width: 0.4,
+          thumbSize: 0.04,
+          orientation: "horizontal"
+        }), React.createElement(LinearLayout, {
+          defaultItemAlignment: "center-center",
+          defaultItemPadding: [0.02, 0.07, 0.02, 0.07],
+          orientation: "horizontal"
+        }, time.map((hour, index) => React.createElement(Text, {
+          textSize: 0.07,
+          key: index,
+          text: `${hour}`
+        })))));
       }
 
     }
