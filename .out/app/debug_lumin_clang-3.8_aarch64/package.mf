@@ -16,6 +16,13 @@
   },
   {
    "compression": 8,
+   "hash": "bfd81b49630590fea639dab9968606214a711e5e",
+   "pkgpath": "bin/_virtual/_rollupPluginBabelHelpers.js",
+   "size": 302,
+   "src": "/Users/mykytailin/Documents/weatherApp/bin/_virtual/_rollupPluginBabelHelpers.js"
+  },
+  {
+   "compression": 8,
    "hash": "06ce115e0c081146d04e17af07d10acc1b1b9581",
    "pkgpath": "bin/_virtual/checkPropTypes.js",
    "size": 136,
@@ -107,9 +114,9 @@
   },
   {
    "compression": 8,
-   "hash": "f73dc08bd01d1dfba7e7b8937740702847df35e0",
+   "hash": "7e15d92faadb617affbafaae19b8595c43224a15",
    "pkgpath": "bin/bundle.js",
-   "size": 5070,
+   "size": 5962,
    "src": "/Users/mykytailin/Documents/weatherApp/bin/bundle.js"
   },
   {
@@ -1045,9 +1052,9 @@
   },
   {
    "compression": 8,
-   "hash": "a29c9c1fc01e2caa9c973de4a0d2a5c9c8c94672",
+   "hash": "ae9b058c762bbeb1c870c20a147925f6ef6321bd",
    "pkgpath": "bin/node_modules/magic-script-components/src/components.js",
-   "size": 961,
+   "size": 836,
    "src": "/Users/mykytailin/Documents/weatherApp/bin/node_modules/magic-script-components/src/components.js"
   },
   {
@@ -1304,9 +1311,9 @@
   },
   {
    "compression": 8,
-   "hash": "7df7e4de6ea33e8801a3a753b3db189509539a33",
+   "hash": "0154707053c8a2df2933bde33ba27fd6ebfaa419",
    "pkgpath": "bin/src/app.js",
-   "size": 2479,
+   "size": 2386,
    "src": "/Users/mykytailin/Documents/weatherApp/bin/src/app.js"
   },
   {
@@ -1332,16 +1339,16 @@
   },
   {
    "compression": 8,
-   "hash": "ac17182965a4705d6798b0062baf967cc31260b8",
+   "hash": "3f4a4191a67e8301b993ade7be555a6e7a8a179e",
    "pkgpath": "bin/src/realData.js",
-   "size": 573,
+   "size": 1394,
    "src": "/Users/mykytailin/Documents/weatherApp/bin/src/realData.js"
   },
   {
    "compression": 8,
-   "hash": "89768dba2a2d297ddcbc0267c8b49999bb9cd1a0",
+   "hash": "5e546dbc842dfa4bb5d77b4d864b5cc977b1e91c",
    "pkgpath": "./digest.sha512.signed",
-   "size": 42295,
+   "size": 42467,
    "src": "/Users/mykytailin/Documents/weatherApp/digest.sha512.signed"
   },
   {

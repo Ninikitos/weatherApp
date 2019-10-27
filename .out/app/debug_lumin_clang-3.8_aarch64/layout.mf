@@ -8,6 +8,10 @@
   "src": "/Users/mykytailin/Documents/weatherApp/bin/_virtual/_commonjsHelpers.js"
  },
  {
+  "dest": "bin/_virtual/_rollupPluginBabelHelpers.js",
+  "src": "/Users/mykytailin/Documents/weatherApp/bin/_virtual/_rollupPluginBabelHelpers.js"
+ },
+ {
   "dest": "bin/_virtual/checkPropTypes.js",
   "src": "/Users/mykytailin/Documents/weatherApp/bin/_virtual/checkPropTypes.js"
  },

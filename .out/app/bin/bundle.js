@@ -51,22 +51,59 @@ var _ = (function (React, lumin) {
 
     }
 
-    const API_KEY = '0f4670104e656aa457f158cbe7631c18';
-    const Plantation_City_code = 4168782;
+    function _defineProperty(obj, key, value) {
+      if (key in obj) {
+        Object.defineProperty(obj, key, {
+          value: value,
+          enumerable: true,
+          configurable: true,
+          writable: true
+        });
+      } else {
+        obj[key] = value;
+      }
 
-    async function getData() {
-      let api_call = await fetch(`api.openweathermap.org/data/2.5/weather?q=${Plantation_City_code},US&appid=${API_KEY}`); // if (!api_call.ok) {
-      //     throw new Error("HTTP error, status = " + api_call.status);
-      // }
-
-      let json = await api_call.json();
-      print(JSON.stringify(json)); //   let string = "basicFetch - Success:\n";
-      //   string += JSON.stringify(json);
+      return obj;
     }
 
-    function Button (props) {
-        // return (<button {...props} />);
-        return React.createElement('button', props);
+    // const Plantation_City_code = 4168782;
+    // // async function getData() {
+    // //     let api_call = await fetch(`api.openweathermap.org/data/2.5/weather?q=${Plantation_City_code},US&appid=${API_KEY}`);
+    // //     // if (!api_call.ok) {
+    // //     //     throw new Error("HTTP error, status = " + api_call.status);
+    // //     // }
+    // //     let json = await api_call.json();
+    // //     print(JSON.stringify(json));
+    // // //   let string = "basicFetch - Success:\n";
+    // // //   string += JSON.stringify(json);
+    // // }
+    // const data = () => {
+    // }
+
+    class Data$1 extends React.Component {
+      constructor(...args) {
+        super(...args);
+
+        _defineProperty(this, "onButtonClick", async () => {
+          let api_call = await fetch(`http://api.openweathermap.org/data/2.5/weather?q=Plantation,US&appid=0f4670104e656aa457f158cbe7631c18`);
+
+          if (!api_call.ok) {
+            throw new Error("HTTP error, status = " + api_call.status);
+          }
+
+          let json = await api_call.json();
+          print(JSON.stringify(json));
+        });
+      }
+
+      render() {
+        return React.createElement(lumin.View, {
+          name: "data-view"
+        }, React.createElement(lumin.Button, {
+          onClick: this.onButtonClick
+        }, "Get Data"));
+      }
+
     }
 
     function Model (props) {
@@ -118,7 +155,6 @@ var _ = (function (React, lumin) {
           min: [-0.45, -0.15, -0.1],
           max: [0.45, 0.15, 0.1]
         };
-        const realData = React.createElement(getData, null);
         const time = ['1pm', '2pm', '3pm', '4pm', '5pm', '6pm', '7pm', '8pm', '9pm', '10pm', '11pm', '12pm'];
         return React.createElement(View, {
           name: "main-view"
@@ -142,7 +178,7 @@ var _ = (function (React, lumin) {
           localPosition: [-0.250, -0.150, 0],
           weight: "medium",
           textAlignment: 'center'
-        }, this.state.currentDay), React.createElement(Button, null, "Get Weather"), React.createElement(Model, {
+        }, this.state.currentDay), React.createElement(Data$1, null), React.createElement(Model, {
           modelPath: "res/Clouds.fbx",
           localScale: [0.0020, 0.0020, 0.0020],
           localPosition: [-0.180, 0.050, 0]
@@ -163,7 +199,7 @@ var _ = (function (React, lumin) {
           textSize: 0.07,
           key: index,
           text: `${hour}`
-        })))), realData);
+        })))));
       }
 
     }
