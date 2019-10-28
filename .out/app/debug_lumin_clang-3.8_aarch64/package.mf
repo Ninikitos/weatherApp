@@ -5,1412 +5,1412 @@
    "hash": "666ed2c9c32893095c876e1a0946451dc51a47a3",
    "pkgpath": "bin/_virtual/ReactPropTypesSecret.js",
    "size": 158,
-   "src": "/Users/mykytailin/Documents/weatherApp/bin/_virtual/ReactPropTypesSecret.js"
+   "src": "C:/Users/nilin/Desktop/weatherApp/bin/_virtual/ReactPropTypesSecret.js"
   },
   {
    "compression": 8,
    "hash": "daf4c1540bb0480e8bc07cc43ff9cd008f320d8a",
    "pkgpath": "bin/_virtual/_commonjsHelpers.js",
    "size": 305,
-   "src": "/Users/mykytailin/Documents/weatherApp/bin/_virtual/_commonjsHelpers.js"
+   "src": "C:/Users/nilin/Desktop/weatherApp/bin/_virtual/_commonjsHelpers.js"
   },
   {
    "compression": 8,
    "hash": "bfd81b49630590fea639dab9968606214a711e5e",
    "pkgpath": "bin/_virtual/_rollupPluginBabelHelpers.js",
    "size": 302,
-   "src": "/Users/mykytailin/Documents/weatherApp/bin/_virtual/_rollupPluginBabelHelpers.js"
+   "src": "C:/Users/nilin/Desktop/weatherApp/bin/_virtual/_rollupPluginBabelHelpers.js"
   },
   {
    "compression": 8,
    "hash": "06ce115e0c081146d04e17af07d10acc1b1b9581",
    "pkgpath": "bin/_virtual/checkPropTypes.js",
    "size": 136,
-   "src": "/Users/mykytailin/Documents/weatherApp/bin/_virtual/checkPropTypes.js"
+   "src": "C:/Users/nilin/Desktop/weatherApp/bin/_virtual/checkPropTypes.js"
   },
   {
    "compression": 8,
    "hash": "7c7ee5920431022779141448906b40427f2f10bc",
    "pkgpath": "bin/_virtual/index.js",
    "size": 122,
-   "src": "/Users/mykytailin/Documents/weatherApp/bin/_virtual/index.js"
+   "src": "C:/Users/nilin/Desktop/weatherApp/bin/_virtual/index.js"
   },
   {
    "compression": 8,
    "hash": "850b3e62e4eadbd4f94d7604946c447afa19fd70",
    "pkgpath": "bin/_virtual/index2.js",
    "size": 100,
-   "src": "/Users/mykytailin/Documents/weatherApp/bin/_virtual/index2.js"
+   "src": "C:/Users/nilin/Desktop/weatherApp/bin/_virtual/index2.js"
   },
   {
    "compression": 8,
    "hash": "1212b7d4049b6414435db2cb5f6647e7bf967ce3",
    "pkgpath": "bin/_virtual/index3.js",
    "size": 112,
-   "src": "/Users/mykytailin/Documents/weatherApp/bin/_virtual/index3.js"
+   "src": "C:/Users/nilin/Desktop/weatherApp/bin/_virtual/index3.js"
   },
   {
    "compression": 8,
    "hash": "3d3ba35bd86f1a7d0f36534812f92a665150c346",
    "pkgpath": "bin/_virtual/react-reconciler.development.js",
    "size": 182,
-   "src": "/Users/mykytailin/Documents/weatherApp/bin/_virtual/react-reconciler.development.js"
+   "src": "C:/Users/nilin/Desktop/weatherApp/bin/_virtual/react-reconciler.development.js"
   },
   {
    "compression": 8,
    "hash": "d623affa0a6d5c4169840ee1f26b8e5310f4bcef",
    "pkgpath": "bin/_virtual/react-reconciler.production.min.js",
    "size": 191,
-   "src": "/Users/mykytailin/Documents/weatherApp/bin/_virtual/react-reconciler.production.min.js"
+   "src": "C:/Users/nilin/Desktop/weatherApp/bin/_virtual/react-reconciler.production.min.js"
   },
   {
    "compression": 8,
    "hash": "4be3db615df8514b1465c4f158b38109dee312b9",
    "pkgpath": "bin/_virtual/react.development.js",
    "size": 140,
-   "src": "/Users/mykytailin/Documents/weatherApp/bin/_virtual/react.development.js"
+   "src": "C:/Users/nilin/Desktop/weatherApp/bin/_virtual/react.development.js"
   },
   {
    "compression": 8,
    "hash": "6639d11ace3c594f06735870e42d29c95ee14343",
    "pkgpath": "bin/_virtual/react.production.min.js",
    "size": 149,
-   "src": "/Users/mykytailin/Documents/weatherApp/bin/_virtual/react.production.min.js"
+   "src": "C:/Users/nilin/Desktop/weatherApp/bin/_virtual/react.production.min.js"
   },
   {
    "compression": 8,
    "hash": "ed9be4fefd7e364dd0a81ea0c411beb52008e8de",
    "pkgpath": "bin/_virtual/scheduler-tracing.development.js",
    "size": 178,
-   "src": "/Users/mykytailin/Documents/weatherApp/bin/_virtual/scheduler-tracing.development.js"
+   "src": "C:/Users/nilin/Desktop/weatherApp/bin/_virtual/scheduler-tracing.development.js"
   },
   {
    "compression": 8,
    "hash": "c8c1d5d6719763b185c923d83f09f1c80c053085",
    "pkgpath": "bin/_virtual/scheduler-tracing.production.min.js",
    "size": 187,
-   "src": "/Users/mykytailin/Documents/weatherApp/bin/_virtual/scheduler-tracing.production.min.js"
+   "src": "C:/Users/nilin/Desktop/weatherApp/bin/_virtual/scheduler-tracing.production.min.js"
   },
   {
    "compression": 8,
    "hash": "05d30fd34911f2f5d004690c442c3ebcaaf86d8e",
    "pkgpath": "bin/_virtual/scheduler.development.js",
    "size": 156,
-   "src": "/Users/mykytailin/Documents/weatherApp/bin/_virtual/scheduler.development.js"
+   "src": "C:/Users/nilin/Desktop/weatherApp/bin/_virtual/scheduler.development.js"
   },
   {
    "compression": 8,
    "hash": "ba283f84f6c8943ec6fd060413d5c80863128abc",
    "pkgpath": "bin/_virtual/scheduler.production.min.js",
    "size": 165,
-   "src": "/Users/mykytailin/Documents/weatherApp/bin/_virtual/scheduler.production.min.js"
+   "src": "C:/Users/nilin/Desktop/weatherApp/bin/_virtual/scheduler.production.min.js"
   },
   {
    "compression": 8,
    "hash": "8054830afc01573469e4fc6c59647b65510ce003",
    "pkgpath": "bin/_virtual/tracing.js",
    "size": 110,
-   "src": "/Users/mykytailin/Documents/weatherApp/bin/_virtual/tracing.js"
+   "src": "C:/Users/nilin/Desktop/weatherApp/bin/_virtual/tracing.js"
   },
   {
    "compression": 8,
-   "hash": "95fbf83c864d5f6c79f470e09b3371f5ff8fcc02",
+   "hash": "1190d245213f9aecffeb0fde52b18b5cd60152a3",
    "pkgpath": "bin/bundle.js",
-   "size": 5519,
-   "src": "/Users/mykytailin/Documents/weatherApp/bin/bundle.js"
+   "size": 5124,
+   "src": "C:/Users/nilin/Desktop/weatherApp/bin/bundle.js"
   },
   {
    "compression": 8,
    "hash": "9b3b9bf7aaa41ad178f5c1db28d09b7cfe724299",
    "pkgpath": "bin/index.js",
    "size": 49,
-   "src": "/Users/mykytailin/Documents/weatherApp/bin/index.js"
+   "src": "C:/Users/nilin/Desktop/weatherApp/bin/index.js"
   },
   {
    "compression": 8,
-   "hash": "04d0a66c78a5a8c126f42f2661f71c06068773c6",
+   "hash": "5a76456d2ee01842b5a3d063c7b857342c145567",
    "pkgpath": "bin/node_modules/magic-script-components-lumin/index.js",
-   "size": 395,
-   "src": "/Users/mykytailin/Documents/weatherApp/bin/node_modules/magic-script-components-lumin/index.js"
+   "size": 409,
+   "src": "C:/Users/nilin/Desktop/weatherApp/bin/node_modules/magic-script-components-lumin/index.js"
   },
   {
    "compression": 8,
-   "hash": "e7391d2d1377f9aa639249625ae9377c01c9abbd",
+   "hash": "85bdd186a07c03de1eed6cdb880c9a0200e7bbe0",
    "pkgpath": "bin/node_modules/magic-script-components-lumin/src/configuration.js",
-   "size": 359,
-   "src": "/Users/mykytailin/Documents/weatherApp/bin/node_modules/magic-script-components-lumin/src/configuration.js"
-  },
-  {
-   "compression": 8,
-   "hash": "6a9e4791c12da6d8114a3869004cc3a2b2a97ff5",
-   "pkgpath": "bin/node_modules/magic-script-components-lumin/src/core/native-factory.js",
-   "size": 463,
-   "src": "/Users/mykytailin/Documents/weatherApp/bin/node_modules/magic-script-components-lumin/src/core/native-factory.js"
-  },
-  {
-   "compression": 8,
-   "hash": "e6e65a16dab3432fe6b69b02d08b61d929ba741c",
-   "pkgpath": "bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/component-mapping.js",
-   "size": 4940,
-   "src": "/Users/mykytailin/Documents/weatherApp/bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/component-mapping.js"
-  },
-  {
-   "compression": 8,
-   "hash": "3b5b4d6c1cdbefd26deeca1013adf6fad6163c61",
-   "pkgpath": "bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/controllers/app-prism-controller.js",
-   "size": 1596,
-   "src": "/Users/mykytailin/Documents/weatherApp/bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/controllers/app-prism-controller.js"
-  },
-  {
-   "compression": 8,
-   "hash": "d00e967a12e820f2837c2c6a84b4f956ece785f0",
-   "pkgpath": "bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/controllers/builders/controller-builder.js",
-   "size": 3096,
-   "src": "/Users/mykytailin/Documents/weatherApp/bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/controllers/builders/controller-builder.js"
-  },
-  {
-   "compression": 8,
-   "hash": "9eb10292d49d2aa703e609c6b3f64eabd3b3362b",
-   "pkgpath": "bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/controllers/mxs-prism-controller.js",
-   "size": 6301,
-   "src": "/Users/mykytailin/Documents/weatherApp/bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/controllers/mxs-prism-controller.js"
-  },
-  {
-   "compression": 8,
-   "hash": "82f5aa13c408aaa12d85b6fa8cdcaba529fb51aa",
-   "pkgpath": "bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/elements/builders/audio-builder.js",
-   "size": 11124,
-   "src": "/Users/mykytailin/Documents/weatherApp/bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/elements/builders/audio-builder.js"
-  },
-  {
-   "compression": 8,
-   "hash": "b5c1b454c50827fd4e1eb59be9898b255f40a998",
-   "pkgpath": "bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/elements/builders/button-builder.js",
-   "size": 5247,
-   "src": "/Users/mykytailin/Documents/weatherApp/bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/elements/builders/button-builder.js"
-  },
-  {
-   "compression": 8,
-   "hash": "d980bd459e673b612b5097e255e635ff925fb62c",
-   "pkgpath": "bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/elements/builders/circle-confirmation-builder.js",
-   "size": 953,
-   "src": "/Users/mykytailin/Documents/weatherApp/bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/elements/builders/circle-confirmation-builder.js"
-  },
-  {
-   "compression": 8,
-   "hash": "e4597a13eef754c83a1a295e242484e3f99479f0",
-   "pkgpath": "bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/elements/builders/color-picker-builder.js",
-   "size": 1240,
-   "src": "/Users/mykytailin/Documents/weatherApp/bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/elements/builders/color-picker-builder.js"
-  },
-  {
-   "compression": 8,
-   "hash": "21d29a75b86a99088494ad4c5b403f4c69871044",
-   "pkgpath": "bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/elements/builders/date-picker-builder.js",
-   "size": 3280,
-   "src": "/Users/mykytailin/Documents/weatherApp/bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/elements/builders/date-picker-builder.js"
-  },
-  {
-   "compression": 8,
-   "hash": "675199c29b496f51cbd4449261fceb4905bb8118",
-   "pkgpath": "bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/elements/builders/dialog-builder.js",
-   "size": 3333,
-   "src": "/Users/mykytailin/Documents/weatherApp/bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/elements/builders/dialog-builder.js"
-  },
-  {
-   "compression": 8,
-   "hash": "3e138ad74e8b7de9c45b19cec4283f5119731fda",
-   "pkgpath": "bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/elements/builders/dropdown-list-builder.js",
-   "size": 3605,
-   "src": "/Users/mykytailin/Documents/weatherApp/bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/elements/builders/dropdown-list-builder.js"
-  },
-  {
-   "compression": 8,
-   "hash": "6ecab99aefd3e15f10922fca0457c7015ca034af",
-   "pkgpath": "bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/elements/builders/dropdown-list-item-builder.js",
-   "size": 3119,
-   "src": "/Users/mykytailin/Documents/weatherApp/bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/elements/builders/dropdown-list-item-builder.js"
-  },
-  {
-   "compression": 8,
-   "hash": "5ed617e8d63bc2eadece9ecd1d517871ed6d4bef",
-   "pkgpath": "bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/elements/builders/element-builder.js",
-   "size": 2865,
-   "src": "/Users/mykytailin/Documents/weatherApp/bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/elements/builders/element-builder.js"
-  },
-  {
-   "compression": 8,
-   "hash": "4c2b1a825307efb3873489ffa4d01ccb94fae484",
-   "pkgpath": "bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/elements/builders/grid-layout-builder.js",
-   "size": 815,
-   "src": "/Users/mykytailin/Documents/weatherApp/bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/elements/builders/grid-layout-builder.js"
-  },
-  {
-   "compression": 8,
-   "hash": "a6e963d2b329269c560a243ff8afa8e712dbd639",
-   "pkgpath": "bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/elements/builders/group-builder.js",
-   "size": 423,
-   "src": "/Users/mykytailin/Documents/weatherApp/bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/elements/builders/group-builder.js"
-  },
-  {
-   "compression": 8,
-   "hash": "b64cbe1eaff41a6c183bd15636f722863af59633",
-   "pkgpath": "bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/elements/builders/image-builder.js",
-   "size": 4708,
-   "src": "/Users/mykytailin/Documents/weatherApp/bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/elements/builders/image-builder.js"
-  },
-  {
-   "compression": 8,
-   "hash": "5180a8c05379b79ebf872a1d62b9c8fb5af51a2b",
-   "pkgpath": "bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/elements/builders/layout-builder.js",
-   "size": 1265,
-   "src": "/Users/mykytailin/Documents/weatherApp/bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/elements/builders/layout-builder.js"
-  },
-  {
-   "compression": 8,
-   "hash": "14f7d5201d9d5816976f677c591f6da362f1cc82",
-   "pkgpath": "bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/elements/builders/light-builder.js",
-   "size": 2079,
-   "src": "/Users/mykytailin/Documents/weatherApp/bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/elements/builders/light-builder.js"
-  },
-  {
-   "compression": 8,
-   "hash": "59df63d7db93a43514999b1278b2a22325620c99",
-   "pkgpath": "bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/elements/builders/line-builder.js",
-   "size": 1045,
-   "src": "/Users/mykytailin/Documents/weatherApp/bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/elements/builders/line-builder.js"
-  },
-  {
-   "compression": 8,
-   "hash": "7fd5990e561cb1bd57ff85df4f236a208af5a622",
-   "pkgpath": "bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/elements/builders/linear-layout-builder.js",
-   "size": 775,
-   "src": "/Users/mykytailin/Documents/weatherApp/bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/elements/builders/linear-layout-builder.js"
-  },
-  {
-   "compression": 8,
-   "hash": "ae5dde9e7619b570a52e01236cbc7b0b1af79102",
-   "pkgpath": "bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/elements/builders/list-view-builder.js",
-   "size": 5121,
-   "src": "/Users/mykytailin/Documents/weatherApp/bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/elements/builders/list-view-builder.js"
-  },
-  {
-   "compression": 8,
-   "hash": "639d284873c08add1bbe3c8be878f20a6fd1697e",
-   "pkgpath": "bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/elements/builders/list-view-item-builder.js",
-   "size": 1737,
-   "src": "/Users/mykytailin/Documents/weatherApp/bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/elements/builders/list-view-item-builder.js"
-  },
-  {
-   "compression": 8,
-   "hash": "2bd07b9d846c91c52013030c3175b35a41345bb5",
-   "pkgpath": "bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/elements/builders/loading-spinner-builder.js",
-   "size": 2421,
-   "src": "/Users/mykytailin/Documents/weatherApp/bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/elements/builders/loading-spinner-builder.js"
-  },
-  {
-   "compression": 8,
-   "hash": "177fbf6f826c82c380f34dba31f4e450da176e30",
-   "pkgpath": "bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/elements/builders/model-builder.js",
-   "size": 6251,
-   "src": "/Users/mykytailin/Documents/weatherApp/bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/elements/builders/model-builder.js"
-  },
-  {
-   "compression": 8,
-   "hash": "1b5bf3c429082e6c0cf4cbb33c96133e6b3e94cd",
-   "pkgpath": "bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/elements/builders/page-view-builder.js",
-   "size": 3475,
-   "src": "/Users/mykytailin/Documents/weatherApp/bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/elements/builders/page-view-builder.js"
-  },
-  {
-   "compression": 8,
-   "hash": "5cc175d4b213bb1cf72b5d66c5b1607bea92ad1e",
-   "pkgpath": "bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/elements/builders/panel-builder.js",
-   "size": 4170,
-   "src": "/Users/mykytailin/Documents/weatherApp/bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/elements/builders/panel-builder.js"
-  },
-  {
-   "compression": 8,
-   "hash": "96f080278ff301e743516aa03804421b047b21e6",
-   "pkgpath": "bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/elements/builders/portal-icon-builder.js",
-   "size": 3187,
-   "src": "/Users/mykytailin/Documents/weatherApp/bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/elements/builders/portal-icon-builder.js"
-  },
-  {
-   "compression": 8,
-   "hash": "bae07f361ff890ccfce973be5bb0cf234de7ad4b",
-   "pkgpath": "bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/elements/builders/positional-layout-builder.js",
-   "size": 1229,
-   "src": "/Users/mykytailin/Documents/weatherApp/bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/elements/builders/positional-layout-builder.js"
-  },
-  {
-   "compression": 8,
-   "hash": "cb8d16b1511b40cdc7dbb38d3962151bc7c1154d",
-   "pkgpath": "bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/elements/builders/progress-bar-builder.js",
-   "size": 2284,
-   "src": "/Users/mykytailin/Documents/weatherApp/bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/elements/builders/progress-bar-builder.js"
-  },
-  {
-   "compression": 8,
-   "hash": "64f22ae90e04a0b86749cb99e038be979b940ae8",
-   "pkgpath": "bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/elements/builders/quad-builder.js",
-   "size": 2833,
-   "src": "/Users/mykytailin/Documents/weatherApp/bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/elements/builders/quad-builder.js"
-  },
-  {
-   "compression": 8,
-   "hash": "afcec9b6dea2e54d1b93c07ddac8e971d923c440",
-   "pkgpath": "bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/elements/builders/rect-layout-builder.js",
-   "size": 938,
-   "src": "/Users/mykytailin/Documents/weatherApp/bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/elements/builders/rect-layout-builder.js"
-  },
-  {
-   "compression": 8,
-   "hash": "7728105a14524e3f7fc9f8bda98778b3f61e8995",
-   "pkgpath": "bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/elements/builders/render-builder.js",
-   "size": 3300,
-   "src": "/Users/mykytailin/Documents/weatherApp/bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/elements/builders/render-builder.js"
-  },
-  {
-   "compression": 8,
-   "hash": "b1be6be6676460fc1f30e5e1180e1b14896b2020",
-   "pkgpath": "bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/elements/builders/scroll-bar-builder.js",
-   "size": 2079,
-   "src": "/Users/mykytailin/Documents/weatherApp/bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/elements/builders/scroll-bar-builder.js"
-  },
-  {
-   "compression": 8,
-   "hash": "0b078ed7ee0581ee419fa2327b23e7041a38ee8d",
-   "pkgpath": "bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/elements/builders/scroll-view-builder.js",
-   "size": 2391,
-   "src": "/Users/mykytailin/Documents/weatherApp/bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/elements/builders/scroll-view-builder.js"
-  },
-  {
-   "compression": 8,
-   "hash": "0adeaf3066d31d16954337410e46b830977fd15c",
-   "pkgpath": "bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/elements/builders/slider-builder.js",
-   "size": 1514,
-   "src": "/Users/mykytailin/Documents/weatherApp/bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/elements/builders/slider-builder.js"
-  },
-  {
-   "compression": 8,
-   "hash": "c6af55391b1ebbe8e4759874b8966961225385f6",
-   "pkgpath": "bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/elements/builders/tab-builder.js",
-   "size": 1816,
-   "src": "/Users/mykytailin/Documents/weatherApp/bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/elements/builders/tab-builder.js"
-  },
-  {
-   "compression": 8,
-   "hash": "3788aa1ad801ff16cb750bae9ff31c136d52418c",
-   "pkgpath": "bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/elements/builders/text-builder.js",
-   "size": 7600,
-   "src": "/Users/mykytailin/Documents/weatherApp/bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/elements/builders/text-builder.js"
-  },
-  {
-   "compression": 8,
-   "hash": "5b9aefe2e76548583229031b9861362bf8dbd9d6",
-   "pkgpath": "bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/elements/builders/text-container-builder.js",
-   "size": 639,
-   "src": "/Users/mykytailin/Documents/weatherApp/bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/elements/builders/text-container-builder.js"
-  },
-  {
-   "compression": 8,
-   "hash": "f0f8132b1f75f4264f0ab12320c4821021f114b2",
-   "pkgpath": "bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/elements/builders/text-edit-builder.js",
-   "size": 10664,
-   "src": "/Users/mykytailin/Documents/weatherApp/bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/elements/builders/text-edit-builder.js"
-  },
-  {
-   "compression": 8,
-   "hash": "8d9d2560f8188c8fd32d10d5228866f25215cad8",
-   "pkgpath": "bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/elements/builders/text-provider-builder.js",
-   "size": 1147,
-   "src": "/Users/mykytailin/Documents/weatherApp/bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/elements/builders/text-provider-builder.js"
-  },
-  {
-   "compression": 8,
-   "hash": "f110426477878f4033ec1f8e03f7efc8d497a377",
-   "pkgpath": "bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/elements/builders/time-picker-builder.js",
-   "size": 2758,
-   "src": "/Users/mykytailin/Documents/weatherApp/bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/elements/builders/time-picker-builder.js"
-  },
-  {
-   "compression": 8,
-   "hash": "eb2d87309be9e5a31365b70b8857bcf456f1983b",
-   "pkgpath": "bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/elements/builders/toggle-builder.js",
-   "size": 2032,
-   "src": "/Users/mykytailin/Documents/weatherApp/bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/elements/builders/toggle-builder.js"
-  },
-  {
-   "compression": 8,
-   "hash": "4c17eee344fe3130ce38804a3b80603f8404a249",
-   "pkgpath": "bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/elements/builders/toggle-group-builder.js",
-   "size": 1385,
-   "src": "/Users/mykytailin/Documents/weatherApp/bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/elements/builders/toggle-group-builder.js"
-  },
-  {
-   "compression": 8,
-   "hash": "9c2d35c1c6ed3d9e3b4eefb0f91f53c175fdb0be",
-   "pkgpath": "bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/elements/builders/transform-builder.js",
-   "size": 4943,
-   "src": "/Users/mykytailin/Documents/weatherApp/bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/elements/builders/transform-builder.js"
-  },
-  {
-   "compression": 8,
-   "hash": "05198d1c5ade45afe49187116fa77b8626c37e3e",
-   "pkgpath": "bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/elements/builders/ui-node-builder.js",
-   "size": 4639,
-   "src": "/Users/mykytailin/Documents/weatherApp/bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/elements/builders/ui-node-builder.js"
-  },
-  {
-   "compression": 8,
-   "hash": "ec33c2951bbbf8366e3d35efd0b2002ed5194d91",
-   "pkgpath": "bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/elements/builders/video-builder.js",
-   "size": 3175,
-   "src": "/Users/mykytailin/Documents/weatherApp/bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/elements/builders/video-builder.js"
-  },
-  {
-   "compression": 8,
-   "hash": "5ba0b302ec83b2ddd2b1de6b135bf47a5c6b0f34",
-   "pkgpath": "bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/elements/builders/web-view-builder.js",
-   "size": 2875,
-   "src": "/Users/mykytailin/Documents/weatherApp/bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/elements/builders/web-view-builder.js"
-  },
-  {
-   "compression": 8,
-   "hash": "18d97e0bdf1e4fb7ac887757ad086046d9c383ed",
-   "pkgpath": "bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/elements/properties/array-property.js",
-   "size": 462,
-   "src": "/Users/mykytailin/Documents/weatherApp/bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/elements/properties/array-property.js"
-  },
-  {
-   "compression": 8,
-   "hash": "e1c047e0cad9b68abedcda1fff67350c7c6c10f9",
-   "pkgpath": "bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/elements/properties/class-property.js",
-   "size": 528,
-   "src": "/Users/mykytailin/Documents/weatherApp/bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/elements/properties/class-property.js"
-  },
-  {
-   "compression": 8,
-   "hash": "fc9cb38f677f940d6672685880efdd7d020a003d",
-   "pkgpath": "bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/elements/properties/enum-property.js",
-   "size": 694,
-   "src": "/Users/mykytailin/Documents/weatherApp/bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/elements/properties/enum-property.js"
-  },
-  {
-   "compression": 8,
-   "hash": "664731dbb4325ffa3c2d9ecbfe7603f4dd02a750",
-   "pkgpath": "bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/elements/properties/primitive-type-property.js",
-   "size": 475,
-   "src": "/Users/mykytailin/Documents/weatherApp/bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/elements/properties/primitive-type-property.js"
-  },
-  {
-   "compression": 8,
-   "hash": "40ae09883056a0df7fb403cd3e0da901e7320201",
-   "pkgpath": "bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/elements/properties/property-descriptor.js",
-   "size": 3148,
-   "src": "/Users/mykytailin/Documents/weatherApp/bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/elements/properties/property-descriptor.js"
-  },
-  {
-   "compression": 8,
-   "hash": "7d697e9b1d2c36ce5975d2f9532fbd9ad310d39f",
-   "pkgpath": "bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/elements/properties/text-children-property.js",
-   "size": 1006,
-   "src": "/Users/mykytailin/Documents/weatherApp/bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/elements/properties/text-children-property.js"
-  },
-  {
-   "compression": 8,
-   "hash": "0269cab4365c8641fe07d8ddd87db648401e6ae4",
-   "pkgpath": "bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/mxs-landscape-app.js",
-   "size": 2116,
-   "src": "/Users/mykytailin/Documents/weatherApp/bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/mxs-landscape-app.js"
-  },
-  {
-   "compression": 8,
-   "hash": "c259cbb6414bc2ceef594653165153d1dc7f47c0",
-   "pkgpath": "bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/platform-factory.js",
-   "size": 14026,
-   "src": "/Users/mykytailin/Documents/weatherApp/bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/platform-factory.js"
-  },
-  {
-   "compression": 8,
-   "hash": "0dc3ba9101f63ebac5cb6a53014469ed82035210",
-   "pkgpath": "bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/types/advance-direction.js",
-   "size": 515,
-   "src": "/Users/mykytailin/Documents/weatherApp/bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/types/advance-direction.js"
-  },
-  {
-   "compression": 8,
-   "hash": "6402cd08ae4b8811a2acbd7e861678909896833f",
-   "pkgpath": "bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/types/alignment.js",
-   "size": 656,
-   "src": "/Users/mykytailin/Documents/weatherApp/bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/types/alignment.js"
-  },
-  {
-   "compression": 8,
-   "hash": "1df92c2ad1af5997686efe0b3eed2143e25a738c",
-   "pkgpath": "bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/types/audio-action.js",
-   "size": 262,
-   "src": "/Users/mykytailin/Documents/weatherApp/bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/types/audio-action.js"
-  },
-  {
-   "compression": 8,
-   "hash": "8998bf080672dab4422d948ed51fba5faf6ccb8c",
-   "pkgpath": "bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/types/cursor-edge-scroll-mode.js",
-   "size": 389,
-   "src": "/Users/mykytailin/Documents/weatherApp/bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/types/cursor-edge-scroll-mode.js"
-  },
-  {
-   "compression": 8,
-   "hash": "c25c29adc71e8581faf0d6abb649a5f0da50b2c0",
-   "pkgpath": "bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/types/cursor-hover-state.js",
-   "size": 1056,
-   "src": "/Users/mykytailin/Documents/weatherApp/bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/types/cursor-hover-state.js"
-  },
-  {
-   "compression": 8,
-   "hash": "488f543e0edb184b8b3206e6b55dd5a17f9e83cf",
-   "pkgpath": "bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/types/date-format.js",
-   "size": 1933,
-   "src": "/Users/mykytailin/Documents/weatherApp/bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/types/date-format.js"
-  },
-  {
-   "compression": 8,
-   "hash": "adb79ee6333ad1e597e194467103df4d8b3538bb",
-   "pkgpath": "bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/types/dialog-layout.js",
-   "size": 341,
-   "src": "/Users/mykytailin/Documents/weatherApp/bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/types/dialog-layout.js"
-  },
-  {
-   "compression": 8,
-   "hash": "faa1a6881be092d161684771c2734ca7329edcf2",
-   "pkgpath": "bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/types/dialog-type.js",
-   "size": 465,
-   "src": "/Users/mykytailin/Documents/weatherApp/bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/types/dialog-type.js"
-  },
-  {
-   "compression": 8,
-   "hash": "ec81df4876573c02f8849b8ed030317a83fa33f4",
-   "pkgpath": "bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/types/eclipse-button-type.js",
-   "size": 481,
-   "src": "/Users/mykytailin/Documents/weatherApp/bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/types/eclipse-button-type.js"
-  },
-  {
-   "compression": 8,
-   "hash": "e35f33426aa65c767810c81d1dceef9de484d1ed",
-   "pkgpath": "bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/types/eclipse-label-type.js",
-   "size": 804,
-   "src": "/Users/mykytailin/Documents/weatherApp/bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/types/eclipse-label-type.js"
-  },
-  {
-   "compression": 8,
-   "hash": "b03d70b3cbe501014a7b0fa3a035be6d2c308609",
-   "pkgpath": "bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/types/event-data/control-pose-3dof-Input-event-data.js",
-   "size": 1116,
-   "src": "/Users/mykytailin/Documents/weatherApp/bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/types/event-data/control-pose-3dof-Input-event-data.js"
-  },
-  {
-   "compression": 8,
-   "hash": "1c4c5b8bc01127d40e80f21ce1a87dfde398f4f0",
-   "pkgpath": "bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/types/event-data/control-pose-6dof-input-event-data.js",
-   "size": 552,
-   "src": "/Users/mykytailin/Documents/weatherApp/bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/types/event-data/control-pose-6dof-input-event-data.js"
-  },
-  {
-   "compression": 8,
-   "hash": "c769ddb350c6502a60811795dbe424efc1f20086",
-   "pkgpath": "bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/types/event-data/control-touch-pad-input-event-data.js",
-   "size": 994,
-   "src": "/Users/mykytailin/Documents/weatherApp/bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/types/event-data/control-touch-pad-input-event-data.js"
-  },
-  {
-   "compression": 8,
-   "hash": "d0415d5b9bfa5b0bed902b147462e26c3078b7df",
-   "pkgpath": "bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/types/event-data/drop-down-list-event-data.js",
-   "size": 966,
-   "src": "/Users/mykytailin/Documents/weatherApp/bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/types/event-data/drop-down-list-event-data.js"
-  },
-  {
-   "compression": 8,
-   "hash": "1842237306b710f3c12cd1e5b42feca588bcd4db",
-   "pkgpath": "bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/types/event-data/event-data.js",
-   "size": 667,
-   "src": "/Users/mykytailin/Documents/weatherApp/bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/types/event-data/event-data.js"
-  },
-  {
-   "compression": 8,
-   "hash": "73fec19423e4a384e8f53e2bd7b5e35023c864db",
-   "pkgpath": "bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/types/event-data/eye-tracking-event-data.js",
-   "size": 2537,
-   "src": "/Users/mykytailin/Documents/weatherApp/bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/types/event-data/eye-tracking-event-data.js"
-  },
-  {
-   "compression": 8,
-   "hash": "f7e6b252621c5e431abb48a931a8c34ef9d50f0b",
-   "pkgpath": "bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/types/event-data/gesture-input-event-data.js",
-   "size": 3548,
-   "src": "/Users/mykytailin/Documents/weatherApp/bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/types/event-data/gesture-input-event-data.js"
-  },
-  {
-   "compression": 8,
-   "hash": "d92675366d5287023179fbf2374f1057a761cd47",
-   "pkgpath": "bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/types/event-data/input-event-data.js",
-   "size": 939,
-   "src": "/Users/mykytailin/Documents/weatherApp/bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/types/event-data/input-event-data.js"
-  },
-  {
-   "compression": 8,
-   "hash": "0fc7e386ef5598c4b182d6e772f37217524cff74",
-   "pkgpath": "bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/types/event-data/key-input-event-data.js",
-   "size": 825,
-   "src": "/Users/mykytailin/Documents/weatherApp/bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/types/event-data/key-input-event-data.js"
-  },
-  {
-   "compression": 8,
-   "hash": "635a7349f5b58d7687e3965819ef35e9777496c7",
-   "pkgpath": "bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/types/event-data/node-event-data.js",
-   "size": 1494,
-   "src": "/Users/mykytailin/Documents/weatherApp/bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/types/event-data/node-event-data.js"
-  },
-  {
-   "compression": 8,
-   "hash": "3e67357ea51def09c1054cec99c22a008a407946",
-   "pkgpath": "bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/types/event-data/prism-event-data.js",
-   "size": 2412,
-   "src": "/Users/mykytailin/Documents/weatherApp/bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/types/event-data/prism-event-data.js"
-  },
-  {
-   "compression": 8,
-   "hash": "e7dfff2110ffc48d1796429ba88d374f64203206",
-   "pkgpath": "bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/types/event-data/progress-bar-event-data.js",
-   "size": 525,
-   "src": "/Users/mykytailin/Documents/weatherApp/bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/types/event-data/progress-bar-event-data.js"
-  },
-  {
-   "compression": 8,
-   "hash": "cfd21b2bc1c489be12a6884c0ddaeb4440424a6f",
-   "pkgpath": "bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/types/event-data/ray-cast-event-data.js",
-   "size": 832,
-   "src": "/Users/mykytailin/Documents/weatherApp/bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/types/event-data/ray-cast-event-data.js"
-  },
-  {
-   "compression": 8,
-   "hash": "1cdd97736d5c49c68cf4f21afe1d0685eca9db9f",
-   "pkgpath": "bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/types/event-data/scroll-view-event-data.js",
-   "size": 640,
-   "src": "/Users/mykytailin/Documents/weatherApp/bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/types/event-data/scroll-view-event-data.js"
-  },
-  {
-   "compression": 8,
-   "hash": "42dd509af65ea8c63134289e619a534a0036ace0",
-   "pkgpath": "bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/types/event-data/selection-event-data.js",
-   "size": 759,
-   "src": "/Users/mykytailin/Documents/weatherApp/bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/types/event-data/selection-event-data.js"
-  },
-  {
-   "compression": 8,
-   "hash": "ea90483078c07ff2447e1de7b5541d00837014bf",
-   "pkgpath": "bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/types/event-data/server-event.js",
-   "size": 756,
-   "src": "/Users/mykytailin/Documents/weatherApp/bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/types/event-data/server-event.js"
-  },
-  {
-   "compression": 8,
-   "hash": "0e561827f60b9134ec6791eaab6932ee4af34780",
-   "pkgpath": "bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/types/event-data/slider-event-data.js",
-   "size": 481,
-   "src": "/Users/mykytailin/Documents/weatherApp/bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/types/event-data/slider-event-data.js"
-  },
-  {
-   "compression": 8,
-   "hash": "e8e2b04c70fe30fd9c8a7bf59879615937a27d86",
-   "pkgpath": "bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/types/event-data/text-edit-event-data.js",
-   "size": 1054,
-   "src": "/Users/mykytailin/Documents/weatherApp/bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/types/event-data/text-edit-event-data.js"
-  },
-  {
-   "compression": 8,
-   "hash": "40a14d8a8fddb8543510c266dd9d68b41570600f",
-   "pkgpath": "bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/types/event-data/toggle-event-data.js",
-   "size": 509,
-   "src": "/Users/mykytailin/Documents/weatherApp/bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/types/event-data/toggle-event-data.js"
-  },
-  {
-   "compression": 8,
-   "hash": "e9333d23498e027c21137cd3c0b8b67dd249c3c2",
-   "pkgpath": "bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/types/event-data/transform-node-event-data.js",
-   "size": 1613,
-   "src": "/Users/mykytailin/Documents/weatherApp/bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/types/event-data/transform-node-event-data.js"
-  },
-  {
-   "compression": 8,
-   "hash": "d0c6fbcbfeee3eb3680b00aff256ceacaeac65a5",
-   "pkgpath": "bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/types/event-data/ui-event-data.js",
-   "size": 972,
-   "src": "/Users/mykytailin/Documents/weatherApp/bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/types/event-data/ui-event-data.js"
-  },
-  {
-   "compression": 8,
-   "hash": "61eef0a157d10cb0265f4ce4d428b3b8cc2c62ca",
-   "pkgpath": "bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/types/event-data/video-event-data.js",
-   "size": 1005,
-   "src": "/Users/mykytailin/Documents/weatherApp/bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/types/event-data/video-event-data.js"
-  },
-  {
-   "compression": 8,
-   "hash": "0ec9c1833726e583653a75a05bf2e10a88f707dd",
-   "pkgpath": "bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/types/event-source.js",
-   "size": 875,
-   "src": "/Users/mykytailin/Documents/weatherApp/bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/types/event-source.js"
-  },
-  {
-   "compression": 8,
-   "hash": "0e08feca841c6b3ee6c303303cf5692e2d9f8438",
-   "pkgpath": "bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/types/event-type.js",
-   "size": 1110,
-   "src": "/Users/mykytailin/Documents/weatherApp/bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/types/event-type.js"
-  },
-  {
-   "compression": 8,
-   "hash": "ab7888110d07a0ab9e14ee25a71da45eb0f0f6e3",
-   "pkgpath": "bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/types/flow-direction.js",
-   "size": 425,
-   "src": "/Users/mykytailin/Documents/weatherApp/bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/types/flow-direction.js"
-  },
-  {
-   "compression": 8,
-   "hash": "b5b2d7758f2e4ccffc97c45aebcadb8b197723b5",
-   "pkgpath": "bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/types/focus-request.js",
-   "size": 435,
-   "src": "/Users/mykytailin/Documents/weatherApp/bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/types/focus-request.js"
-  },
-  {
-   "compression": 8,
-   "hash": "cfdb5ed43a00372729d85ba06e10f5f331aaa7f5",
-   "pkgpath": "bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/types/font-style.js",
-   "size": 541,
-   "src": "/Users/mykytailin/Documents/weatherApp/bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/types/font-style.js"
-  },
-  {
-   "compression": 8,
-   "hash": "a3108aa1e571a4e65780c89b4b3439f699af1ccd",
-   "pkgpath": "bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/types/gesture-direction.js",
-   "size": 711,
-   "src": "/Users/mykytailin/Documents/weatherApp/bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/types/gesture-direction.js"
-  },
-  {
-   "compression": 8,
-   "hash": "1feece4e643ab80d3eb06ce474de12068efb9b90",
-   "pkgpath": "bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/types/gesture-type.js",
-   "size": 1473,
-   "src": "/Users/mykytailin/Documents/weatherApp/bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/types/gesture-type.js"
-  },
-  {
-   "compression": 8,
-   "hash": "7874547e6f5a678fac13159ca9c5d5c6b57fd853",
-   "pkgpath": "bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/types/gravity-well-snap.js",
-   "size": 520,
-   "src": "/Users/mykytailin/Documents/weatherApp/bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/types/gravity-well-snap.js"
-  },
-  {
-   "compression": 8,
-   "hash": "89f0d430ba0242200fd0d07f4c31b4929bfe3923",
-   "pkgpath": "bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/types/hand-gesture-keypoint-name.js",
-   "size": 2180,
-   "src": "/Users/mykytailin/Documents/weatherApp/bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/types/hand-gesture-keypoint-name.js"
-  },
-  {
-   "compression": 8,
-   "hash": "17f19f7b365e385c4cfb48472c3c1d60ccd66468",
-   "pkgpath": "bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/types/horizontal-text-alignment.js",
-   "size": 489,
-   "src": "/Users/mykytailin/Documents/weatherApp/bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/types/horizontal-text-alignment.js"
-  },
-  {
-   "compression": 8,
-   "hash": "3ba3d084438e295093b5d71f78705e3a8cdecba2",
-   "pkgpath": "bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/types/key-codes.js",
-   "size": 12236,
-   "src": "/Users/mykytailin/Documents/weatherApp/bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/types/key-codes.js"
-  },
-  {
-   "compression": 8,
-   "hash": "69537d9d2fb5341c7a2e1cbda3388a0d9d8f6f30",
-   "pkgpath": "bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/types/label-display-mode.js",
-   "size": 360,
-   "src": "/Users/mykytailin/Documents/weatherApp/bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/types/label-display-mode.js"
-  },
-  {
-   "compression": 8,
-   "hash": "f1813ef42422fb969d72933606a00998e51bad42",
-   "pkgpath": "bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/types/light-type.js",
    "size": 364,
-   "src": "/Users/mykytailin/Documents/weatherApp/bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/types/light-type.js"
+   "src": "C:/Users/nilin/Desktop/weatherApp/bin/node_modules/magic-script-components-lumin/src/configuration.js"
   },
   {
    "compression": 8,
-   "hash": "accb12021b0e4f5fd05bbc1a89acee5efa2c4077",
-   "pkgpath": "bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/types/loading-spinner-type.js",
-   "size": 413,
-   "src": "/Users/mykytailin/Documents/weatherApp/bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/types/loading-spinner-type.js"
+   "hash": "071610cb2e75e95c428adb4bd058b5313c7874c6",
+   "pkgpath": "bin/node_modules/magic-script-components-lumin/src/core/native-factory.js",
+   "size": 479,
+   "src": "C:/Users/nilin/Desktop/weatherApp/bin/node_modules/magic-script-components-lumin/src/core/native-factory.js"
   },
   {
    "compression": 8,
-   "hash": "ae059482b650f2fc1dd84c83f2737c2a72f18067",
-   "pkgpath": "bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/types/orientation.js",
-   "size": 349,
-   "src": "/Users/mykytailin/Documents/weatherApp/bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/types/orientation.js"
+   "hash": "0a828a13d8e99d1020ce13cb117f57a471714645",
+   "pkgpath": "bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/component-mapping.js",
+   "size": 4992,
+   "src": "C:/Users/nilin/Desktop/weatherApp/bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/component-mapping.js"
   },
   {
    "compression": 8,
-   "hash": "fac6e498f3fe77737b9010acf362ce4c861ecc41",
-   "pkgpath": "bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/types/panel-cursor-transition-type.js",
-   "size": 489,
-   "src": "/Users/mykytailin/Documents/weatherApp/bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/types/panel-cursor-transition-type.js"
+   "hash": "ce17db492a5ec3eb5b53d4e5cde83ffc1aec2be3",
+   "pkgpath": "bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/controllers/app-prism-controller.js",
+   "size": 1646,
+   "src": "C:/Users/nilin/Desktop/weatherApp/bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/controllers/app-prism-controller.js"
   },
   {
    "compression": 8,
-   "hash": "db7d9739bf9c43b0dd07909cdac21d7c4ecf6a81",
-   "pkgpath": "bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/types/panel-edge-constraint-level.js",
-   "size": 603,
-   "src": "/Users/mykytailin/Documents/weatherApp/bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/types/panel-edge-constraint-level.js"
+   "hash": "ce208563b084191bfd040e38dd76e87c882061bf",
+   "pkgpath": "bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/controllers/builders/controller-builder.js",
+   "size": 3186,
+   "src": "C:/Users/nilin/Desktop/weatherApp/bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/controllers/builders/controller-builder.js"
   },
   {
    "compression": 8,
-   "hash": "2b427a5b0b9e2713e0f6e6faf3085e06c84ddc93",
-   "pkgpath": "bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/types/portal-icon-size.js",
-   "size": 447,
-   "src": "/Users/mykytailin/Documents/weatherApp/bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/types/portal-icon-size.js"
+   "hash": "a3f842ccb82144fe3c933173725ac0c4067e42c6",
+   "pkgpath": "bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/controllers/mxs-prism-controller.js",
+   "size": 6454,
+   "src": "C:/Users/nilin/Desktop/weatherApp/bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/controllers/mxs-prism-controller.js"
   },
   {
    "compression": 8,
-   "hash": "72050ca9a62e4fb5cadb91284af9448c45a60f59",
-   "pkgpath": "bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/types/quality.js",
-   "size": 734,
-   "src": "/Users/mykytailin/Documents/weatherApp/bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/types/quality.js"
+   "hash": "a65d4e1f024c0b50542e48ea696a7d5ed32ad958",
+   "pkgpath": "bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/elements/builders/audio-builder.js",
+   "size": 11353,
+   "src": "C:/Users/nilin/Desktop/weatherApp/bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/elements/builders/audio-builder.js"
   },
   {
    "compression": 8,
-   "hash": "1906c1565dfdaaeec3d8c00ca886a5de787b2959",
-   "pkgpath": "bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/types/ray-cast-event-type.js",
-   "size": 1307,
-   "src": "/Users/mykytailin/Documents/weatherApp/bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/types/ray-cast-event-type.js"
+   "hash": "0c47e4459a4b2c2eb3cc262f845ed71b232eb44f",
+   "pkgpath": "bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/elements/builders/button-builder.js",
+   "size": 5347,
+   "src": "C:/Users/nilin/Desktop/weatherApp/bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/elements/builders/button-builder.js"
   },
   {
    "compression": 8,
-   "hash": "ed5bbc0ae30c593cc27fb555aab3de684d182091",
-   "pkgpath": "bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/types/rendering-layer.js",
-   "size": 663,
-   "src": "/Users/mykytailin/Documents/weatherApp/bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/types/rendering-layer.js"
+   "hash": "d467ecb4eb28c929402fd438869ab479ff961524",
+   "pkgpath": "bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/elements/builders/circle-confirmation-builder.js",
+   "size": 978,
+   "src": "C:/Users/nilin/Desktop/weatherApp/bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/elements/builders/circle-confirmation-builder.js"
   },
   {
    "compression": 8,
-   "hash": "cdfb2e6770ea2d11380a71da4b7bb9d86b3b2824",
-   "pkgpath": "bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/types/scroll-bar-visibility.js",
-   "size": 376,
-   "src": "/Users/mykytailin/Documents/weatherApp/bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/types/scroll-bar-visibility.js"
+   "hash": "93ae86b6b58fcc9d12b93eb276592c3980967fe4",
+   "pkgpath": "bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/elements/builders/color-picker-builder.js",
+   "size": 1271,
+   "src": "C:/Users/nilin/Desktop/weatherApp/bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/elements/builders/color-picker-builder.js"
   },
   {
    "compression": 8,
-   "hash": "a8b6d2f82e6e0ddf16b37f9e3470ea7f6f03cb21",
-   "pkgpath": "bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/types/scroll-direction.js",
-   "size": 328,
-   "src": "/Users/mykytailin/Documents/weatherApp/bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/types/scroll-direction.js"
+   "hash": "6b649655cbca347f51981a3faccffcf06df797ef",
+   "pkgpath": "bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/elements/builders/date-picker-builder.js",
+   "size": 3348,
+   "src": "C:/Users/nilin/Desktop/weatherApp/bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/elements/builders/date-picker-builder.js"
   },
   {
    "compression": 8,
-   "hash": "50662c6a8239e36729fb0e748f5d793bad099f4e",
-   "pkgpath": "bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/types/selection-event-type.js",
-   "size": 413,
-   "src": "/Users/mykytailin/Documents/weatherApp/bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/types/selection-event-type.js"
+   "hash": "f83e9512841b35388500444bd039915363c808a5",
+   "pkgpath": "bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/elements/builders/dialog-builder.js",
+   "size": 3395,
+   "src": "C:/Users/nilin/Desktop/weatherApp/bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/elements/builders/dialog-builder.js"
   },
   {
    "compression": 8,
-   "hash": "e9d6e441381249c60d4b2cafc1c78a989c93cb9f",
-   "pkgpath": "bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/types/shader-type.js",
-   "size": 374,
-   "src": "/Users/mykytailin/Documents/weatherApp/bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/types/shader-type.js"
+   "hash": "323645b2fabe8376cb71915dba29ab94aed31edb",
+   "pkgpath": "bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/elements/builders/dropdown-list-builder.js",
+   "size": 3675,
+   "src": "C:/Users/nilin/Desktop/weatherApp/bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/elements/builders/dropdown-list-builder.js"
   },
   {
    "compression": 8,
-   "hash": "7b64d769303ab8b2b81e0f5aa08afc5f7041ed78",
-   "pkgpath": "bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/types/side.js",
-   "size": 300,
-   "src": "/Users/mykytailin/Documents/weatherApp/bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/types/side.js"
+   "hash": "15d3c2172060ccdc1e86b01a0cf9daa2c19e6745",
+   "pkgpath": "bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/elements/builders/dropdown-list-item-builder.js",
+   "size": 3218,
+   "src": "C:/Users/nilin/Desktop/weatherApp/bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/elements/builders/dropdown-list-item-builder.js"
   },
   {
    "compression": 8,
-   "hash": "c98c08b59c1fbc8bef953b0a3a4103e0d690b14b",
-   "pkgpath": "bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/types/sound-event.js",
-   "size": 2090,
-   "src": "/Users/mykytailin/Documents/weatherApp/bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/types/sound-event.js"
+   "hash": "0d275a69e9ef3ec42de3a58b3686954e62edbba3",
+   "pkgpath": "bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/elements/builders/element-builder.js",
+   "size": 2942,
+   "src": "C:/Users/nilin/Desktop/weatherApp/bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/elements/builders/element-builder.js"
   },
   {
    "compression": 8,
-   "hash": "1c11e9da49c45a1da0633724e5cd0653d604246f",
-   "pkgpath": "bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/types/system-icons.js",
-   "size": 10089,
-   "src": "/Users/mykytailin/Documents/weatherApp/bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/types/system-icons.js"
+   "hash": "f58b89b34d0a4fcb4b839e0aeb83880112c76a28",
+   "pkgpath": "bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/elements/builders/grid-layout-builder.js",
+   "size": 834,
+   "src": "C:/Users/nilin/Desktop/weatherApp/bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/elements/builders/grid-layout-builder.js"
   },
   {
    "compression": 8,
-   "hash": "a40065bb5762ac55516a5d51c2787c2d83f48244",
-   "pkgpath": "bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/types/text-entry-mode.js",
-   "size": 426,
-   "src": "/Users/mykytailin/Documents/weatherApp/bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/types/text-entry-mode.js"
+   "hash": "aa775e7fdf7918c01bd625021e225c6f79e49086",
+   "pkgpath": "bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/elements/builders/group-builder.js",
+   "size": 435,
+   "src": "C:/Users/nilin/Desktop/weatherApp/bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/elements/builders/group-builder.js"
   },
   {
    "compression": 8,
-   "hash": "cee407d43a11616aced5da21444b3e5a0b3bea77",
-   "pkgpath": "bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/types/texture-type.js",
-   "size": 843,
-   "src": "/Users/mykytailin/Documents/weatherApp/bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/types/texture-type.js"
+   "hash": "670cb57a9c0af69f0ea19520040ae5ed176d6205",
+   "pkgpath": "bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/elements/builders/image-builder.js",
+   "size": 4823,
+   "src": "C:/Users/nilin/Desktop/weatherApp/bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/elements/builders/image-builder.js"
   },
   {
    "compression": 8,
-   "hash": "da3e5561da58ef77f99dc9d79f2cc715bbe4b592",
-   "pkgpath": "bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/types/time-format.js",
-   "size": 3030,
-   "src": "/Users/mykytailin/Documents/weatherApp/bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/types/time-format.js"
+   "hash": "695ae88b20c1de69afac5242eb55d89211abdd0b",
+   "pkgpath": "bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/elements/builders/layout-builder.js",
+   "size": 1303,
+   "src": "C:/Users/nilin/Desktop/weatherApp/bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/elements/builders/layout-builder.js"
   },
   {
    "compression": 8,
-   "hash": "3ea06e01ea959abe4c13c50ea662d52af7040d8d",
-   "pkgpath": "bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/types/time-period.js",
-   "size": 286,
-   "src": "/Users/mykytailin/Documents/weatherApp/bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/types/time-period.js"
+   "hash": "98cfc2793610f8e9af634e929bacdcc8415535b1",
+   "pkgpath": "bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/elements/builders/light-builder.js",
+   "size": 2118,
+   "src": "C:/Users/nilin/Desktop/weatherApp/bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/elements/builders/light-builder.js"
   },
   {
    "compression": 8,
-   "hash": "e2ee4ae2bdcb85e88035aed22d6f9fb5bd6cca6f",
-   "pkgpath": "bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/types/toggle-type.js",
-   "size": 343,
-   "src": "/Users/mykytailin/Documents/weatherApp/bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/types/toggle-type.js"
+   "hash": "f1a6b393b60448eedeb59070c0297f3ee65f8ee2",
+   "pkgpath": "bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/elements/builders/line-builder.js",
+   "size": 1075,
+   "src": "C:/Users/nilin/Desktop/weatherApp/bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/elements/builders/line-builder.js"
   },
   {
    "compression": 8,
-   "hash": "deb8df7cf0773123216c77aef85e5a5c4720baf6",
-   "pkgpath": "bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/types/ui-node-events.js",
-   "size": 4197,
-   "src": "/Users/mykytailin/Documents/weatherApp/bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/types/ui-node-events.js"
+   "hash": "bacb91270fc12f416d98f7a764fdf7e62e397b9f",
+   "pkgpath": "bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/elements/builders/linear-layout-builder.js",
+   "size": 793,
+   "src": "C:/Users/nilin/Desktop/weatherApp/bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/elements/builders/linear-layout-builder.js"
   },
   {
    "compression": 8,
-   "hash": "dd8ddb607de1b3a570485b13c8fc0e149bec0c6a",
-   "pkgpath": "bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/types/video-action.js",
-   "size": 245,
-   "src": "/Users/mykytailin/Documents/weatherApp/bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/types/video-action.js"
+   "hash": "606ab98e3b7a236915eb6712682d226b87d0811c",
+   "pkgpath": "bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/elements/builders/list-view-builder.js",
+   "size": 5227,
+   "src": "C:/Users/nilin/Desktop/weatherApp/bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/elements/builders/list-view-builder.js"
   },
   {
    "compression": 8,
-   "hash": "a903059571a99dfce3e304048d1282adec135f9c",
-   "pkgpath": "bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/types/video-event-type.js",
-   "size": 600,
-   "src": "/Users/mykytailin/Documents/weatherApp/bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/types/video-event-type.js"
+   "hash": "54d19f15b8706d2922a086c2fe1658e6398e9c50",
+   "pkgpath": "bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/elements/builders/list-view-item-builder.js",
+   "size": 1786,
+   "src": "C:/Users/nilin/Desktop/weatherApp/bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/elements/builders/list-view-item-builder.js"
   },
   {
    "compression": 8,
-   "hash": "73f9419ab4e8d2983cc89665a5cdb5383a042cda",
-   "pkgpath": "bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/types/view-mode.js",
-   "size": 322,
-   "src": "/Users/mykytailin/Documents/weatherApp/bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/types/view-mode.js"
+   "hash": "2db8b5d335b1ede090a228be274aefef30cdd281",
+   "pkgpath": "bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/elements/builders/loading-spinner-builder.js",
+   "size": 2464,
+   "src": "C:/Users/nilin/Desktop/weatherApp/bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/elements/builders/loading-spinner-builder.js"
   },
   {
    "compression": 8,
-   "hash": "627a329b6615e35c1406ba69ca006806bf6fd3e5",
-   "pkgpath": "bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/types/web-view-action.js",
-   "size": 256,
-   "src": "/Users/mykytailin/Documents/weatherApp/bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/types/web-view-action.js"
+   "hash": "700b71b4f9a531b2253f4e006e3a95678c6d181c",
+   "pkgpath": "bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/elements/builders/model-builder.js",
+   "size": 6407,
+   "src": "C:/Users/nilin/Desktop/weatherApp/bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/elements/builders/model-builder.js"
   },
   {
    "compression": 8,
-   "hash": "b1b4f8d5b65e09b2bc98f66276cd18addfd54d6b",
-   "pkgpath": "bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/utilities/extractor.js",
-   "size": 285,
-   "src": "/Users/mykytailin/Documents/weatherApp/bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/utilities/extractor.js"
-  },
-  {
-   "compression": 8,
-   "hash": "39dee451b041f77b2ec0af388842e8462516fd98",
-   "pkgpath": "bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/utilities/validator.js",
-   "size": 5103,
-   "src": "/Users/mykytailin/Documents/weatherApp/bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/utilities/validator.js"
-  },
-  {
-   "compression": 8,
-   "hash": "be173694b4d3dfe2e4174119ad2d845ea03bef70",
-   "pkgpath": "bin/node_modules/magic-script-components-lumin/src/react-magic-script/magic-script-renderer.js",
-   "size": 13919,
-   "src": "/Users/mykytailin/Documents/weatherApp/bin/node_modules/magic-script-components-lumin/src/react-magic-script/magic-script-renderer.js"
-  },
-  {
-   "compression": 8,
-   "hash": "b03f89af657d758b8342a085f4904bd2c6e44b90",
-   "pkgpath": "bin/node_modules/magic-script-components-lumin/src/react-magic-script/react-magic-script.js",
-   "size": 543,
-   "src": "/Users/mykytailin/Documents/weatherApp/bin/node_modules/magic-script-components-lumin/src/react-magic-script/react-magic-script.js"
-  },
-  {
-   "compression": 8,
-   "hash": "a29c9c1fc01e2caa9c973de4a0d2a5c9c8c94672",
-   "pkgpath": "bin/node_modules/magic-script-components/src/components.js",
-   "size": 961,
-   "src": "/Users/mykytailin/Documents/weatherApp/bin/node_modules/magic-script-components/src/components.js"
-  },
-  {
-   "compression": 8,
-   "hash": "d344c26a9ceeff8bb40296a577b72a297ff92581",
-   "pkgpath": "bin/node_modules/magic-script-polyfills/src/assert.js",
-   "size": 211,
-   "src": "/Users/mykytailin/Documents/weatherApp/bin/node_modules/magic-script-polyfills/src/assert.js"
-  },
-  {
-   "compression": 8,
-   "hash": "991701ead1e4d88ca70c0a46ac408ec2c0cfe853",
-   "pkgpath": "bin/node_modules/magic-script-polyfills/src/bintools.js",
-   "size": 5374,
-   "src": "/Users/mykytailin/Documents/weatherApp/bin/node_modules/magic-script-polyfills/src/bintools.js"
-  },
-  {
-   "compression": 8,
-   "hash": "0b00bbaa8677cce583b9c6bdef2945588e9ee959",
-   "pkgpath": "bin/node_modules/magic-script-polyfills/src/codec-wrap.js",
-   "size": 1880,
-   "src": "/Users/mykytailin/Documents/weatherApp/bin/node_modules/magic-script-polyfills/src/codec-wrap.js"
-  },
-  {
-   "compression": 8,
-   "hash": "de9cdd906aa387360bf7ffefaa76e583876aa067",
-   "pkgpath": "bin/node_modules/magic-script-polyfills/src/evented.js",
-   "size": 1089,
-   "src": "/Users/mykytailin/Documents/weatherApp/bin/node_modules/magic-script-polyfills/src/evented.js"
-  },
-  {
-   "compression": 8,
-   "hash": "5c63f931031a890830c23e16f47e047c3b61ea60",
-   "pkgpath": "bin/node_modules/magic-script-polyfills/src/fetch.js",
-   "size": 7350,
-   "src": "/Users/mykytailin/Documents/weatherApp/bin/node_modules/magic-script-polyfills/src/fetch.js"
-  },
-  {
-   "compression": 8,
-   "hash": "cdb5eafffd72e1db73829553c41f69d7e7d63577",
-   "pkgpath": "bin/node_modules/magic-script-polyfills/src/fs.js",
-   "size": 3928,
-   "src": "/Users/mykytailin/Documents/weatherApp/bin/node_modules/magic-script-polyfills/src/fs.js"
-  },
-  {
-   "compression": 8,
-   "hash": "9ef91d62105008365cdfbf9f871d789bc9d4974e",
-   "pkgpath": "bin/node_modules/magic-script-polyfills/src/headers.js",
-   "size": 1573,
-   "src": "/Users/mykytailin/Documents/weatherApp/bin/node_modules/magic-script-polyfills/src/headers.js"
-  },
-  {
-   "compression": 8,
-   "hash": "4777029b24142559e1dac0ac3ae0fb5f88492ffe",
-   "pkgpath": "bin/node_modules/magic-script-polyfills/src/http-codec.js",
-   "size": 8582,
-   "src": "/Users/mykytailin/Documents/weatherApp/bin/node_modules/magic-script-polyfills/src/http-codec.js"
-  },
-  {
-   "compression": 8,
-   "hash": "a463ddb17460e051dfd086de8d70ead0fdea59af",
-   "pkgpath": "bin/node_modules/magic-script-polyfills/src/mime.js",
-   "size": 5784,
-   "src": "/Users/mykytailin/Documents/weatherApp/bin/node_modules/magic-script-polyfills/src/mime.js"
-  },
-  {
-   "compression": 8,
-   "hash": "7f3e26b16a968270cc4e96e1f5f7a67dcb2965ec",
-   "pkgpath": "bin/node_modules/magic-script-polyfills/src/polyfills.js",
-   "size": 878,
-   "src": "/Users/mykytailin/Documents/weatherApp/bin/node_modules/magic-script-polyfills/src/polyfills.js"
-  },
-  {
-   "compression": 8,
-   "hash": "5a531a5aea8706254fdf577c0231c1d922023310",
-   "pkgpath": "bin/node_modules/magic-script-polyfills/src/resolve.js",
-   "size": 859,
-   "src": "/Users/mykytailin/Documents/weatherApp/bin/node_modules/magic-script-polyfills/src/resolve.js"
-  },
-  {
-   "compression": 8,
-   "hash": "65a0e5ad85201a130a3d3762a55b1e43951e250f",
-   "pkgpath": "bin/node_modules/magic-script-polyfills/src/sha1.js",
+   "hash": "2ad032783ba8dd888f862170aa4902f6f21cbd9c",
+   "pkgpath": "bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/elements/builders/page-view-builder.js",
    "size": 3563,
-   "src": "/Users/mykytailin/Documents/weatherApp/bin/node_modules/magic-script-polyfills/src/sha1.js"
+   "src": "C:/Users/nilin/Desktop/weatherApp/bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/elements/builders/page-view-builder.js"
   },
   {
    "compression": 8,
-   "hash": "c665a011b71fd571aea7703cf3a0a0f96b95343e",
-   "pkgpath": "bin/node_modules/magic-script-polyfills/src/socket-wrap.js",
-   "size": 2606,
-   "src": "/Users/mykytailin/Documents/weatherApp/bin/node_modules/magic-script-polyfills/src/socket-wrap.js"
+   "hash": "65a6561d632cfb5f7d40ba933c3c764ecd8be2bc",
+   "pkgpath": "bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/elements/builders/panel-builder.js",
+   "size": 4260,
+   "src": "C:/Users/nilin/Desktop/weatherApp/bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/elements/builders/panel-builder.js"
   },
   {
    "compression": 8,
-   "hash": "379ff0f739120f40e7f4639225bdf3ed583d4814",
-   "pkgpath": "bin/node_modules/magic-script-polyfills/src/tcp.js",
-   "size": 944,
-   "src": "/Users/mykytailin/Documents/weatherApp/bin/node_modules/magic-script-polyfills/src/tcp.js"
+   "hash": "99baa411088d782b5104542508f896cc7b135d5b",
+   "pkgpath": "bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/elements/builders/portal-icon-builder.js",
+   "size": 3240,
+   "src": "C:/Users/nilin/Desktop/weatherApp/bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/elements/builders/portal-icon-builder.js"
   },
   {
    "compression": 8,
-   "hash": "2ca4e16db232d9bdc449fafae0ca9abec0dcae93",
-   "pkgpath": "bin/node_modules/magic-script-polyfills/src/text-encoder.js",
-   "size": 2386,
-   "src": "/Users/mykytailin/Documents/weatherApp/bin/node_modules/magic-script-polyfills/src/text-encoder.js"
+   "hash": "c8f49ded9b191013b4be58259f9c666d1acd62d3",
+   "pkgpath": "bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/elements/builders/positional-layout-builder.js",
+   "size": 1241,
+   "src": "C:/Users/nilin/Desktop/weatherApp/bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/elements/builders/positional-layout-builder.js"
   },
   {
    "compression": 8,
-   "hash": "7d0c6f9bf02d440eeb1b62ac0b7ef364ca26dda2",
-   "pkgpath": "bin/node_modules/magic-script-polyfills/src/timers.js",
-   "size": 2961,
-   "src": "/Users/mykytailin/Documents/weatherApp/bin/node_modules/magic-script-polyfills/src/timers.js"
+   "hash": "bfd3732a348abdedc7df94c54ae915927f2fb8a3",
+   "pkgpath": "bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/elements/builders/progress-bar-builder.js",
+   "size": 2334,
+   "src": "C:/Users/nilin/Desktop/weatherApp/bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/elements/builders/progress-bar-builder.js"
   },
   {
    "compression": 8,
-   "hash": "ba230d3a70e3fe50d3ecd93b66e78cc7109551bc",
-   "pkgpath": "bin/node_modules/magic-script-polyfills/src/tls-wrap.js",
-   "size": 2384,
-   "src": "/Users/mykytailin/Documents/weatherApp/bin/node_modules/magic-script-polyfills/src/tls-wrap.js"
+   "hash": "6954c998ca0be8d9c0c9d8b41d7a8082db040285",
+   "pkgpath": "bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/elements/builders/quad-builder.js",
+   "size": 2901,
+   "src": "C:/Users/nilin/Desktop/weatherApp/bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/elements/builders/quad-builder.js"
   },
   {
    "compression": 8,
-   "hash": "0328916a719a29a5b9e6d6db68c3e9920ea57419",
-   "pkgpath": "bin/node_modules/magic-script-polyfills/src/utils.js",
+   "hash": "622584aff52f6f96b4cdee6f8a59f8eb91f22d7f",
+   "pkgpath": "bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/elements/builders/rect-layout-builder.js",
    "size": 960,
-   "src": "/Users/mykytailin/Documents/weatherApp/bin/node_modules/magic-script-polyfills/src/utils.js"
+   "src": "C:/Users/nilin/Desktop/weatherApp/bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/elements/builders/rect-layout-builder.js"
   },
   {
    "compression": 8,
-   "hash": "9d41b2ab54a3bc59488b2a1b14f07af202a38662",
+   "hash": "6084868fcbb1974a15757777d120d434083a7cc3",
+   "pkgpath": "bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/elements/builders/render-builder.js",
+   "size": 3355,
+   "src": "C:/Users/nilin/Desktop/weatherApp/bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/elements/builders/render-builder.js"
+  },
+  {
+   "compression": 8,
+   "hash": "73f652bd9d16cb90e3144b0cf487b9674dfff677",
+   "pkgpath": "bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/elements/builders/scroll-bar-builder.js",
+   "size": 2132,
+   "src": "C:/Users/nilin/Desktop/weatherApp/bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/elements/builders/scroll-bar-builder.js"
+  },
+  {
+   "compression": 8,
+   "hash": "ea9ef956e76c00322e93a7ec4983bd2f8fb6cbd1",
+   "pkgpath": "bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/elements/builders/scroll-view-builder.js",
+   "size": 2433,
+   "src": "C:/Users/nilin/Desktop/weatherApp/bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/elements/builders/scroll-view-builder.js"
+  },
+  {
+   "compression": 8,
+   "hash": "a2e0eecdba360c2dbd71873f54b011fc2bc66f36",
+   "pkgpath": "bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/elements/builders/slider-builder.js",
+   "size": 1550,
+   "src": "C:/Users/nilin/Desktop/weatherApp/bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/elements/builders/slider-builder.js"
+  },
+  {
+   "compression": 8,
+   "hash": "0d965ea88fc90ad0a84d890f2dd5852da67cf011",
+   "pkgpath": "bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/elements/builders/tab-builder.js",
+   "size": 1857,
+   "src": "C:/Users/nilin/Desktop/weatherApp/bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/elements/builders/tab-builder.js"
+  },
+  {
+   "compression": 8,
+   "hash": "6db3574b4c1af714fc85a42cfa5a235189dbc975",
+   "pkgpath": "bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/elements/builders/text-builder.js",
+   "size": 7743,
+   "src": "C:/Users/nilin/Desktop/weatherApp/bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/elements/builders/text-builder.js"
+  },
+  {
+   "compression": 8,
+   "hash": "027d25bbec573f72400473f16f6214cde58ad8a9",
+   "pkgpath": "bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/elements/builders/text-container-builder.js",
+   "size": 648,
+   "src": "C:/Users/nilin/Desktop/weatherApp/bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/elements/builders/text-container-builder.js"
+  },
+  {
+   "compression": 8,
+   "hash": "57fab0ee1d2c9cbc1adce9e01bfa474ace743878",
+   "pkgpath": "bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/elements/builders/text-edit-builder.js",
+   "size": 10865,
+   "src": "C:/Users/nilin/Desktop/weatherApp/bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/elements/builders/text-edit-builder.js"
+  },
+  {
+   "compression": 8,
+   "hash": "8208ba3db1d90096a0429f2197d88d96344b439f",
+   "pkgpath": "bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/elements/builders/text-provider-builder.js",
+   "size": 1180,
+   "src": "C:/Users/nilin/Desktop/weatherApp/bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/elements/builders/text-provider-builder.js"
+  },
+  {
+   "compression": 8,
+   "hash": "04d470a424afd76c69833b0494d3081a4f8680ce",
+   "pkgpath": "bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/elements/builders/time-picker-builder.js",
+   "size": 2816,
+   "src": "C:/Users/nilin/Desktop/weatherApp/bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/elements/builders/time-picker-builder.js"
+  },
+  {
+   "compression": 8,
+   "hash": "f1aa0024fee2af7e2dfb6a49ab2f159f6806f429",
+   "pkgpath": "bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/elements/builders/toggle-builder.js",
+   "size": 2081,
+   "src": "C:/Users/nilin/Desktop/weatherApp/bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/elements/builders/toggle-builder.js"
+  },
+  {
+   "compression": 8,
+   "hash": "110ae06369db4100651e66c1fd5b01cf3d709f45",
+   "pkgpath": "bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/elements/builders/toggle-group-builder.js",
+   "size": 1412,
+   "src": "C:/Users/nilin/Desktop/weatherApp/bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/elements/builders/toggle-group-builder.js"
+  },
+  {
+   "compression": 8,
+   "hash": "0860a3c37d028542b55839b2e24654a8ac8da395",
+   "pkgpath": "bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/elements/builders/transform-builder.js",
+   "size": 5057,
+   "src": "C:/Users/nilin/Desktop/weatherApp/bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/elements/builders/transform-builder.js"
+  },
+  {
+   "compression": 8,
+   "hash": "6a9f3a1327dbe1d16c462343c637622803e3c1dd",
+   "pkgpath": "bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/elements/builders/ui-node-builder.js",
+   "size": 4718,
+   "src": "C:/Users/nilin/Desktop/weatherApp/bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/elements/builders/ui-node-builder.js"
+  },
+  {
+   "compression": 8,
+   "hash": "f30dfb967b64d5c951dc8c3aa90d77e5216999a5",
+   "pkgpath": "bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/elements/builders/video-builder.js",
+   "size": 3247,
+   "src": "C:/Users/nilin/Desktop/weatherApp/bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/elements/builders/video-builder.js"
+  },
+  {
+   "compression": 8,
+   "hash": "369b21bee2203ea47ff71f4c92fc0bed75d71bf9",
+   "pkgpath": "bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/elements/builders/web-view-builder.js",
+   "size": 2946,
+   "src": "C:/Users/nilin/Desktop/weatherApp/bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/elements/builders/web-view-builder.js"
+  },
+  {
+   "compression": 8,
+   "hash": "a930e11441b6cbbe0a76f92c0bebe52876055677",
+   "pkgpath": "bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/elements/properties/array-property.js",
+   "size": 475,
+   "src": "C:/Users/nilin/Desktop/weatherApp/bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/elements/properties/array-property.js"
+  },
+  {
+   "compression": 8,
+   "hash": "e1f3355d913ed6394724133913bc16246e51133d",
+   "pkgpath": "bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/elements/properties/class-property.js",
+   "size": 544,
+   "src": "C:/Users/nilin/Desktop/weatherApp/bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/elements/properties/class-property.js"
+  },
+  {
+   "compression": 8,
+   "hash": "25b48e8a3b25c4375c4ba131205d85c0348e4a51",
+   "pkgpath": "bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/elements/properties/enum-property.js",
+   "size": 713,
+   "src": "C:/Users/nilin/Desktop/weatherApp/bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/elements/properties/enum-property.js"
+  },
+  {
+   "compression": 8,
+   "hash": "5c2a35932b35d0afadbb20d423ae37b4bc7d55f9",
+   "pkgpath": "bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/elements/properties/primitive-type-property.js",
+   "size": 488,
+   "src": "C:/Users/nilin/Desktop/weatherApp/bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/elements/properties/primitive-type-property.js"
+  },
+  {
+   "compression": 8,
+   "hash": "d9cf4456034c8f95b22484bf2800a41e3b74c271",
+   "pkgpath": "bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/elements/properties/property-descriptor.js",
+   "size": 3260,
+   "src": "C:/Users/nilin/Desktop/weatherApp/bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/elements/properties/property-descriptor.js"
+  },
+  {
+   "compression": 8,
+   "hash": "6d3edf910e049177c216e4b5236894d09c9ddaed",
+   "pkgpath": "bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/elements/properties/text-children-property.js",
+   "size": 1037,
+   "src": "C:/Users/nilin/Desktop/weatherApp/bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/elements/properties/text-children-property.js"
+  },
+  {
+   "compression": 8,
+   "hash": "13d4d003910d4cb80f28e3c25ffdc59fdc2a7a40",
+   "pkgpath": "bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/mxs-landscape-app.js",
+   "size": 2186,
+   "src": "C:/Users/nilin/Desktop/weatherApp/bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/mxs-landscape-app.js"
+  },
+  {
+   "compression": 8,
+   "hash": "d604eed90e20d221465b9c506cff088078c9e79f",
+   "pkgpath": "bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/platform-factory.js",
+   "size": 14419,
+   "src": "C:/Users/nilin/Desktop/weatherApp/bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/platform-factory.js"
+  },
+  {
+   "compression": 8,
+   "hash": "51ebd14bcc4047e1840051f99358866b79437e39",
+   "pkgpath": "bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/types/advance-direction.js",
+   "size": 527,
+   "src": "C:/Users/nilin/Desktop/weatherApp/bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/types/advance-direction.js"
+  },
+  {
+   "compression": 8,
+   "hash": "00457c9589bbdb2e176f1b8b44ee782fd32c7f4b",
+   "pkgpath": "bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/types/alignment.js",
+   "size": 672,
+   "src": "C:/Users/nilin/Desktop/weatherApp/bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/types/alignment.js"
+  },
+  {
+   "compression": 8,
+   "hash": "668ccd76e1d03837e802f44db0829ea2fe21b8c4",
+   "pkgpath": "bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/types/audio-action.js",
+   "size": 273,
+   "src": "C:/Users/nilin/Desktop/weatherApp/bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/types/audio-action.js"
+  },
+  {
+   "compression": 8,
+   "hash": "3ce4977f9d46e84bbfd03e46ab37ddf6ef10bda3",
+   "pkgpath": "bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/types/cursor-edge-scroll-mode.js",
+   "size": 399,
+   "src": "C:/Users/nilin/Desktop/weatherApp/bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/types/cursor-edge-scroll-mode.js"
+  },
+  {
+   "compression": 8,
+   "hash": "c4e0385095044b5b83f6ac9e63b8de3e99679ec4",
+   "pkgpath": "bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/types/cursor-hover-state.js",
+   "size": 1079,
+   "src": "C:/Users/nilin/Desktop/weatherApp/bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/types/cursor-hover-state.js"
+  },
+  {
+   "compression": 8,
+   "hash": "4ee6277669431bf62fa5900b9f538eec74e59efe",
+   "pkgpath": "bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/types/date-format.js",
+   "size": 2001,
+   "src": "C:/Users/nilin/Desktop/weatherApp/bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/types/date-format.js"
+  },
+  {
+   "compression": 8,
+   "hash": "913acac6d9072582ba6896ce16bf65bf7a526f25",
+   "pkgpath": "bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/types/dialog-layout.js",
+   "size": 350,
+   "src": "C:/Users/nilin/Desktop/weatherApp/bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/types/dialog-layout.js"
+  },
+  {
+   "compression": 8,
+   "hash": "dae012449f492007bc73763df0ae6542dfcd8969",
+   "pkgpath": "bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/types/dialog-type.js",
+   "size": 477,
+   "src": "C:/Users/nilin/Desktop/weatherApp/bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/types/dialog-type.js"
+  },
+  {
+   "compression": 8,
+   "hash": "08f4132400f4a7e37d2d390f65b411e8c55d82d3",
+   "pkgpath": "bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/types/eclipse-button-type.js",
+   "size": 492,
+   "src": "C:/Users/nilin/Desktop/weatherApp/bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/types/eclipse-button-type.js"
+  },
+  {
+   "compression": 8,
+   "hash": "1b3942aa7bd3c2507c5a5d7b2c98dbdabe4dc241",
+   "pkgpath": "bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/types/eclipse-label-type.js",
+   "size": 826,
+   "src": "C:/Users/nilin/Desktop/weatherApp/bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/types/eclipse-label-type.js"
+  },
+  {
+   "compression": 8,
+   "hash": "7c874a735354ae6557c39926fed6bbb980ec4eb6",
+   "pkgpath": "bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/types/event-data/control-pose-3dof-Input-event-data.js",
+   "size": 1154,
+   "src": "C:/Users/nilin/Desktop/weatherApp/bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/types/event-data/control-pose-3dof-Input-event-data.js"
+  },
+  {
+   "compression": 8,
+   "hash": "cb94d7efb50c1ec8c98f3e3cb016c6e1f61b57f2",
+   "pkgpath": "bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/types/event-data/control-pose-6dof-input-event-data.js",
+   "size": 562,
+   "src": "C:/Users/nilin/Desktop/weatherApp/bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/types/event-data/control-pose-6dof-input-event-data.js"
+  },
+  {
+   "compression": 8,
+   "hash": "b2d7f2cc62ac5cb71f35504561067f127c645448",
+   "pkgpath": "bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/types/event-data/control-touch-pad-input-event-data.js",
+   "size": 1024,
+   "src": "C:/Users/nilin/Desktop/weatherApp/bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/types/event-data/control-touch-pad-input-event-data.js"
+  },
+  {
+   "compression": 8,
+   "hash": "acfe370834a12fff5c2dee3f85fd66fae717ce59",
+   "pkgpath": "bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/types/event-data/drop-down-list-event-data.js",
+   "size": 998,
+   "src": "C:/Users/nilin/Desktop/weatherApp/bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/types/event-data/drop-down-list-event-data.js"
+  },
+  {
+   "compression": 8,
+   "hash": "c045f3fef06eead54e2c48364c03caf94a1ac1b3",
+   "pkgpath": "bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/types/event-data/event-data.js",
+   "size": 688,
+   "src": "C:/Users/nilin/Desktop/weatherApp/bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/types/event-data/event-data.js"
+  },
+  {
+   "compression": 8,
+   "hash": "f69ae864e089b76167cb8ce22adb2152aca07fa4",
+   "pkgpath": "bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/types/event-data/eye-tracking-event-data.js",
+   "size": 2601,
+   "src": "C:/Users/nilin/Desktop/weatherApp/bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/types/event-data/eye-tracking-event-data.js"
+  },
+  {
+   "compression": 8,
+   "hash": "6680f6d3be37f0947e30bb9b7a9a328a696b5649",
+   "pkgpath": "bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/types/event-data/gesture-input-event-data.js",
+   "size": 3651,
+   "src": "C:/Users/nilin/Desktop/weatherApp/bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/types/event-data/gesture-input-event-data.js"
+  },
+  {
+   "compression": 8,
+   "hash": "5151e316be365097288279f6a8c8eb8f344503a6",
+   "pkgpath": "bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/types/event-data/input-event-data.js",
+   "size": 963,
+   "src": "C:/Users/nilin/Desktop/weatherApp/bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/types/event-data/input-event-data.js"
+  },
+  {
+   "compression": 8,
+   "hash": "df159377eebc109938b434a3de18dbd23ac9b0e3",
+   "pkgpath": "bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/types/event-data/key-input-event-data.js",
+   "size": 845,
+   "src": "C:/Users/nilin/Desktop/weatherApp/bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/types/event-data/key-input-event-data.js"
+  },
+  {
+   "compression": 8,
+   "hash": "2a498210e0bab7abad78f80542ab8322ac5c01fe",
+   "pkgpath": "bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/types/event-data/node-event-data.js",
+   "size": 1557,
+   "src": "C:/Users/nilin/Desktop/weatherApp/bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/types/event-data/node-event-data.js"
+  },
+  {
+   "compression": 8,
+   "hash": "fca56af45aff0b5b836d248da89f02c7787d31aa",
+   "pkgpath": "bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/types/event-data/prism-event-data.js",
+   "size": 2483,
+   "src": "C:/Users/nilin/Desktop/weatherApp/bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/types/event-data/prism-event-data.js"
+  },
+  {
+   "compression": 8,
+   "hash": "4be816be2a2c0d1294d03eb854927f7ad4bb42fe",
+   "pkgpath": "bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/types/event-data/progress-bar-event-data.js",
+   "size": 542,
+   "src": "C:/Users/nilin/Desktop/weatherApp/bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/types/event-data/progress-bar-event-data.js"
+  },
+  {
+   "compression": 8,
+   "hash": "a78e419c30f3262542ab9e83845852b78f7b7523",
+   "pkgpath": "bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/types/event-data/ray-cast-event-data.js",
+   "size": 852,
+   "src": "C:/Users/nilin/Desktop/weatherApp/bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/types/event-data/ray-cast-event-data.js"
+  },
+  {
+   "compression": 8,
+   "hash": "de1a28211eabbba3418469bce481c6af48d2fb74",
+   "pkgpath": "bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/types/event-data/scroll-view-event-data.js",
+   "size": 660,
+   "src": "C:/Users/nilin/Desktop/weatherApp/bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/types/event-data/scroll-view-event-data.js"
+  },
+  {
+   "compression": 8,
+   "hash": "14c4a18d5c0fea9b5a02810ad5c15b69a332565d",
+   "pkgpath": "bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/types/event-data/selection-event-data.js",
+   "size": 777,
+   "src": "C:/Users/nilin/Desktop/weatherApp/bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/types/event-data/selection-event-data.js"
+  },
+  {
+   "compression": 8,
+   "hash": "e8c18f511ad9e987ef405d41d5a293db82260671",
+   "pkgpath": "bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/types/event-data/server-event.js",
+   "size": 783,
+   "src": "C:/Users/nilin/Desktop/weatherApp/bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/types/event-data/server-event.js"
+  },
+  {
+   "compression": 8,
+   "hash": "b987c9c67bb82e9722151f80c39fff011d91d6c1",
+   "pkgpath": "bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/types/event-data/slider-event-data.js",
+   "size": 497,
+   "src": "C:/Users/nilin/Desktop/weatherApp/bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/types/event-data/slider-event-data.js"
+  },
+  {
+   "compression": 8,
+   "hash": "9e94f31af5aafa1c2dd88b2092092bf21f747214",
+   "pkgpath": "bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/types/event-data/text-edit-event-data.js",
+   "size": 1089,
+   "src": "C:/Users/nilin/Desktop/weatherApp/bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/types/event-data/text-edit-event-data.js"
+  },
+  {
+   "compression": 8,
+   "hash": "cdc74e88d9e93ad3f2b12be410312dcd138dbc6d",
+   "pkgpath": "bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/types/event-data/toggle-event-data.js",
+   "size": 526,
+   "src": "C:/Users/nilin/Desktop/weatherApp/bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/types/event-data/toggle-event-data.js"
+  },
+  {
+   "compression": 8,
+   "hash": "dbeeaabe8f40679b5bb2af289d9a8c7d62f46058",
+   "pkgpath": "bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/types/event-data/transform-node-event-data.js",
+   "size": 1654,
+   "src": "C:/Users/nilin/Desktop/weatherApp/bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/types/event-data/transform-node-event-data.js"
+  },
+  {
+   "compression": 8,
+   "hash": "14bc433147e6468d8b063b07fe45e7ce255c4048",
+   "pkgpath": "bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/types/event-data/ui-event-data.js",
+   "size": 998,
+   "src": "C:/Users/nilin/Desktop/weatherApp/bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/types/event-data/ui-event-data.js"
+  },
+  {
+   "compression": 8,
+   "hash": "960c28c9e7895191774008b229a9be0b4328d0bb",
+   "pkgpath": "bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/types/event-data/video-event-data.js",
+   "size": 1033,
+   "src": "C:/Users/nilin/Desktop/weatherApp/bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/types/event-data/video-event-data.js"
+  },
+  {
+   "compression": 8,
+   "hash": "dd41689b16ac4f3a9e9009d714c4db07e5a80965",
+   "pkgpath": "bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/types/event-source.js",
+   "size": 895,
+   "src": "C:/Users/nilin/Desktop/weatherApp/bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/types/event-source.js"
+  },
+  {
+   "compression": 8,
+   "hash": "f272a727975bee4ab4de42bc810b6838499cc74d",
+   "pkgpath": "bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/types/event-type.js",
+   "size": 1133,
+   "src": "C:/Users/nilin/Desktop/weatherApp/bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/types/event-type.js"
+  },
+  {
+   "compression": 8,
+   "hash": "a662484cab6bfa3b4eeb6e1e58b9cfaead7c037d",
+   "pkgpath": "bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/types/flow-direction.js",
+   "size": 436,
+   "src": "C:/Users/nilin/Desktop/weatherApp/bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/types/flow-direction.js"
+  },
+  {
+   "compression": 8,
+   "hash": "b41845541ca8dddac0e6da43112a1a201c3afda7",
+   "pkgpath": "bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/types/focus-request.js",
+   "size": 445,
+   "src": "C:/Users/nilin/Desktop/weatherApp/bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/types/focus-request.js"
+  },
+  {
+   "compression": 8,
+   "hash": "4dd8b46ad58e591c632cb27393f9edc0d11b5979",
+   "pkgpath": "bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/types/font-style.js",
+   "size": 555,
+   "src": "C:/Users/nilin/Desktop/weatherApp/bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/types/font-style.js"
+  },
+  {
+   "compression": 8,
+   "hash": "d23b155fac2949c9feb20aaf3c2608e702ee8878",
+   "pkgpath": "bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/types/gesture-direction.js",
+   "size": 728,
+   "src": "C:/Users/nilin/Desktop/weatherApp/bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/types/gesture-direction.js"
+  },
+  {
+   "compression": 8,
+   "hash": "f5c9ab4308a65ee7ae2182007168cf855d51af84",
+   "pkgpath": "bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/types/gesture-type.js",
+   "size": 1506,
+   "src": "C:/Users/nilin/Desktop/weatherApp/bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/types/gesture-type.js"
+  },
+  {
+   "compression": 8,
+   "hash": "1abdebcddfa9f1a9d67606642d9512eace1112ce",
+   "pkgpath": "bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/types/gravity-well-snap.js",
+   "size": 532,
+   "src": "C:/Users/nilin/Desktop/weatherApp/bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/types/gravity-well-snap.js"
+  },
+  {
+   "compression": 8,
+   "hash": "3ad39ccec958006c203fb860925b429d760f71f4",
+   "pkgpath": "bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/types/hand-gesture-keypoint-name.js",
+   "size": 2212,
+   "src": "C:/Users/nilin/Desktop/weatherApp/bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/types/hand-gesture-keypoint-name.js"
+  },
+  {
+   "compression": 8,
+   "hash": "0b4dcb1df8d20a90f6b4949cc30649a9ca26bf78",
+   "pkgpath": "bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/types/horizontal-text-alignment.js",
+   "size": 500,
+   "src": "C:/Users/nilin/Desktop/weatherApp/bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/types/horizontal-text-alignment.js"
+  },
+  {
+   "compression": 8,
+   "hash": "d46a419c8208845b2235af2b842aaa24da60660a",
+   "pkgpath": "bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/types/key-codes.js",
+   "size": 12473,
+   "src": "C:/Users/nilin/Desktop/weatherApp/bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/types/key-codes.js"
+  },
+  {
+   "compression": 8,
+   "hash": "4daff98deca33db09f9c12439dd5a1bc1233652d",
+   "pkgpath": "bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/types/label-display-mode.js",
+   "size": 370,
+   "src": "C:/Users/nilin/Desktop/weatherApp/bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/types/label-display-mode.js"
+  },
+  {
+   "compression": 8,
+   "hash": "cf8f56adac177483a225b0bc77e1d1c6396c51a8",
+   "pkgpath": "bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/types/light-type.js",
+   "size": 375,
+   "src": "C:/Users/nilin/Desktop/weatherApp/bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/types/light-type.js"
+  },
+  {
+   "compression": 8,
+   "hash": "040705b320a01b550956ae316f447abcd9cbbb31",
+   "pkgpath": "bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/types/loading-spinner-type.js",
+   "size": 423,
+   "src": "C:/Users/nilin/Desktop/weatherApp/bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/types/loading-spinner-type.js"
+  },
+  {
+   "compression": 8,
+   "hash": "1dc572e8aa229bf3cb11add31ba1e535642f75bf",
+   "pkgpath": "bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/types/orientation.js",
+   "size": 358,
+   "src": "C:/Users/nilin/Desktop/weatherApp/bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/types/orientation.js"
+  },
+  {
+   "compression": 8,
+   "hash": "8ead775c5aeaf924b629c9b684d19ef852dd21c9",
+   "pkgpath": "bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/types/panel-cursor-transition-type.js",
+   "size": 499,
+   "src": "C:/Users/nilin/Desktop/weatherApp/bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/types/panel-cursor-transition-type.js"
+  },
+  {
+   "compression": 8,
+   "hash": "93a582a47c5eb068252fde0f40ff2adcd9e43149",
+   "pkgpath": "bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/types/panel-edge-constraint-level.js",
+   "size": 616,
+   "src": "C:/Users/nilin/Desktop/weatherApp/bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/types/panel-edge-constraint-level.js"
+  },
+  {
+   "compression": 8,
+   "hash": "d8862fb796b7b944531b8f7f64cf410463150ba8",
+   "pkgpath": "bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/types/portal-icon-size.js",
+   "size": 459,
+   "src": "C:/Users/nilin/Desktop/weatherApp/bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/types/portal-icon-size.js"
+  },
+  {
+   "compression": 8,
+   "hash": "01cfa12534e4dd94c14f6bae1e02839d18df1990",
+   "pkgpath": "bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/types/quality.js",
+   "size": 752,
+   "src": "C:/Users/nilin/Desktop/weatherApp/bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/types/quality.js"
+  },
+  {
+   "compression": 8,
+   "hash": "7569a332e004c910cec43f97a8e537ef1223ac18",
+   "pkgpath": "bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/types/ray-cast-event-type.js",
+   "size": 1330,
+   "src": "C:/Users/nilin/Desktop/weatherApp/bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/types/ray-cast-event-type.js"
+  },
+  {
+   "compression": 8,
+   "hash": "ccce9b7059b2b48a8d90d7acac6021e85904a5ee",
+   "pkgpath": "bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/types/rendering-layer.js",
+   "size": 677,
+   "src": "C:/Users/nilin/Desktop/weatherApp/bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/types/rendering-layer.js"
+  },
+  {
+   "compression": 8,
+   "hash": "1d11474ca65d47fcd1d1fa4a26b15f22c25eb7d0",
+   "pkgpath": "bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/types/scroll-bar-visibility.js",
+   "size": 386,
+   "src": "C:/Users/nilin/Desktop/weatherApp/bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/types/scroll-bar-visibility.js"
+  },
+  {
+   "compression": 8,
+   "hash": "f430308ba682cec86f60b67d593d453c5677e078",
+   "pkgpath": "bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/types/scroll-direction.js",
+   "size": 337,
+   "src": "C:/Users/nilin/Desktop/weatherApp/bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/types/scroll-direction.js"
+  },
+  {
+   "compression": 8,
+   "hash": "e00c7d4add6194b757dbc2aab16c7c26d44106d5",
+   "pkgpath": "bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/types/selection-event-type.js",
+   "size": 422,
+   "src": "C:/Users/nilin/Desktop/weatherApp/bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/types/selection-event-type.js"
+  },
+  {
+   "compression": 8,
+   "hash": "2a54e5c68742488e41c37c7b01129f5951f684a2",
+   "pkgpath": "bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/types/shader-type.js",
+   "size": 384,
+   "src": "C:/Users/nilin/Desktop/weatherApp/bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/types/shader-type.js"
+  },
+  {
+   "compression": 8,
+   "hash": "dd8f688fb8b00e5107a96948f4c206a937c57c46",
+   "pkgpath": "bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/types/side.js",
+   "size": 311,
+   "src": "C:/Users/nilin/Desktop/weatherApp/bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/types/side.js"
+  },
+  {
+   "compression": 8,
+   "hash": "d58e7b6ffa1d5c502de41f4ad80b4d7fb0623c0f",
+   "pkgpath": "bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/types/sound-event.js",
+   "size": 2128,
+   "src": "C:/Users/nilin/Desktop/weatherApp/bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/types/sound-event.js"
+  },
+  {
+   "compression": 8,
+   "hash": "25da722dc30e5bfa17aa21f61e19a50c1ada08c9",
+   "pkgpath": "bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/types/system-icons.js",
+   "size": 10317,
+   "src": "C:/Users/nilin/Desktop/weatherApp/bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/types/system-icons.js"
+  },
+  {
+   "compression": 8,
+   "hash": "f4de2f0d46da7ebdc84c3ce79dc2881d3f75a571",
+   "pkgpath": "bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/types/text-entry-mode.js",
+   "size": 438,
+   "src": "C:/Users/nilin/Desktop/weatherApp/bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/types/text-entry-mode.js"
+  },
+  {
+   "compression": 8,
+   "hash": "44f7ce5ca9c4485e4746e091229f213f779fc5c2",
+   "pkgpath": "bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/types/texture-type.js",
+   "size": 862,
+   "src": "C:/Users/nilin/Desktop/weatherApp/bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/types/texture-type.js"
+  },
+  {
+   "compression": 8,
+   "hash": "5e72d3fe38dab23080b7b74a50067075f69b4559",
+   "pkgpath": "bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/types/time-format.js",
+   "size": 3127,
+   "src": "C:/Users/nilin/Desktop/weatherApp/bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/types/time-format.js"
+  },
+  {
+   "compression": 8,
+   "hash": "5b59315ab19100ef61313928af23c5ba6a5d997a",
+   "pkgpath": "bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/types/time-period.js",
+   "size": 295,
+   "src": "C:/Users/nilin/Desktop/weatherApp/bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/types/time-period.js"
+  },
+  {
+   "compression": 8,
+   "hash": "126cace1b0caba11824450e4253c2714a2fdc218",
+   "pkgpath": "bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/types/toggle-type.js",
+   "size": 353,
+   "src": "C:/Users/nilin/Desktop/weatherApp/bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/types/toggle-type.js"
+  },
+  {
+   "compression": 8,
+   "hash": "28a549b86d7ce09687349880941b575eda9ee6bf",
+   "pkgpath": "bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/types/ui-node-events.js",
+   "size": 4261,
+   "src": "C:/Users/nilin/Desktop/weatherApp/bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/types/ui-node-events.js"
+  },
+  {
+   "compression": 8,
+   "hash": "ec7b416ec3bd1ac6aeb007c1fad02902f87045e1",
+   "pkgpath": "bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/types/video-action.js",
+   "size": 255,
+   "src": "C:/Users/nilin/Desktop/weatherApp/bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/types/video-action.js"
+  },
+  {
+   "compression": 8,
+   "hash": "e77d34306c54a65c9f4ee908450a64708b6f0bd1",
+   "pkgpath": "bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/types/video-event-type.js",
+   "size": 614,
+   "src": "C:/Users/nilin/Desktop/weatherApp/bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/types/video-event-type.js"
+  },
+  {
+   "compression": 8,
+   "hash": "71219d3fc792702b4ab7516dcceb5b737ba0c385",
+   "pkgpath": "bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/types/view-mode.js",
+   "size": 331,
+   "src": "C:/Users/nilin/Desktop/weatherApp/bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/types/view-mode.js"
+  },
+  {
+   "compression": 8,
+   "hash": "ab087dfd4e116f18a5c1f1457a8e7ee3f8112da0",
+   "pkgpath": "bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/types/web-view-action.js",
+   "size": 266,
+   "src": "C:/Users/nilin/Desktop/weatherApp/bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/types/web-view-action.js"
+  },
+  {
+   "compression": 8,
+   "hash": "37b70bb763b9a6b16e6378a3e9645ba4a9b6942d",
+   "pkgpath": "bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/utilities/extractor.js",
+   "size": 293,
+   "src": "C:/Users/nilin/Desktop/weatherApp/bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/utilities/extractor.js"
+  },
+  {
+   "compression": 8,
+   "hash": "811e23af405a7ffcb33fe31a5f59a8584e3c758b",
+   "pkgpath": "bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/utilities/validator.js",
+   "size": 5149,
+   "src": "C:/Users/nilin/Desktop/weatherApp/bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/utilities/validator.js"
+  },
+  {
+   "compression": 8,
+   "hash": "5679fa5df2b9f3cad17f5c59436e582f2a63aec8",
+   "pkgpath": "bin/node_modules/magic-script-components-lumin/src/react-magic-script/magic-script-renderer.js",
+   "size": 14368,
+   "src": "C:/Users/nilin/Desktop/weatherApp/bin/node_modules/magic-script-components-lumin/src/react-magic-script/magic-script-renderer.js"
+  },
+  {
+   "compression": 8,
+   "hash": "e08912b502e7509f20059885a12c708f43625ec7",
+   "pkgpath": "bin/node_modules/magic-script-components-lumin/src/react-magic-script/react-magic-script.js",
+   "size": 558,
+   "src": "C:/Users/nilin/Desktop/weatherApp/bin/node_modules/magic-script-components-lumin/src/react-magic-script/react-magic-script.js"
+  },
+  {
+   "compression": 8,
+   "hash": "a96f46205e7172ce99edba761d7c91a560663484",
+   "pkgpath": "bin/node_modules/magic-script-components/src/components.js",
+   "size": 994,
+   "src": "C:/Users/nilin/Desktop/weatherApp/bin/node_modules/magic-script-components/src/components.js"
+  },
+  {
+   "compression": 8,
+   "hash": "b8b0bb66a9a07cb1eb2544c15f52a51f580ba4d6",
+   "pkgpath": "bin/node_modules/magic-script-polyfills/src/assert.js",
+   "size": 219,
+   "src": "C:/Users/nilin/Desktop/weatherApp/bin/node_modules/magic-script-polyfills/src/assert.js"
+  },
+  {
+   "compression": 8,
+   "hash": "2cdf525b5e1db2ee7e9b7f6bc7f91e53d6ea99a3",
+   "pkgpath": "bin/node_modules/magic-script-polyfills/src/bintools.js",
+   "size": 5591,
+   "src": "C:/Users/nilin/Desktop/weatherApp/bin/node_modules/magic-script-polyfills/src/bintools.js"
+  },
+  {
+   "compression": 8,
+   "hash": "132283a69b545113af409f73d831c4612bb1c192",
+   "pkgpath": "bin/node_modules/magic-script-polyfills/src/codec-wrap.js",
+   "size": 1946,
+   "src": "C:/Users/nilin/Desktop/weatherApp/bin/node_modules/magic-script-polyfills/src/codec-wrap.js"
+  },
+  {
+   "compression": 8,
+   "hash": "27956cfab109e08eae16b9c5f67791938ba69ee4",
+   "pkgpath": "bin/node_modules/magic-script-polyfills/src/evented.js",
+   "size": 1131,
+   "src": "C:/Users/nilin/Desktop/weatherApp/bin/node_modules/magic-script-polyfills/src/evented.js"
+  },
+  {
+   "compression": 8,
+   "hash": "d1dffeb855bba4d49c95ca49df0c53f4f4ec0d2b",
+   "pkgpath": "bin/node_modules/magic-script-polyfills/src/fetch.js",
+   "size": 7581,
+   "src": "C:/Users/nilin/Desktop/weatherApp/bin/node_modules/magic-script-polyfills/src/fetch.js"
+  },
+  {
+   "compression": 8,
+   "hash": "8c29591f460467143e276b92cb22159fb912ad93",
+   "pkgpath": "bin/node_modules/magic-script-polyfills/src/fs.js",
+   "size": 4068,
+   "src": "C:/Users/nilin/Desktop/weatherApp/bin/node_modules/magic-script-polyfills/src/fs.js"
+  },
+  {
+   "compression": 8,
+   "hash": "72cce3441340a16d24612b6c8c82869c08930759",
+   "pkgpath": "bin/node_modules/magic-script-polyfills/src/headers.js",
+   "size": 1635,
+   "src": "C:/Users/nilin/Desktop/weatherApp/bin/node_modules/magic-script-polyfills/src/headers.js"
+  },
+  {
+   "compression": 8,
+   "hash": "5631ce73aa74f391c08fb9d6b4903b999d353dbc",
+   "pkgpath": "bin/node_modules/magic-script-polyfills/src/http-codec.js",
+   "size": 8863,
+   "src": "C:/Users/nilin/Desktop/weatherApp/bin/node_modules/magic-script-polyfills/src/http-codec.js"
+  },
+  {
+   "compression": 8,
+   "hash": "bd42fb5e3ea960590766473a5300587de6c21300",
+   "pkgpath": "bin/node_modules/magic-script-polyfills/src/mime.js",
+   "size": 5986,
+   "src": "C:/Users/nilin/Desktop/weatherApp/bin/node_modules/magic-script-polyfills/src/mime.js"
+  },
+  {
+   "compression": 8,
+   "hash": "34f7a58466f960cdafb8c562d5cb64064c400140",
+   "pkgpath": "bin/node_modules/magic-script-polyfills/src/polyfills.js",
+   "size": 894,
+   "src": "C:/Users/nilin/Desktop/weatherApp/bin/node_modules/magic-script-polyfills/src/polyfills.js"
+  },
+  {
+   "compression": 8,
+   "hash": "fea7f0a17e5b475e5ca63d3034c8977655a5c5e1",
+   "pkgpath": "bin/node_modules/magic-script-polyfills/src/resolve.js",
+   "size": 890,
+   "src": "C:/Users/nilin/Desktop/weatherApp/bin/node_modules/magic-script-polyfills/src/resolve.js"
+  },
+  {
+   "compression": 8,
+   "hash": "01901174b3ede496d05e7c56122e2552731bd67e",
+   "pkgpath": "bin/node_modules/magic-script-polyfills/src/sha1.js",
+   "size": 3706,
+   "src": "C:/Users/nilin/Desktop/weatherApp/bin/node_modules/magic-script-polyfills/src/sha1.js"
+  },
+  {
+   "compression": 8,
+   "hash": "4c1f00bd664102eb8a27f7e12d71ca033ec08729",
+   "pkgpath": "bin/node_modules/magic-script-polyfills/src/socket-wrap.js",
+   "size": 2695,
+   "src": "C:/Users/nilin/Desktop/weatherApp/bin/node_modules/magic-script-polyfills/src/socket-wrap.js"
+  },
+  {
+   "compression": 8,
+   "hash": "b14dcb7be1d80234b3cd8a20c1769364e978ede4",
+   "pkgpath": "bin/node_modules/magic-script-polyfills/src/tcp.js",
+   "size": 977,
+   "src": "C:/Users/nilin/Desktop/weatherApp/bin/node_modules/magic-script-polyfills/src/tcp.js"
+  },
+  {
+   "compression": 8,
+   "hash": "572acefb2375b6513b512ce441d827abb6d58dc8",
+   "pkgpath": "bin/node_modules/magic-script-polyfills/src/text-encoder.js",
+   "size": 2439,
+   "src": "C:/Users/nilin/Desktop/weatherApp/bin/node_modules/magic-script-polyfills/src/text-encoder.js"
+  },
+  {
+   "compression": 8,
+   "hash": "a28a66d71c7f847f7f4465c0dd80c75e41347dd2",
+   "pkgpath": "bin/node_modules/magic-script-polyfills/src/timers.js",
+   "size": 3059,
+   "src": "C:/Users/nilin/Desktop/weatherApp/bin/node_modules/magic-script-polyfills/src/timers.js"
+  },
+  {
+   "compression": 8,
+   "hash": "abcfb6282438cf3866babb3577305b2dad626953",
+   "pkgpath": "bin/node_modules/magic-script-polyfills/src/tls-wrap.js",
+   "size": 2478,
+   "src": "C:/Users/nilin/Desktop/weatherApp/bin/node_modules/magic-script-polyfills/src/tls-wrap.js"
+  },
+  {
+   "compression": 8,
+   "hash": "b630dd97281dddf8d77017cfb1c58120c22d70dd",
+   "pkgpath": "bin/node_modules/magic-script-polyfills/src/utils.js",
+   "size": 995,
+   "src": "C:/Users/nilin/Desktop/weatherApp/bin/node_modules/magic-script-polyfills/src/utils.js"
+  },
+  {
+   "compression": 8,
+   "hash": "6be954bf1ed5b47e95299608e2e9902a033024b0",
    "pkgpath": "bin/node_modules/magic-script-polyfills/src/websocket-codec.js",
-   "size": 3029,
-   "src": "/Users/mykytailin/Documents/weatherApp/bin/node_modules/magic-script-polyfills/src/websocket-codec.js"
+   "size": 3142,
+   "src": "C:/Users/nilin/Desktop/weatherApp/bin/node_modules/magic-script-polyfills/src/websocket-codec.js"
   },
   {
    "compression": 8,
-   "hash": "136f57763011c6265e56a64d6e6d5fd649b702f3",
+   "hash": "ced25797822723e3c12cb293d835a06e704d8952",
    "pkgpath": "bin/node_modules/magic-script-polyfills/src/websocket.js",
-   "size": 6262,
-   "src": "/Users/mykytailin/Documents/weatherApp/bin/node_modules/magic-script-polyfills/src/websocket.js"
+   "size": 6434,
+   "src": "C:/Users/nilin/Desktop/weatherApp/bin/node_modules/magic-script-polyfills/src/websocket.js"
   },
   {
    "compression": 8,
-   "hash": "645d1c0f9a80d20b941529d249c83e77c22e5144",
+   "hash": "432354597b4ae3696c6cc20b25ee6f244db9e6dd",
    "pkgpath": "bin/node_modules/magic-script-polyfills/src/xhr.js",
-   "size": 913,
-   "src": "/Users/mykytailin/Documents/weatherApp/bin/node_modules/magic-script-polyfills/src/xhr.js"
+   "size": 940,
+   "src": "C:/Users/nilin/Desktop/weatherApp/bin/node_modules/magic-script-polyfills/src/xhr.js"
   },
   {
    "compression": 8,
-   "hash": "fea9a17f3250cd654ad11d97ab57dc7e79d82f2e",
+   "hash": "af9a5eaf15e6824600b2ba4e07fc5f085e027e65",
    "pkgpath": "bin/node_modules/object-assign/index.js",
-   "size": 2140,
-   "src": "/Users/mykytailin/Documents/weatherApp/bin/node_modules/object-assign/index.js"
+   "size": 2227,
+   "src": "C:/Users/nilin/Desktop/weatherApp/bin/node_modules/object-assign/index.js"
   },
   {
    "compression": 8,
-   "hash": "f225fe5f270cf7d1bfc7fb6707a617f0ddae14ce",
+   "hash": "4fdf2b2802dc330efa85cd8fd0f55d6dcf91b89b",
    "pkgpath": "bin/node_modules/prop-types/checkPropTypes.js",
-   "size": 3717,
-   "src": "/Users/mykytailin/Documents/weatherApp/bin/node_modules/prop-types/checkPropTypes.js"
+   "size": 3809,
+   "src": "C:/Users/nilin/Desktop/weatherApp/bin/node_modules/prop-types/checkPropTypes.js"
   },
   {
    "compression": 8,
-   "hash": "ae79af6947e6a6e4a2c4fc361700e793721a3869",
+   "hash": "4e7e1c1a34f01010ff797142d183abdd0852b0e2",
    "pkgpath": "bin/node_modules/prop-types/lib/ReactPropTypesSecret.js",
-   "size": 366,
-   "src": "/Users/mykytailin/Documents/weatherApp/bin/node_modules/prop-types/lib/ReactPropTypesSecret.js"
+   "size": 375,
+   "src": "C:/Users/nilin/Desktop/weatherApp/bin/node_modules/prop-types/lib/ReactPropTypesSecret.js"
   },
   {
    "compression": 8,
-   "hash": "779b2907073a2786ecd93c0e31daa15cae2bad98",
+   "hash": "085ee0be8a4951d2bd69a3528e273084a83fb47b",
    "pkgpath": "bin/node_modules/react-reconciler/cjs/react-reconciler.development.js",
-   "size": 552456,
-   "src": "/Users/mykytailin/Documents/weatherApp/bin/node_modules/react-reconciler/cjs/react-reconciler.development.js"
+   "size": 567890,
+   "src": "C:/Users/nilin/Desktop/weatherApp/bin/node_modules/react-reconciler/cjs/react-reconciler.development.js"
   },
   {
    "compression": 8,
-   "hash": "c53ca01a22f94d6c19d59e45d508ffd8353639ee",
+   "hash": "a62a855058f2aafb7a3d7aa9a1f009bef488802a",
    "pkgpath": "bin/node_modules/react-reconciler/cjs/react-reconciler.production.min.js",
-   "size": 70810,
-   "src": "/Users/mykytailin/Documents/weatherApp/bin/node_modules/react-reconciler/cjs/react-reconciler.production.min.js"
+   "size": 71112,
+   "src": "C:/Users/nilin/Desktop/weatherApp/bin/node_modules/react-reconciler/cjs/react-reconciler.production.min.js"
   },
   {
    "compression": 8,
-   "hash": "c3fc563399abd28a72501b09b97c3654a53aeb48",
+   "hash": "bbc4ca0e5a93b2974b863a4003e88eff74ceefa6",
    "pkgpath": "bin/node_modules/react-reconciler/index.js",
-   "size": 590,
-   "src": "/Users/mykytailin/Documents/weatherApp/bin/node_modules/react-reconciler/index.js"
+   "size": 595,
+   "src": "C:/Users/nilin/Desktop/weatherApp/bin/node_modules/react-reconciler/index.js"
   },
   {
    "compression": 8,
-   "hash": "f0cee2c3c10d3d190e45b771aef1f91ab216bd76",
+   "hash": "6f443f5c58348445b7ab3a9b5d9aa8a74cbb9252",
    "pkgpath": "bin/node_modules/react/cjs/react.development.js",
-   "size": 65020,
-   "src": "/Users/mykytailin/Documents/weatherApp/bin/node_modules/react/cjs/react.development.js"
+   "size": 67021,
+   "src": "C:/Users/nilin/Desktop/weatherApp/bin/node_modules/react/cjs/react.development.js"
   },
   {
    "compression": 8,
-   "hash": "4576b90c2a1bd777344f708ac368629814b00bca",
+   "hash": "4d56d395519d5c74bea06ae258844826c1149cf0",
    "pkgpath": "bin/node_modules/react/cjs/react.production.min.js",
-   "size": 6655,
-   "src": "/Users/mykytailin/Documents/weatherApp/bin/node_modules/react/cjs/react.production.min.js"
+   "size": 6670,
+   "src": "C:/Users/nilin/Desktop/weatherApp/bin/node_modules/react/cjs/react.production.min.js"
   },
   {
    "compression": 8,
-   "hash": "6dc00fdfbff374abcaf47119b72cade7a66928b3",
+   "hash": "ac0e6a9631d8ed910ea2db9b5abda6e59a02bae6",
    "pkgpath": "bin/node_modules/react/index.js",
-   "size": 516,
-   "src": "/Users/mykytailin/Documents/weatherApp/bin/node_modules/react/index.js"
+   "size": 521,
+   "src": "C:/Users/nilin/Desktop/weatherApp/bin/node_modules/react/index.js"
   },
   {
    "compression": 8,
-   "hash": "52e78e0899c107f6f9a6e8f31b7559dac1b10fdc",
+   "hash": "b6c6075b10ec986b59332aa43490e4cd86d77a4b",
    "pkgpath": "bin/node_modules/scheduler/cjs/scheduler-tracing.development.js",
-   "size": 12176,
-   "src": "/Users/mykytailin/Documents/weatherApp/bin/node_modules/scheduler/cjs/scheduler-tracing.development.js"
+   "size": 12595,
+   "src": "C:/Users/nilin/Desktop/weatherApp/bin/node_modules/scheduler/cjs/scheduler-tracing.development.js"
   },
   {
    "compression": 8,
    "hash": "5b9203604c8084c28c7e2eaf394d2f3307e2aeab",
    "pkgpath": "bin/node_modules/scheduler/cjs/scheduler-tracing.production.min.js",
    "size": 2068,
-   "src": "/Users/mykytailin/Documents/weatherApp/bin/node_modules/scheduler/cjs/scheduler-tracing.production.min.js"
+   "src": "C:/Users/nilin/Desktop/weatherApp/bin/node_modules/scheduler/cjs/scheduler-tracing.production.min.js"
   },
   {
    "compression": 8,
-   "hash": "74d7967d1bf284fc7794289a51eacb480f488056",
+   "hash": "cbcf6d7cf3c0c4aa59173719efbc6e380f0bc7f2",
    "pkgpath": "bin/node_modules/scheduler/cjs/scheduler.development.js",
-   "size": 28477,
-   "src": "/Users/mykytailin/Documents/weatherApp/bin/node_modules/scheduler/cjs/scheduler.development.js"
+   "size": 28818,
+   "src": "C:/Users/nilin/Desktop/weatherApp/bin/node_modules/scheduler/cjs/scheduler.development.js"
   },
   {
    "compression": 8,
-   "hash": "97783c86b8119078b484bb9f4457b9431ed7780a",
+   "hash": "ac4c6974e0d2d89e8d0058e06984a783b7ab3612",
    "pkgpath": "bin/node_modules/scheduler/cjs/scheduler.production.min.js",
-   "size": 8370,
-   "src": "/Users/mykytailin/Documents/weatherApp/bin/node_modules/scheduler/cjs/scheduler.production.min.js"
+   "size": 8383,
+   "src": "C:/Users/nilin/Desktop/weatherApp/bin/node_modules/scheduler/cjs/scheduler.production.min.js"
   },
   {
    "compression": 8,
-   "hash": "2f24248f32ed3f370000ba41842cc3db20b888aa",
+   "hash": "ad8aec39976f38ac0b496979daf34bd63db0a673",
    "pkgpath": "bin/node_modules/scheduler/index.js",
-   "size": 518,
-   "src": "/Users/mykytailin/Documents/weatherApp/bin/node_modules/scheduler/index.js"
+   "size": 523,
+   "src": "C:/Users/nilin/Desktop/weatherApp/bin/node_modules/scheduler/index.js"
   },
   {
    "compression": 8,
-   "hash": "40fd896d3e7ca6815dd3fe87d4f3ed869d047719",
+   "hash": "9514743d88d86ad2bdb3a12bbc7643cc8a48a09f",
    "pkgpath": "bin/node_modules/scheduler/tracing.js",
-   "size": 546,
-   "src": "/Users/mykytailin/Documents/weatherApp/bin/node_modules/scheduler/tracing.js"
+   "size": 551,
+   "src": "C:/Users/nilin/Desktop/weatherApp/bin/node_modules/scheduler/tracing.js"
   },
   {
    "compression": 8,
-   "hash": "fe0e10310223e13b26cb7698888b05a7c5454142",
+   "hash": "a1acd13e3043c9b1be79989e6d4ee9b244c3defb",
    "pkgpath": "bin/src/app.js",
-   "size": 3490,
-   "src": "/Users/mykytailin/Documents/weatherApp/bin/src/app.js"
+   "size": 3072,
+   "src": "C:/Users/nilin/Desktop/weatherApp/bin/src/app.js"
   },
   {
    "compression": 8,
    "hash": "3d66cfd0c883b6adf9e1939923a494e4a467704a",
    "pkgpath": "bin/src/data.js",
    "size": 789,
-   "src": "/Users/mykytailin/Documents/weatherApp/bin/src/data.js"
+   "src": "C:/Users/nilin/Desktop/weatherApp/bin/src/data.js"
   },
   {
    "compression": 8,
    "hash": "1bac297c9ac2fd9c473f493b9e99f28f25ac4425",
    "pkgpath": "bin/src/global-scope.js",
    "size": 123,
-   "src": "/Users/mykytailin/Documents/weatherApp/bin/src/global-scope.js"
+   "src": "C:/Users/nilin/Desktop/weatherApp/bin/src/global-scope.js"
   },
   {
    "compression": 8,
    "hash": "6c5ca41e64aa57fff035283ffccdbaa786ebf148",
    "pkgpath": "bin/src/main.js",
    "size": 410,
-   "src": "/Users/mykytailin/Documents/weatherApp/bin/src/main.js"
+   "src": "C:/Users/nilin/Desktop/weatherApp/bin/src/main.js"
   },
   {
    "compression": 8,
-   "hash": "b13c8d987f9e705d5548ef94ff2554192656670f",
+   "hash": "e4aabf330fb218b34c0b257994cec57581063d68",
    "pkgpath": "bin/src/realData.js",
-   "size": 2410,
-   "src": "/Users/mykytailin/Documents/weatherApp/bin/src/realData.js"
+   "size": 2485,
+   "src": "C:/Users/nilin/Desktop/weatherApp/bin/src/realData.js"
   },
   {
    "compression": 8,
-   "hash": "712f21c1a624f5a26b3c0b9585d43ced84e8f4fb",
+   "hash": "be19c635b474fd0e45e9613fa2a79ede72b049a5",
    "pkgpath": "./digest.sha512.signed",
-   "size": 42467,
-   "src": "/Users/mykytailin/Documents/weatherApp/digest.sha512.signed"
+   "size": 42416,
+   "src": "C:/Users/nilin/Desktop/weatherApp/digest.sha512.signed"
   },
   {
    "compression": 8,
-   "hash": "1b94a8acde0879396c6c9cea9c61d95d9b8ee279",
-   "pkgpath": "manifest.xml",
-   "size": 567,
-   "src": "/Users/mykytailin/Documents/weatherApp/manifest.xml",
-   "xfrm_flags": {
-    "manifest": {
-     "cert_hash": "585d35f2ba86b13caa4c6204ecf1849a1ad80930",
-     "developer_id": "f68d2647-c86b-4719-85b2-cbb5865289f9",
-     "min_api_level": "2"
-    }
-   },
-   "xfrm_hash": "cc70e4cc1b1b5206ced13d20db8b5c2da3cdc9d8",
-   "xfrm_path": "/Users/mykytailin/Documents/weatherApp/.out/app/debug_lumin_clang-3.8_aarch64/manifest.xml-79a0468d9b698567",
-   "xfrm_size": 543
-  },
-  {
-   "compression": 8,
-   "hash": "2ef6914991072b123c4d7284a3abe6da9539751f",
+   "hash": "f994114bd7b804d7e83f4cfa315ffe9fca5f0333",
    "pkgpath": "res/Cloud_Material.kmat",
-   "size": 378,
-   "src": "/Users/mykytailin/Documents/weatherApp/res/Cloud_Material.kmat"
+   "size": 412,
+   "src": "C:/Users/nilin/Desktop/weatherApp/res/Cloud_Material.kmat"
   },
   {
    "compression": 8,
    "hash": "0706f416921a1dc94a44f010ec6be972759851cd",
    "pkgpath": "res/Clouds.fbx",
    "size": 60396,
-   "src": "/Users/mykytailin/Documents/weatherApp/res/Clouds.fbx"
+   "src": "C:/Users/nilin/Desktop/weatherApp/res/Clouds.fbx"
   },
   {
    "compression": 8,
    "hash": "a005ea646f0c8433fda77ef4ff8a41ace9bac7a9",
    "pkgpath": "res/Earth.fbx",
    "size": 707088,
-   "src": "/Users/mykytailin/Documents/weatherApp/res/Earth.fbx"
+   "src": "C:/Users/nilin/Desktop/weatherApp/res/Earth.fbx"
   },
   {
    "compression": 8,
    "hash": "1ad3ec6d08920ad867cb140f440c8173c61b6504",
    "pkgpath": "res/rainy.fbx",
    "size": 1018256,
-   "src": "/Users/mykytailin/Documents/weatherApp/res/rainy.fbx"
+   "src": "C:/Users/nilin/Desktop/weatherApp/res/rainy.fbx"
   },
   {
    "compression": 8,
    "hash": "53f67a08607959bf3fe4729159dfa91496628aa1",
    "pkgpath": "res/sunny.fbx",
    "size": 366848,
-   "src": "/Users/mykytailin/Documents/weatherApp/res/sunny.fbx"
+   "src": "C:/Users/nilin/Desktop/weatherApp/res/sunny.fbx"
+  },
+  {
+   "compression": 8,
+   "hash": "09c42434eb96a11cd484ee2834c305fe4fec971f",
+   "pkgpath": "manifest.xml",
+   "size": 626,
+   "src": "C:/Users/nilin/Desktop/weatherApp\\manifest.xml",
+   "xfrm_flags": {
+    "manifest": {
+     "cert_hash": "2e3ca398ab9ae604f77bd093d88da657221814f3",
+     "developer_id": "Magic Leap Internal",
+     "min_api_level": "2"
+    }
+   },
+   "xfrm_hash": "d5632a73b91b546ab56b58a02df28f3ea074cd58",
+   "xfrm_path": "C:/Users/nilin/Desktop/weatherApp/.out/app/debug_lumin_clang-3.8_aarch64\\manifest.xml-0ec1cc8b35b3b891",
+   "xfrm_size": 577
   }
  ],
  "pkgflags": {
   "signed": {
-   "cert": "/Users/mykytailin/MagicLeap/cert/prod.cert"
+   "cert": "C:\\Users\\nilin\\Desktop\\mlsdk_main\\internal\\ml_internal.cert"
   },
   "taildata": {
    "debuggable": true,
-   "devcert": "/Users/mykytailin/MagicLeap/cert/prod.cert",
+   "devcert": "C:\\Users\\nilin\\Desktop\\mlsdk_main\\internal\\ml_internal.cert",
    "sbox": "USER",
    "version": 3
   }

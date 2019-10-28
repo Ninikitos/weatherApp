@@ -106,28 +106,24 @@ var _ = (function (React) {
       super(props);
 
       _defineProperty(this, "onButtonClick", async data => {
-        const api_call = await fetch('http://api.openweathermap.org/data/2.5/weather?q=Plantation,US&appid=0f4670104e656aa457f158cbe7631c18');
+        let result;
 
-        if (!api_call.ok) {
-          throw new Error("HTTP error, status = " + api_call.status);
+        try {
+          result = await fetch('http://api.openweathermap.org/data/2.5/weather?q=Plantation,US&appid=0f4670104e656aa457f158cbe7631c18');
+        } catch (error) {
+          print(`API Data Fetch error: ${error.message}`);
         }
 
-        const json = await api_call.json(); // export function makeButton(prism, text) {
-        //   const { UiButton, EclipseButtonParams, EclipseButtonType } = ui;
-        //   let prms = new EclipseButtonParams(EclipseButtonType.kText, "Press me");
-        //   let node = UiButton.CreateEclipseButton(prism, prms);
-        //   node.onActivateSub(uiEventData => {
-        //     basicFetch(text).catch(error => {
-        //       text.setText("basicFetch - Error: " + error.message);
-        //     });
-        //   });
-        //   return node;
-        // }
+        let jsonData;
 
-        api_call.catch(error => {
-          print("basicFetch - Error: " + error.message);
-        });
-        print(JSON.stringify(json));
+        try {
+          jsonData = await result.json();
+        } catch (error) {
+          print(`JSON conversion error: ${error.message}`);
+        }
+
+        console.log('JSON Data:', jsonData);
+        print(JSON.stringify(jsonData));
       });
 
       let fakeData = new Data();

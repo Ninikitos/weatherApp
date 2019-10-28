@@ -20,14 +20,22 @@ export default class MyApp extends React.Component {
   }
 
   onButtonClick = async (data) => {
-    const api_call = await fetch('http://api.openweathermap.org/data/2.5/weather?q=Plantation,US&appid=0f4670104e656aa457f158cbe7631c18');
-    const json = await api_call.json();
+    let result;
+    try {
+      result = await fetch('http://api.openweathermap.org/data/2.5/weather?q=Plantation,US&appid=0f4670104e656aa457f158cbe7631c18'); 
+    } catch(error) {
+      print(`API Data Fetch error: ${error.message}`);
+    }
 
-    api_call.catch(error => {
-      print("basicFetch - Error: " + error.message);
-  });
+    let jsonData;
+    try {
+      jsonData = await result.json();
+    } catch(error) {
+      print(`JSON conversion error: ${error.message}`);
+    }
 
-    print(JSON.stringify(json));
+     console.log('JSON Data:', jsonData);
+     print(JSON.stringify(jsonData));
   }
 
   render() {
