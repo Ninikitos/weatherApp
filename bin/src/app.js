@@ -1,13 +1,38 @@
 import React from '../node_modules/react/index.js';
-import Data$1 from './data.js';
-import Data from './realData.js';
-import { View, Text, Model, ScrollView, ScrollBar, LinearLayout } from '../node_modules/magic-script-components/src/components.js';
+import { defineProperty as _defineProperty } from '../_virtual/_rollupPluginBabelHelpers.js';
+import Data from './data.js';
+import { View, Text, Button, Model, ScrollView, ScrollBar, LinearLayout } from '../node_modules/magic-script-components/src/components.js';
 
-//
 class MyApp extends React.Component {
   constructor(props) {
     super(props);
-    let fakeData = new Data$1();
+
+    _defineProperty(this, "onButtonClick", async data => {
+      const api_call = await fetch('http://api.openweathermap.org/data/2.5/weather?q=Plantation,US&appid=0f4670104e656aa457f158cbe7631c18');
+
+      if (!api_call.ok) {
+        throw new Error("HTTP error, status = " + api_call.status);
+      }
+
+      const json = await api_call.json(); // export function makeButton(prism, text) {
+      //   const { UiButton, EclipseButtonParams, EclipseButtonType } = ui;
+      //   let prms = new EclipseButtonParams(EclipseButtonType.kText, "Press me");
+      //   let node = UiButton.CreateEclipseButton(prism, prms);
+      //   node.onActivateSub(uiEventData => {
+      //     basicFetch(text).catch(error => {
+      //       text.setText("basicFetch - Error: " + error.message);
+      //     });
+      //   });
+      //   return node;
+      // }
+
+      api_call.catch(error => {
+        print("basicFetch - Error: " + error.message);
+      });
+      print(JSON.stringify(json));
+    });
+
+    let fakeData = new Data();
     this.state = {
       currentTemp: fakeData.temperature.Friday,
       currentCity: fakeData.city,
@@ -45,7 +70,9 @@ class MyApp extends React.Component {
       localPosition: [-0.250, -0.150, 0],
       weight: "medium",
       textAlignment: 'center'
-    }, this.state.currentDay), React.createElement(Data, null), React.createElement(Model, {
+    }, this.state.currentDay), React.createElement(Button, {
+      onClick: this.onButtonClick
+    }, "Get weather"), React.createElement(Model, {
       modelPath: "res/Clouds.fbx",
       localScale: [0.0020, 0.0020, 0.0020],
       localPosition: [-0.180, 0.050, 0]

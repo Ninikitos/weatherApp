@@ -114,9 +114,9 @@
   },
   {
    "compression": 8,
-   "hash": "7e15d92faadb617affbafaae19b8595c43224a15",
+   "hash": "95fbf83c864d5f6c79f470e09b3371f5ff8fcc02",
    "pkgpath": "bin/bundle.js",
-   "size": 5962,
+   "size": 5519,
    "src": "/Users/mykytailin/Documents/weatherApp/bin/bundle.js"
   },
   {
@@ -1052,9 +1052,9 @@
   },
   {
    "compression": 8,
-   "hash": "ae9b058c762bbeb1c870c20a147925f6ef6321bd",
+   "hash": "a29c9c1fc01e2caa9c973de4a0d2a5c9c8c94672",
    "pkgpath": "bin/node_modules/magic-script-components/src/components.js",
-   "size": 836,
+   "size": 961,
    "src": "/Users/mykytailin/Documents/weatherApp/bin/node_modules/magic-script-components/src/components.js"
   },
   {
@@ -1311,9 +1311,9 @@
   },
   {
    "compression": 8,
-   "hash": "0154707053c8a2df2933bde33ba27fd6ebfaa419",
+   "hash": "fe0e10310223e13b26cb7698888b05a7c5454142",
    "pkgpath": "bin/src/app.js",
-   "size": 2386,
+   "size": 3490,
    "src": "/Users/mykytailin/Documents/weatherApp/bin/src/app.js"
   },
   {
@@ -1339,14 +1339,14 @@
   },
   {
    "compression": 8,
-   "hash": "3f4a4191a67e8301b993ade7be555a6e7a8a179e",
+   "hash": "b13c8d987f9e705d5548ef94ff2554192656670f",
    "pkgpath": "bin/src/realData.js",
-   "size": 1394,
+   "size": 2410,
    "src": "/Users/mykytailin/Documents/weatherApp/bin/src/realData.js"
   },
   {
    "compression": 8,
-   "hash": "5e546dbc842dfa4bb5d77b4d864b5cc977b1e91c",
+   "hash": "712f21c1a624f5a26b3c0b9585d43ced84e8f4fb",
    "pkgpath": "./digest.sha512.signed",
    "size": 42467,
    "src": "/Users/mykytailin/Documents/weatherApp/digest.sha512.signed"

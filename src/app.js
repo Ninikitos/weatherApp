@@ -1,7 +1,7 @@
 //
 import React from "react";
 import Data from "./data.js";
-import RealData from "./realData.js";
+
 import { View, Text, Model, ScrollView, ScrollBar, LinearLayout, Button } from "magic-script-components";
 
 export default class MyApp extends React.Component {
@@ -19,6 +19,17 @@ export default class MyApp extends React.Component {
     };
   }
 
+  onButtonClick = async (data) => {
+    const api_call = await fetch('http://api.openweathermap.org/data/2.5/weather?q=Plantation,US&appid=0f4670104e656aa457f158cbe7631c18');
+    const json = await api_call.json();
+
+    api_call.catch(error => {
+      print("basicFetch - Error: " + error.message);
+  });
+
+    print(JSON.stringify(json));
+  }
+
   render() {
 
     const aabb = {
@@ -34,7 +45,7 @@ export default class MyApp extends React.Component {
         <Text textSize={0.03}   localPosition={[0.2, 0.285, 0]} weight='medium' textAlignment={'center'}>{this.state.currentCity}</Text>
         <Text textSize={0.03}   localPosition={[0.2, 0.225, 0]} weight='medium' textAlignment={'center'}>{this.state.currentCondition}</Text>
         <Text textSize={0.13}   localPosition={[-0.250, -0.150, 0]} weight='medium' textAlignment={'center'}>{this.state.currentDay}</Text>
-        <RealData></RealData>
+        <Button onClick={this.onButtonClick}>Get weather</Button>
         <Model
           modelPath={"res/Clouds.fbx"}
           localScale={[0.0020, 0.0020, 0.0020]}
