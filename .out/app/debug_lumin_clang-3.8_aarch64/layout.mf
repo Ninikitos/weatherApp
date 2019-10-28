@@ -756,6 +756,10 @@
   "src": "C:/Users/nilin/Desktop/weatherApp/bin/src/data.js"
  },
  {
+  "dest": "bin/src/fakeData.js",
+  "src": "C:/Users/nilin/Desktop/weatherApp/bin/src/fakeData.js"
+ },
+ {
   "dest": "bin/src/global-scope.js",
   "src": "C:/Users/nilin/Desktop/weatherApp/bin/src/global-scope.js"
  },

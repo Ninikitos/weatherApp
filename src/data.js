@@ -1,42 +1,33 @@
+import React from 'react';
+
 export default class Data {
-    constructor() {
-        this.temperature = {
-            Monday: 90,
-            Tuesday: 90,
-            Wednesday: 90,
-            Thursday: 90,
-            Friday: 90,
-            Saturday: 90,
-            Sunday: 90
-        }
-        this.days = [
-            'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'
-        ];
-        this.hours = [
-            {onePm: 1},
-            {twoPm: 2},
-            {threePm: 3},
-            {fourPm: 4},
-            {fivePm: 5},
-            {sixPm: 6},
-            {sevenPm: 7},
-            {eightPm: 8},
-            {ninePm: 9},
-            {tenPm: 10},
-            {elevenPm: 11},
-            {twelvePm: 12}
-        ];
-        this.city = 'Miami';
-        this.conditions = {
-            Sunny: 'Sunny', 
-            Rainy: 'Rainy',
-            Cloudy: 'Cloudy',
-            Snow: 'Snow'
-        };
-    }
- 
+
+    // My class has following "properies" and one method requestData()
+  getData = async () => {
+
+      return {
+        temperature : this.requestData().temp,
+        city        : this.requestData().name,
+        condition   : this.requestData().weather.description
+      }
+  }
+
+  requestData = async () => {
+
+      let result;
+      try {
+        result = await fetch('http://api.openweathermap.org/data/2.5/weather?q=Plantation,US&appid=0f4670104e656aa457f158cbe7631c18'); 
+      } catch(error) {
+        print(`API Data Fetch error: ${error.message}`);
+      }
+  
+      let jsonData;
+      try {
+        jsonData = await result.json();
+      } catch(error) {
+        print(`JSON conversion error: ${error.message}`);
+      }
+  
+        return jsonData;
+  }    
 }
-
-
-
-

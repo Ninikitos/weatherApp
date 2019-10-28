@@ -20,6 +20,39 @@ var _ = (function (React) {
 
   class Data {
     constructor() {
+      _defineProperty(this, "getData", async () => {
+        return {
+          temperature: this.requestData().temp,
+          city: this.requestData().name,
+          condition: this.requestData().weather[0].description
+        };
+      });
+
+      _defineProperty(this, "requestData", async () => {
+        let result;
+
+        try {
+          result = await fetch('http://api.openweathermap.org/data/2.5/weather?q=Plantation,US&appid=0f4670104e656aa457f158cbe7631c18');
+        } catch (error) {
+          print(`API Data Fetch error: ${error.message}`);
+        }
+
+        let jsonData;
+
+        try {
+          jsonData = await result.json();
+        } catch (error) {
+          print(`JSON conversion error: ${error.message}`);
+        }
+
+        return jsonData;
+      });
+    }
+
+  }
+
+  class FakeData {
+    constructor() {
       this.temperature = {
         Monday: 90,
         Tuesday: 90,
@@ -66,11 +99,6 @@ var _ = (function (React) {
 
   }
 
-  function Button (props) {
-      // return (<button {...props} />);
-      return React.createElement('button', props);
-  }
-
   function Model (props) {
       // return (<model {...props} />);
       return React.createElement('model', props);
@@ -105,36 +133,42 @@ var _ = (function (React) {
     constructor(props) {
       super(props);
 
-      _defineProperty(this, "onButtonClick", async data => {
-        let result;
-
-        try {
-          result = await fetch('http://api.openweathermap.org/data/2.5/weather?q=Plantation,US&appid=0f4670104e656aa457f158cbe7631c18');
-        } catch (error) {
-          print(`API Data Fetch error: ${error.message}`);
-        }
-
-        let jsonData;
-
-        try {
-          jsonData = await result.json();
-        } catch (error) {
-          print(`JSON conversion error: ${error.message}`);
-        }
-
-        console.log('JSON Data:', jsonData);
-        print(JSON.stringify(jsonData));
+      _defineProperty(this, "componentDidMount", async () => {
+        const data = await this.data.getData();
+        this.setState({
+          currentTemp: data.temperature,
+          currentCity: data.city,
+          currentCondition: data.condition
+        });
+        print("  works");
       });
 
-      let fakeData = new Data();
+      this.data = new Data();
+      const fakeData = new FakeData();
       this.state = {
-        currentTemp: fakeData.temperature.Friday,
-        currentCity: fakeData.city,
-        currentCondition: fakeData.conditions.Sunny,
+        currentTemp: "undefined",
+        currentCity: "undefined",
+        currentCondition: "undefined",
         currentTime: fakeData.hours[0],
-        currentDay: fakeData.days[5]
+        currentDay: fakeData.days[0]
       };
-    }
+    } // onButtonClick = async () => {
+    //   let result;
+    //   try {
+    //     result = await fetch('http://api.openweathermap.org/data/2.5/weather?q=Plantation,US&appid=0f4670104e656aa457f158cbe7631c18'); 
+    //   } catch(error) {
+    //     print(`API Data Fetch error: ${error.message}`);
+    //   }
+    //   let jsonData;
+    //   try {
+    //     jsonData = await result.json();
+    //   } catch(error) {
+    //     print(`JSON conversion error: ${error.message}`);
+    //   }
+    //    console.log('JSON Data:', jsonData);
+    //    print(JSON.stringify(jsonData));
+    // }
+
 
     render() {
       const aabb = {
@@ -164,10 +198,13 @@ var _ = (function (React) {
         localPosition: [-0.250, -0.150, 0],
         weight: "medium",
         textAlignment: 'center'
-      }, this.state.currentDay), React.createElement(Button, {
-        onClick: this.onButtonClick
-      }, "Get weather"), React.createElement(Model, {
-        modelPath: "res/Clouds.fbx",
+      }, this.state.currentDay), React.createElement(Model, {
+        modelPath: 'res/donut.fbx',
+        materialPath: 'res/donut.kmat',
+        texturePaths: ['res/Black.png', 'res/Grey.png', 'res/Normal.png', 'res/White.png'],
+        textureName: 'donut_material',
+        importScale: 5,
+        defaultTextureIndex: 0,
         localScale: [0.0020, 0.0020, 0.0020],
         localPosition: [-0.180, 0.050, 0]
       }), React.createElement(ScrollView, {
