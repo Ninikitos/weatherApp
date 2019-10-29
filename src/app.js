@@ -3,7 +3,7 @@ import React from "react";
 import Data from "./data.js";
 import FakeData from "./fakeData.js";
 
-import { View, Text, Model, ScrollView, ScrollBar, LinearLayout } from "magic-script-components";
+import { View, Text, Model, ScrollView, ScrollBar, LinearLayout, Toggle } from "magic-script-components";
 
 export default class MyApp extends React.Component {
   constructor(props) {
@@ -16,41 +16,66 @@ export default class MyApp extends React.Component {
       currentTemp:          "undefined",
       currentCity:          "undefined",
       currentCondition:     "undefined",
+      currentHumidity:      "undefined",
+      currentMinTemp:       "undefined",
+      currentMaxTemp:       "undefined",
       currentTime:          fakeData.hours[0],
-      currentDay:           fakeData.days[0]
+      useMetricUnits:       false
     };
   }
 
-  // onButtonClick = async () => {
-  //   let result;
-  //   try {
-  //     result = await fetch('http://api.openweathermap.org/data/2.5/weather?q=Plantation,US&appid=0f4670104e656aa457f158cbe7631c18'); 
-  //   } catch(error) {
-  //     print(`API Data Fetch error: ${error.message}`);
-  //   }
+  getTempUnits = () => this.state.useMetricUnits ? 'metric' : 'imperial'
 
-  //   let jsonData;
-  //   try {
-  //     jsonData = await result.json();
-  //   } catch(error) {
-  //     print(`JSON conversion error: ${error.message}`);
-  //   }
+  getAppData = async (cityId, units) => { 
 
-  //    console.log('JSON Data:', jsonData);
-  //    print(JSON.stringify(jsonData));
-  // }
+    const data = await this.data.getData(cityId, units);
+    return {
+      currentTemp:          data.temperature,
+      currentCity:          data.city,
+      currentCondition:     data.condition,
+      currentHumidity:      data.humidity,
+      currentMinTemp:       data.temp_min,
+      currentMaxTemp:       data.temp_max
+    };
+  }
+
+  getCity = () => '4168782'
 
   componentDidMount = async () => {
 
-    const data = await this.data.getData();
-    this.setState(
-      {
-        currentTemp:          data.temperature,
-        currentCity:          data.city,
-        currentCondition:     data.condition
-      }
-    );
-    print("componentDidMount works");
+    // Plantation: 4168782
+
+    const newState = await this.getAppData(this.getCity(), this.getTempUnits());
+
+    print("componentDidMount works", JSON.stringify(newState));
+    this.setState( newState );
+  }
+
+  onToggleChangedHandler = async () => {
+
+    const tempUnit = this.state.useMetricUnits ? 'imperial' : 'metric';
+    const newState = await this.getAppData(this.getCity(), tempUnit);
+
+    this.setState( state => ({...newState, useMetricUnits: !state.useMetricUnits}));
+  }
+
+  getCurrentDay = () => {
+    let date = new Date();
+    let currentWeekDay = date.getDay();
+    let weekDayArr = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
+
+    return weekDayArr[currentWeekDay - 1];
+  }
+
+  getCurrentMonthAndDay = () => {
+
+    let date = new Date();
+    let currentDay = date.getDate();
+    let currentMonth = date.getMonth();
+    let allMonths = ['January','February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+    let newDate = allMonths[currentMonth] + " " + currentDay;
+
+    return newDate;
   }
 
   render() {
@@ -62,21 +87,22 @@ export default class MyApp extends React.Component {
 
     const time = ['1pm', '2pm', '3pm', '4pm', '5pm', '6pm', '7pm', '8pm', '9pm', '10pm', '11pm', '12pm'];
 
+    let flooredTemp = Math.floor(this.state.currentTemp);
+
     return (
       <View name="main-view">
-        <Text textSize={0.15}   localPosition={[0, 0.2, 0]} weight='bold'   textAlignment={'center'}>{this.state.currentTemp}</Text>
-        <Text textSize={0.03}   localPosition={[0.2, 0.285, 0]} weight='medium' textAlignment={'center'}>{this.state.currentCity}</Text>
-        <Text textSize={0.03}   localPosition={[0.2, 0.225, 0]} weight='medium' textAlignment={'center'}>{this.state.currentCondition}</Text>
-        <Text textSize={0.13}   localPosition={[-0.250, -0.150, 0]} weight='medium' textAlignment={'center'}>{this.state.currentDay}</Text>
+        <Text   textSize={0.15}   localPosition={[0, 0.2, 0]}           weight='bold'     textAlignment={'center'}>{flooredTemp}</Text>
+        <Text   textSize={0.05}   localPosition={[0.2, 0.285, 0]}       weight='medium'   textAlignment={'center'}>{this.state.currentCity}</Text>
+        <Text   textSize={0.05}   localPosition={[0.2, 0.225, 0]}       weight='medium'   textAlignment={'center'}>{this.state.currentCondition}</Text>
+        <Text   textSize={0.05}   localPosition={[0.2, 0.165, 0]}       weight='medium'   textAlignment={'center'}>{this.state.currentHumidity}% Humidity</Text>
+        <Text   textSize={0.1}    localPosition={[-0.050, -0.050, 0]}   weight='medium'   textAlignment={'center'}>{this.getCurrentDay()}</Text>
+        <Text   textSize={0.05}   localPosition={[-0.020, -0.1250, 0]}  weight='medium'   textAlignment={'center'}>{this.getCurrentMonthAndDay()}</Text>
+        <Toggle textSize={0.03}   localPosition={[0.13, 0.165, 0]}      text="F / °C"     onToggleChanged={this.onToggleChangedHandler}></Toggle>
         <Model
-          modelPath={'res/donut.fbx'}
-          materialPath={'res/donut.kmat'}
-          texturePaths={['res/Black.png', 'res/Grey.png', 'res/Normal.png', 'res/White.png' ]}
-          textureName={'donut_material'}
-          importScale={5}
-          defaultTextureIndex={0}
+          modelPath={'res/sunny_plantation.glb'}
+          importScale={12}
           localScale={[0.0020, 0.0020, 0.0020]}
-          localPosition={[-0.180, 0.050, 0]}
+          localPosition={[-0.3, 0.250, 0]}
         ></Model>
         <ScrollView scrollBarVisibility="always" scrollBounds={aabb} localPosition={[0, -0.3, 0]} scrollDirection="horizontal">
           <ScrollBar width={0.4} thumbSize={0.04} orientation="horizontal"/>

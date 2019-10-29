@@ -1,21 +1,27 @@
-import '../node_modules/react/index.js';
 import { defineProperty as _defineProperty } from '../_virtual/_rollupPluginBabelHelpers.js';
 
+const baseURL = 'http://api.openweathermap.org/data/2.5/weather?';
+const appId = '0f4670104e656aa457f158cbe7631c18';
 class Data {
   constructor() {
-    _defineProperty(this, "getData", async () => {
+    _defineProperty(this, "getData", async (...parameters) => {
+      const data = await this.requestData(...parameters);
       return {
-        temperature: this.requestData().temp,
-        city: this.requestData().name,
-        condition: this.requestData().weather[0].description
+        temperature: data.main.temp,
+        city: data.name,
+        condition: data.weather[0].description,
+        humidity: data.main.humidity,
+        tempMin: data.main.temp_min,
+        tempMax: data.main.temp_max
       };
     });
 
-    _defineProperty(this, "requestData", async () => {
+    _defineProperty(this, "requestData", async (cityId, units) => {
       let result;
 
       try {
-        result = await fetch('http://api.openweathermap.org/data/2.5/weather?q=Plantation,US&appid=0f4670104e656aa457f158cbe7631c18');
+        // 'id=4168782&&units=imperial'
+        result = await fetch(`${baseURL}&id=${cityId}&units=${units}&appid=${appId}`);
       } catch (error) {
         print(`API Data Fetch error: ${error.message}`);
       }

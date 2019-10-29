@@ -1,22 +1,27 @@
-import React from 'react';
+const baseURL = 'http://api.openweathermap.org/data/2.5/weather?';
+const appId = '0f4670104e656aa457f158cbe7631c18';
 
 export default class Data {
 
     // My class has following "properies" and one method requestData()
-  getData = async () => {
-
+  getData = async (...parameters) => {
+      const data = await this.requestData(...parameters);
       return {
-        temperature : this.requestData().temp,
-        city        : this.requestData().name,
-        condition   : this.requestData().weather.description
+        temperature : data.main.temp,
+        city        : data.name,
+        condition   : data.weather[0].description,
+        humidity    : data.main.humidity,
+        tempMin     : data.main.temp_min,
+        tempMax     : data.main.temp_max
       }
   }
 
-  requestData = async () => {
+  requestData = async (cityId, units) => {
 
       let result;
       try {
-        result = await fetch('http://api.openweathermap.org/data/2.5/weather?q=Plantation,US&appid=0f4670104e656aa457f158cbe7631c18'); 
+        // 'id=4168782&&units=imperial'
+        result = await fetch(`${baseURL}&id=${cityId}&units=${units}&appid=${appId}`); 
       } catch(error) {
         print(`API Data Fetch error: ${error.message}`);
       }
