@@ -3,7 +3,7 @@ import React from "react";
 import Data from "./data.js";
 import FakeData from "./fakeData.js";
 
-import { View, Text, Model, ScrollView, ScrollBar, LinearLayout, Toggle } from "magic-script-components";
+import { View, Text, Model, ScrollView, ScrollBar, LinearLayout, Toggle, GridLayout, Button } from "magic-script-components";
 
 export default class MyApp extends React.Component {
   constructor(props) {
@@ -26,6 +26,8 @@ export default class MyApp extends React.Component {
 
   getTempUnits = () => this.state.useMetricUnits ? 'metric' : 'imperial'
 
+  getCity = () => '4168782'
+
   getAppData = async (cityId, units) => { 
 
     const data = await this.data.getData(cityId, units);
@@ -35,11 +37,9 @@ export default class MyApp extends React.Component {
       currentCondition:     data.condition,
       currentHumidity:      data.humidity,
       currentMinTemp:       data.temp_min,
-      currentMaxTemp:       data.temp_max
+      currentMaxTemp:       data.temp_max,
     };
   }
-
-  getCity = () => '4168782'
 
   componentDidMount = async () => {
 
@@ -78,6 +78,27 @@ export default class MyApp extends React.Component {
     return newDate;
   }
 
+  setModelIcon = () => {
+
+    let result = "";
+
+    if ((this.state.currentCondition === 'scattered clouds') || (this.state.currentCondition === 'broken clouds')) {
+      result = 'res/cloudy_plantation.glb';
+
+    } else if ((this.state.currentCondition === 'few clouds') || (this.state.currentCondition === 'clear sky')) {
+      result = 'res/sunny_plantation.glb';
+
+    } else if ((this.state.currentCondition === 'shower rain') || (this.state.currentCondition === 'rain') || (this.state.currentCondition === 'thunderstorm') || (this.state.currentCondition === 'mist')) {
+      result = 'res/rainy_plantation.glb';
+  
+    } else {
+      print("There is no snow in Florida");
+  
+    }
+    print("setModelIcon Result: " + result);
+    return result;
+  }
+
   render() {
 
     const aabb = {
@@ -85,26 +106,46 @@ export default class MyApp extends React.Component {
       max: [0.45, 0.15, 0.1]
     };
 
-    const time = ['1pm', '2pm', '3pm', '4pm', '5pm', '6pm', '7pm', '8pm', '9pm', '10pm', '11pm', '12pm'];
+    // const time = ['1pm', '2pm', '3pm', '4pm', '5pm', '6pm', '7pm', '8pm', '9pm', '10pm', '11pm', '12pm'];
 
     let flooredTemp = Math.floor(this.state.currentTemp);
 
     return (
       <View name="main-view">
-        <Text   textSize={0.15}   localPosition={[0, 0.2, 0]}           weight='bold'     textAlignment={'center'}>{flooredTemp}</Text>
-        <Text   textSize={0.05}   localPosition={[0.2, 0.285, 0]}       weight='medium'   textAlignment={'center'}>{this.state.currentCity}</Text>
-        <Text   textSize={0.05}   localPosition={[0.2, 0.225, 0]}       weight='medium'   textAlignment={'center'}>{this.state.currentCondition}</Text>
-        <Text   textSize={0.05}   localPosition={[0.2, 0.165, 0]}       weight='medium'   textAlignment={'center'}>{this.state.currentHumidity}% Humidity</Text>
-        <Text   textSize={0.1}    localPosition={[-0.050, -0.050, 0]}   weight='medium'   textAlignment={'center'}>{this.getCurrentDay()}</Text>
-        <Text   textSize={0.05}   localPosition={[-0.020, -0.1250, 0]}  weight='medium'   textAlignment={'center'}>{this.getCurrentMonthAndDay()}</Text>
-        <Toggle textSize={0.03}   localPosition={[0.13, 0.165, 0]}      text="F / °C"     onToggleChanged={this.onToggleChangedHandler}></Toggle>
-        <Model
-          modelPath={'res/sunny_plantation.glb'}
-          importScale={12}
-          localScale={[0.0020, 0.0020, 0.0020]}
-          localPosition={[-0.3, 0.250, 0]}
-        ></Model>
-        <ScrollView scrollBarVisibility="always" scrollBounds={aabb} localPosition={[0, -0.3, 0]} scrollDirection="horizontal">
+        <GridLayout
+          name="content-grid"
+          rows={2}
+          defaultItemPadding={[0, 0, 0.1, 0.5]}
+          localPosition={[-1.05, 0.4, 0]}
+          defaultItemAlignment="center-center">
+          <GridLayout
+            name="model-grid"
+            defaultItemAlignment="center-center"
+            >
+            <Model
+              modelPath={`${this.setModelIcon()}`}
+              importScale={20}
+              localScale={[0.0020, 0.0020, 0.0020]}
+            ></Model>
+          </GridLayout>
+          <GridLayout
+            name="content-grid"
+            rows={2}
+            columns={3}
+            defaultItemAlignment="center-left"
+            defaultItemPadding={[0, 0.005, 0, 0.1]} 
+          >
+            <Text textSize={0.05} weight='medium'   textAlignment={'center'}>{this.getCurrentDay()}</Text>
+            <Text textSize={0.2}  weight='bold'     textAlignment={'center'}>{flooredTemp}</Text>
+            <Text textSize={0.05} weight='medium'   textAlignment={'center'}>{this.state.currentCondition}</Text>
+            <Text textSize={0.05} weight='medium'   textAlignment={'center'}>{this.getCurrentMonthAndDay()}</Text>
+            <Toggle textSize={0.03} text="F / °C"   onToggleChanged={this.onToggleChangedHandler}></Toggle>
+              {/* <Text textSize={0.05} weight='medium' textAlignment={'center'}>{this.state.currentCity}</Text> */}
+            <Text textSize={0.05} weight='medium'   textAlignment={'center'}>{this.state.currentHumidity}% Humidity</Text>
+          </GridLayout>
+        </GridLayout>
+        
+        {/* <ScrollView scrollBarVisibility="always" scrollBounds={aabb} localPosition={[0, -0.3, 0]} scrollDirection="horizontal">
           <ScrollBar width={0.4} thumbSize={0.04} orientation="horizontal"/>
           <LinearLayout
             defaultItemAlignment="center-center"
@@ -119,7 +160,7 @@ export default class MyApp extends React.Component {
               />
             ))}
           </LinearLayout>
-        </ScrollView>
+        </ScrollView> */}
       </View>
     );
   }

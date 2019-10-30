@@ -114,9 +114,9 @@
   },
   {
    "compression": 8,
-   "hash": "a9f026bdadb45cfdb322b404b4aa700f84728040",
+   "hash": "3c2b578ef2d4050949ef9621a884918e1dde35ee",
    "pkgpath": "bin/bundle.js",
-   "size": 8190,
+   "size": 7961,
    "src": "C:/Users/nilin/Desktop/weatherApp/bin/bundle.js"
   },
   {
@@ -1052,9 +1052,9 @@
   },
   {
    "compression": 8,
-   "hash": "4d7c84e1b07d8901c0f983bc2aa141e2121509cd",
+   "hash": "52c21b3159ade3dc80fa6c3e05fc0259318188ef",
    "pkgpath": "bin/node_modules/magic-script-components/src/components.js",
-   "size": 954,
+   "size": 658,
    "src": "C:/Users/nilin/Desktop/weatherApp/bin/node_modules/magic-script-components/src/components.js"
   },
   {
@@ -1311,9 +1311,9 @@
   },
   {
    "compression": 8,
-   "hash": "7485cabb40c39d99a921d5b7e49d49311de3b7a0",
+   "hash": "d823897983f25ef434314e43d9dee6f1bd18c438",
    "pkgpath": "bin/src/app.js",
-   "size": 5019,
+   "size": 5062,
    "src": "C:/Users/nilin/Desktop/weatherApp/bin/src/app.js"
   },
   {
@@ -1353,17 +1353,38 @@
   },
   {
    "compression": 8,
-   "hash": "96f6452d39fe5f35c2bd607917bdefb9fe9fbdb2",
+   "hash": "df044d53b75e059330c40e6c830d5a0ff26a7793",
    "pkgpath": "./digest.sha512.signed",
    "size": 42566,
    "src": "C:/Users/nilin/Desktop/weatherApp/digest.sha512.signed"
   },
   {
    "compression": 8,
-   "hash": "a005ea646f0c8433fda77ef4ff8a41ace9bac7a9",
-   "pkgpath": "res/Earth.fbx",
-   "size": 707088,
-   "src": "C:/Users/nilin/Desktop/weatherApp/res/Earth.fbx"
+   "hash": "f595d37f19f8bb3b9268f375069c48ecce150c6e",
+   "pkgpath": "res/cloudy_plantation.glb",
+   "size": 231672,
+   "src": "C:/Users/nilin/Desktop/weatherApp/res/cloudy_plantation.glb"
+  },
+  {
+   "compression": 8,
+   "hash": "cc50d13b64021fa0bc2e741026adba6b72126aac",
+   "pkgpath": "res/cloudy_plantation2.glb",
+   "size": 226524,
+   "src": "C:/Users/nilin/Desktop/weatherApp/res/cloudy_plantation2.glb"
+  },
+  {
+   "compression": 8,
+   "hash": "0f4e7d4be0abfff1b642abc078c026e97ba528cc",
+   "pkgpath": "res/rainy_plantation.glb",
+   "size": 224328,
+   "src": "C:/Users/nilin/Desktop/weatherApp/res/rainy_plantation.glb"
+  },
+  {
+   "compression": 8,
+   "hash": "a0a4cdc678ac8813693f138e011d5fc3dedafd69",
+   "pkgpath": "res/rainy_plantation2.glb",
+   "size": 220608,
+   "src": "C:/Users/nilin/Desktop/weatherApp/res/rainy_plantation2.glb"
   },
   {
    "compression": 8,
@@ -1371,6 +1392,20 @@
    "pkgpath": "res/sunny_plantation.glb",
    "size": 145864,
    "src": "C:/Users/nilin/Desktop/weatherApp/res/sunny_plantation.glb"
+  },
+  {
+   "compression": 8,
+   "hash": "98cac8ba19253efe94153f780f93aa0a05094ebd",
+   "pkgpath": "res/sunny_plantation2.glb",
+   "size": 142060,
+   "src": "C:/Users/nilin/Desktop/weatherApp/res/sunny_plantation2.glb"
+  },
+  {
+   "compression": 8,
+   "hash": "2be2c6589d6842406e5a6287dc8d3771003112b7",
+   "pkgpath": "res/usa.glb",
+   "size": 2225216,
+   "src": "C:/Users/nilin/Desktop/weatherApp/res/usa.glb"
   },
   {
    "compression": 8,
