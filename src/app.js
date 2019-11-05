@@ -171,12 +171,6 @@ export default class MyApp extends React.Component {
                     loadFile={true}
                     action="start"
                   ></Audio>
-                  <Model
-                    localRotation={[0, 1, 0, 0]}
-                    modelPath='res/panels.fbx'
-                    importScale={3}
-                    localScale={[0.0010, 0.0010, 0.0010]}
-                  ></Model>
                 </View> : null 
               }
             </GridLayout>
