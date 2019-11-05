@@ -114,9 +114,9 @@
   },
   {
    "compression": 8,
-   "hash": "6fcc713c941690f199d8e1128a98a032cd376c16",
+   "hash": "45bb5f2534ccbbd2f36b894d6e4e95b82c79b3ac",
    "pkgpath": "bin/bundle.js",
-   "size": 8821,
+   "size": 52728,
    "src": "C:/Users/nilin/Desktop/weatherApp/bin/bundle.js"
   },
   {
@@ -125,6 +125,55 @@
    "pkgpath": "bin/index.js",
    "size": 49,
    "src": "C:/Users/nilin/Desktop/weatherApp/bin/index.js"
+  },
+  {
+   "compression": 8,
+   "hash": "09ceecb0b404dfdeed833e2df84ca5d5819880a2",
+   "pkgpath": "bin/node_modules/gl-matrix/esm/common.js",
+   "size": 445,
+   "src": "C:/Users/nilin/Desktop/weatherApp/bin/node_modules/gl-matrix/esm/common.js"
+  },
+  {
+   "compression": 8,
+   "hash": "e47a2048d9ab028be18b80c4a79fbe4c0ba00a8c",
+   "pkgpath": "bin/node_modules/gl-matrix/esm/mat3.js",
+   "size": 435,
+   "src": "C:/Users/nilin/Desktop/weatherApp/bin/node_modules/gl-matrix/esm/mat3.js"
+  },
+  {
+   "compression": 8,
+   "hash": "42565b445e8681636977be0dc65a6e7c56a1813c",
+   "pkgpath": "bin/node_modules/gl-matrix/esm/quat.js",
+   "size": 18504,
+   "src": "C:/Users/nilin/Desktop/weatherApp/bin/node_modules/gl-matrix/esm/quat.js"
+  },
+  {
+   "compression": 8,
+   "hash": "7088333b747a86e9e8e4c895b2534578027e433f",
+   "pkgpath": "bin/node_modules/gl-matrix/esm/quat2.js",
+   "size": 365,
+   "src": "C:/Users/nilin/Desktop/weatherApp/bin/node_modules/gl-matrix/esm/quat2.js"
+  },
+  {
+   "compression": 8,
+   "hash": "fb7e2359c4df1925b88b9eef37850e38987d42c3",
+   "pkgpath": "bin/node_modules/gl-matrix/esm/vec2.js",
+   "size": 1429,
+   "src": "C:/Users/nilin/Desktop/weatherApp/bin/node_modules/gl-matrix/esm/vec2.js"
+  },
+  {
+   "compression": 8,
+   "hash": "0cb2f1fb3e2e5d68b4211671e33ea7234019308b",
+   "pkgpath": "bin/node_modules/gl-matrix/esm/vec3.js",
+   "size": 3314,
+   "src": "C:/Users/nilin/Desktop/weatherApp/bin/node_modules/gl-matrix/esm/vec3.js"
+  },
+  {
+   "compression": 8,
+   "hash": "58d8932e8436bb6e39a04de532fdca235797aa25",
+   "pkgpath": "bin/node_modules/gl-matrix/esm/vec4.js",
+   "size": 15222,
+   "src": "C:/Users/nilin/Desktop/weatherApp/bin/node_modules/gl-matrix/esm/vec4.js"
   },
   {
    "compression": 8,
@@ -1052,9 +1101,9 @@
   },
   {
    "compression": 8,
-   "hash": "52c21b3159ade3dc80fa6c3e05fc0259318188ef",
+   "hash": "ee3296a31209c18050803f904eb6615e5053f732",
    "pkgpath": "bin/node_modules/magic-script-components/src/components.js",
-   "size": 658,
+   "size": 784,
    "src": "C:/Users/nilin/Desktop/weatherApp/bin/node_modules/magic-script-components/src/components.js"
   },
   {
@@ -1311,9 +1360,9 @@
   },
   {
    "compression": 8,
-   "hash": "9dcb32a074285d0b32dde8afecb1367af4503b8d",
+   "hash": "2f8e692a27839ed57b0859e9f8967e7debc4ce10",
    "pkgpath": "bin/src/app.js",
-   "size": 5882,
+   "size": 7135,
    "src": "C:/Users/nilin/Desktop/weatherApp/bin/src/app.js"
   },
   {
@@ -1339,7 +1388,7 @@
   },
   {
    "compression": 8,
-   "hash": "6c5ca41e64aa57fff035283ffccdbaa786ebf148",
+   "hash": "f0cc173822a1388ba792e753d42ff43956175403",
    "pkgpath": "bin/src/main.js",
    "size": 410,
    "src": "C:/Users/nilin/Desktop/weatherApp/bin/src/main.js"
@@ -1353,10 +1402,38 @@
   },
   {
    "compression": 8,
-   "hash": "af904114036d7a743d54fad04e46f4b2c7106317",
+   "hash": "221d0c7e5209e1efce8d562bd0b663d072f67e6b",
    "pkgpath": "./digest.sha512.signed",
-   "size": 42566,
+   "size": 43752,
    "src": "C:/Users/nilin/Desktop/weatherApp/digest.sha512.signed"
+  },
+  {
+   "compression": 8,
+   "hash": "566ea5fa4158aeb3fb7767f5f79ec7abf6393f21",
+   "pkgpath": "res/ES_Rain Heavy 4 - SFX Producer.mp3",
+   "size": 4681034,
+   "src": "C:/Users/nilin/Desktop/weatherApp/res/ES_Rain Heavy 4 - SFX Producer.mp3"
+  },
+  {
+   "compression": 8,
+   "hash": "8fd85f35d815a7f40110f2fe314cef8a900560b6",
+   "pkgpath": "res/ES_Sunny Field With Birds - Organic Nature Sounds.mp3",
+   "size": 7433354,
+   "src": "C:/Users/nilin/Desktop/weatherApp/res/ES_Sunny Field With Birds - Organic Nature Sounds.mp3"
+  },
+  {
+   "compression": 8,
+   "hash": "3ee69f87fc215993dd88851b1c87ed3015ea8952",
+   "pkgpath": "res/ES_Whip Whoosh Swoosh 5 - SFX Producer.mp3",
+   "size": 21348,
+   "src": "C:/Users/nilin/Desktop/weatherApp/res/ES_Whip Whoosh Swoosh 5 - SFX Producer.mp3"
+  },
+  {
+   "compression": 8,
+   "hash": "46d85cb2854a8e3f8a73bdda401fa84226d05749",
+   "pkgpath": "res/ES_Wind Storm Forest 1 - SFX Producer.mp3",
+   "size": 7202880,
+   "src": "C:/Users/nilin/Desktop/weatherApp/res/ES_Wind Storm Forest 1 - SFX Producer.mp3"
   },
   {
    "compression": 8,
@@ -1371,6 +1448,13 @@
    "pkgpath": "res/cloudy_plantation2.glb",
    "size": 226524,
    "src": "C:/Users/nilin/Desktop/weatherApp/res/cloudy_plantation2.glb"
+  },
+  {
+   "compression": 8,
+   "hash": "6d053207530fc59869f55007493a3a1669273e07",
+   "pkgpath": "res/panels.fbx",
+   "size": 27100,
+   "src": "C:/Users/nilin/Desktop/weatherApp/res/panels.fbx"
   },
   {
    "compression": 8,

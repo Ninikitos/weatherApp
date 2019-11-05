@@ -3,7 +3,8 @@ import React from "react";
 import Data from "./data.js";
 import FakeData from "./fakeData.js";
 
-import { View, Text, Model, ScrollView, ScrollBar, LinearLayout, Toggle, GridLayout, Button } from "magic-script-components";
+import { View, Text, Model, ScrollView, ScrollBar, LinearLayout, Toggle, GridLayout, Button, Audio } from "magic-script-components";
+import { vec3, quat } from "gl-matrix";
 
 export default class MyApp extends React.Component {
   constructor(props) {
@@ -22,6 +23,7 @@ export default class MyApp extends React.Component {
       currentTime:          fakeData.hours[0],
       useMetricUnits:       false,
       modelPath:            undefined,
+      audioPath:            undefined,
       timeIntervalFinished: false
     };
   }
@@ -61,22 +63,27 @@ export default class MyApp extends React.Component {
       print("this.state.currentCondition before condition: " + this.state.currentCondition);
 
       if ((this.state.currentCondition === 'scattered clouds') || (this.state.currentCondition === 'broken clouds')) {
-
         this.setState({
           timeIntervalFinished: true,
-          modelPath: 'res/cloudy_plantation.glb'
+          modelPath: 'res/cloudy_plantation.glb',
+          audioPath: 'res/ES_Wind Storm Forest 1 - SFX Producer.mp3'
+          
         })
+
 
       } else if ((this.state.currentCondition === 'few clouds') || (this.state.currentCondition === 'clear sky')) {
         this.setState({
           timeIntervalFinished: true,
-          modelPath: 'res/sunny_plantation.glb'
+          modelPath: 'res/sunny_plantation.glb',
+          audioPath: 'res/ES_Sunny Field With Birds - Organic Nature Sounds.mp3'
+          
         })
 
-      } else if ((this.state.currentCondition === 'shower rain') || (this.state.currentCondition === 'rain') || (this.state.currentCondition === 'thunderstorm') || (this.state.currentCondition === 'mist')) {
+      } else if ((this.state.currentCondition === 'shower rain') || (this.state.currentCondition === 'rain') || (this.state.currentCondition === 'thunderstorm') || (this.state.currentCondition === 'mist') || (this.state.currentCondition === 'light rain')) {
         this.setState({
           timeIntervalFinished: true,
-          modelPath: 'res/rainy_plantation.glb'
+          modelPath: 'res/rainy_plantation.glb',
+          audioPath: 'res/ES_Rain Heavy 4 - SFX Producer.mp3'
         })
 
       } else {
@@ -113,6 +120,20 @@ export default class MyApp extends React.Component {
 
     return newDate;
   }
+
+  // calcRotation = () => {
+  //   const tempArr = new Array(4);
+
+  //   const rot = quat.fromEuler([], 0, 180, 0);
+  //   tempArr[0] = rot[0];
+  //   tempArr[1] = rot[1];
+  //   tempArr[2] = rot[2];
+  //   tempArr[3] = rot[3];
+
+  //   print(tempArr + rot);
+
+  //   return tempArr;
+  // }
   
   render() {
 
@@ -139,11 +160,24 @@ export default class MyApp extends React.Component {
             >
               { 
                 this.state.modelPath !== undefined ? 
-                <Model
-                  modelPath={this.state.modelPath}
-                  importScale={20}
-                  localScale={[0.0020, 0.0020, 0.0020]}
-                ></Model> : null 
+                <View>
+                  <Model
+                    modelPath={this.state.modelPath}
+                    importScale={20}
+                    localScale={[0.0020, 0.0020, 0.0020]}
+                  ></Model>
+                  <Audio
+                    fileName={this.state.audioPath}
+                    loadFile={true}
+                    action="start"
+                  ></Audio>
+                  <Model
+                    localRotation={[0, 1, 0, 0]}
+                    modelPath='res/panels.fbx'
+                    importScale={3}
+                    localScale={[0.0010, 0.0010, 0.0010]}
+                  ></Model>
+                </View> : null 
               }
             </GridLayout>
           <GridLayout

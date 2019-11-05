@@ -26,6 +26,7 @@
   "dependencies": {
     "magic-script-components": "2.0.0",
     "magic-script-components-lumin": "git+https://github.com/magic-script/magic-script-components-lumin.git",
-    "magic-script-polyfills": "^2.4.2"
+    "magic-script-polyfills": "^2.4.2",
+    "gl-matrix": "^3.0.0"
   }
 }

@@ -2,7 +2,14 @@ import React from '../node_modules/react/index.js';
 import { defineProperty as _defineProperty } from '../_virtual/_rollupPluginBabelHelpers.js';
 import Data from './data.js';
 import FakeData from './fakeData.js';
-import { View, GridLayout, Model, Text, Toggle } from '../node_modules/magic-script-components/src/components.js';
+import { View, GridLayout, Model, Audio, Text, Toggle } from '../node_modules/magic-script-components/src/components.js';
+import '../node_modules/gl-matrix/esm/common.js';
+import '../node_modules/gl-matrix/esm/mat3.js';
+import '../node_modules/gl-matrix/esm/vec3.js';
+import '../node_modules/gl-matrix/esm/vec4.js';
+import '../node_modules/gl-matrix/esm/quat.js';
+import '../node_modules/gl-matrix/esm/quat2.js';
+import '../node_modules/gl-matrix/esm/vec2.js';
 
 class MyApp extends React.Component {
   constructor(props) {
@@ -40,17 +47,20 @@ class MyApp extends React.Component {
         if (this.state.currentCondition === 'scattered clouds' || this.state.currentCondition === 'broken clouds') {
           this.setState({
             timeIntervalFinished: true,
-            modelPath: 'res/cloudy_plantation.glb'
+            modelPath: 'res/cloudy_plantation.glb',
+            audioPath: 'res/ES_Wind Storm Forest 1 - SFX Producer.mp3'
           });
         } else if (this.state.currentCondition === 'few clouds' || this.state.currentCondition === 'clear sky') {
           this.setState({
             timeIntervalFinished: true,
-            modelPath: 'res/sunny_plantation.glb'
+            modelPath: 'res/sunny_plantation.glb',
+            audioPath: 'res/ES_Sunny Field With Birds - Organic Nature Sounds.mp3'
           });
-        } else if (this.state.currentCondition === 'shower rain' || this.state.currentCondition === 'rain' || this.state.currentCondition === 'thunderstorm' || this.state.currentCondition === 'mist') {
+        } else if (this.state.currentCondition === 'shower rain' || this.state.currentCondition === 'rain' || this.state.currentCondition === 'thunderstorm' || this.state.currentCondition === 'mist' || this.state.currentCondition === 'light rain') {
           this.setState({
             timeIntervalFinished: true,
-            modelPath: 'res/rainy_plantation.glb'
+            modelPath: 'res/rainy_plantation.glb',
+            audioPath: 'res/ES_Rain Heavy 4 - SFX Producer.mp3'
           });
         } else {
           print("There is no snow in Florida");
@@ -96,10 +106,21 @@ class MyApp extends React.Component {
       currentTime: fakeData.hours[0],
       useMetricUnits: false,
       modelPath: undefined,
+      audioPath: undefined,
       timeIntervalFinished: false
     };
   }
 
+  // calcRotation = () => {
+  //   const tempArr = new Array(4);
+  //   const rot = quat.fromEuler([], 0, 180, 0);
+  //   tempArr[0] = rot[0];
+  //   tempArr[1] = rot[1];
+  //   tempArr[2] = rot[2];
+  //   tempArr[3] = rot[3];
+  //   print(tempArr + rot);
+  //   return tempArr;
+  // }
   render() {
     // const aabb = {
     //   min: [-0.45, -0.15, -0.1],
@@ -119,11 +140,20 @@ class MyApp extends React.Component {
     }, React.createElement(GridLayout, {
       name: "model-grid",
       defaultItemAlignment: "center-center"
-    }, this.state.modelPath !== undefined ? React.createElement(Model, {
+    }, this.state.modelPath !== undefined ? React.createElement(View, null, React.createElement(Model, {
       modelPath: this.state.modelPath,
       importScale: 20,
       localScale: [0.0020, 0.0020, 0.0020]
-    }) : null), React.createElement(GridLayout, {
+    }), React.createElement(Audio, {
+      fileName: this.state.audioPath,
+      loadFile: true,
+      action: "start"
+    }), React.createElement(Model, {
+      localRotation: [0, 1, 0, 0],
+      modelPath: "res/panels.fbx",
+      importScale: 3,
+      localScale: [0.0010, 0.0010, 0.0010]
+    })) : null), React.createElement(GridLayout, {
       name: "content-grid",
       rows: 2,
       columns: 3,

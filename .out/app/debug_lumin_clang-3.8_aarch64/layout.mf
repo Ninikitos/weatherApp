@@ -72,6 +72,34 @@
   "src": "C:/Users/nilin/Desktop/weatherApp/bin/index.js"
  },
  {
+  "dest": "bin/node_modules/gl-matrix/esm/common.js",
+  "src": "C:/Users/nilin/Desktop/weatherApp/bin/node_modules/gl-matrix/esm/common.js"
+ },
+ {
+  "dest": "bin/node_modules/gl-matrix/esm/mat3.js",
+  "src": "C:/Users/nilin/Desktop/weatherApp/bin/node_modules/gl-matrix/esm/mat3.js"
+ },
+ {
+  "dest": "bin/node_modules/gl-matrix/esm/quat.js",
+  "src": "C:/Users/nilin/Desktop/weatherApp/bin/node_modules/gl-matrix/esm/quat.js"
+ },
+ {
+  "dest": "bin/node_modules/gl-matrix/esm/quat2.js",
+  "src": "C:/Users/nilin/Desktop/weatherApp/bin/node_modules/gl-matrix/esm/quat2.js"
+ },
+ {
+  "dest": "bin/node_modules/gl-matrix/esm/vec2.js",
+  "src": "C:/Users/nilin/Desktop/weatherApp/bin/node_modules/gl-matrix/esm/vec2.js"
+ },
+ {
+  "dest": "bin/node_modules/gl-matrix/esm/vec3.js",
+  "src": "C:/Users/nilin/Desktop/weatherApp/bin/node_modules/gl-matrix/esm/vec3.js"
+ },
+ {
+  "dest": "bin/node_modules/gl-matrix/esm/vec4.js",
+  "src": "C:/Users/nilin/Desktop/weatherApp/bin/node_modules/gl-matrix/esm/vec4.js"
+ },
+ {
   "dest": "bin/node_modules/magic-script-components-lumin/index.js",
   "src": "C:/Users/nilin/Desktop/weatherApp/bin/node_modules/magic-script-components-lumin/index.js"
  },
