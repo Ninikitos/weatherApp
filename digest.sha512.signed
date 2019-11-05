@@ -15,7 +15,7 @@ cc8107d363e4d3a271d6bcd4b0032c5d8b6b6c7b6bfa3a4a105924fc418c3e1d4f4473978669612c
 f0f57dcf8128194c2d9496f3ab64667dcc9eba013e55c815e4ec2f204664f7567bff09e1e61ab5939d099dac45002ce5ecd33f3df3fdfe587c310523bf68c894  bin/_virtual/scheduler.development.js
 ec1e67e8f349cedef600ab4d404c0bda49c0c298a929d1fb730fdc209d28997437c2e3a4d4bb5446d1f065a1d6af9ebc51a7a0a7d0da5c60565431a595045aac  bin/_virtual/scheduler.production.min.js
 9ee08bfe7e9564b0eeae3e6c4d9d974d3e930b012f091f409b1d165065a7bda627aab42135a55756cdf5bbedc40fcf014d4e653064a7a1cc5f564b0454ffeee4  bin/_virtual/tracing.js
-f4df020a4b0253158da85a327de349d2f90b75007636d5b4d86110fef892415bf5979ad1963ba627bf7b43fceecbc3c15d138ccb8ec2e32b6dd8d4c137ff2c43  bin/bundle.js
+bc5f4635cfc888d8f5a28b9575a7870667be52151ebe6d116b58c044710d756bfbf90a8bb8a2ffe1696853267829b67e9598afa2011803cd885b2585b479bd79  bin/bundle.js
 bb2b7b516c7370bc1db88055185cc09b88e335d5a6e8d015d11dbddc4cfcb4f24406ac349e22afbab7489ef9da6b03b278025335e6ecafe374f3b8134083f41d  bin/index.js
 73baf20e46939924f70d668c769896be6bb1f80981f2a899061d53911b092ca8a58452dbfd780177401ee83ef25b1c5f76827f057665993d27533aadfa4aeeb4  bin/node_modules/magic-script-components-lumin/index.js
 bc6b18035eb769d572f71177a24c569fbfc3919fd828a0e14b5bccf8e4698ee34a8b66474affe93ba4de9e004ceb7b7b8393768781d5bdc5a57298e247d8f7f6  bin/node_modules/magic-script-components-lumin/src/configuration.js
@@ -186,7 +186,7 @@ b1d9647528bd491f42cfdd7be9298ec2a265d87ca3d7f44e5a98043a4cb98ef3782f3895c78ebdfc
 8202209af7121092739300bf10771a94dd58e579c6bb8f226c6f18a2269092f972708465c9453e75ece7a657e23b6aef22ac30c9ddd2d159d9f4bc8dc5b22e61  bin/node_modules/scheduler/cjs/scheduler.production.min.js
 68e2e1f000416c50f37a3428a11e6f51b2804d3eea6bc8b5962ad44739a8c846dcb7f48a6b2b33e21e4e3e924c582481d83a8fd584055513ded0db812f467fec  bin/node_modules/scheduler/index.js
 f9d50f92dd77c8bafbd4860a48228648dc86e6606cec1e46457b87bb6d4dd9e97ca672f7605b7cac292dd8ab6da79f0b27cc7d59fae563af93e440cdb5a7f288  bin/node_modules/scheduler/tracing.js
-8a4271ae0189ef7c2e1d79a030b3d36e2738b5d2a8b43fcb8c52c74a9a136b63babf9ed6f8b8e9de314cb7c453f5801d60d33af15863910f102d14c76f5b4d26  bin/src/app.js
+9993bad86abd2dffa4dbd8fcb05371f55c9135f93acc9a9653525a95dd34bd35bf2d2e4db8bd2fa174f733313a8853b46b5690271653bfba4497e7d937e08b92  bin/src/app.js
 6eb8adcaece7f2354cef2abf6c250010b673baf2b74d3b12468be82d5f7ab7fa32224d182c1d85ed12dcc58dcdb015f33445c2809ae744cc48681b14575cf8d3  bin/src/data.js
 25fa8aa40fe6f7cef4c3b5ba911f2ece53f0fb86d13d6d376f4da12408694b88fa362da0eb6d5f176d24d1bf2b56f759d7beef3d8aa9ab8e90c1458addeb64e9  bin/src/fakeData.js
 7fb17c55901fcb763b232012a636bf773533683495d9a494c910fc654a1071d4a9f8aaf96728c016cdd4e2dcb39d570f0b3f239bd287c6c2aca47a2638cd59e4  bin/src/global-scope.js
@@ -194,6 +194,6 @@ f9d50f92dd77c8bafbd4860a48228648dc86e6606cec1e46457b87bb6d4dd9e97ca672f7605b7cac
 5ef34b8d6c14d9553595cc17ee8f115b444941da36ea58e7dc16c39f65a3a7c3a3048096cb6e2a5a241b1e840a766e62bed2b80d2318aa0c919a0656d1709fde  bin/src/realData.js
 #     USER                                                                       TAILDATA0‚>	*†H†÷ ‚/0‚+10	`†He0	*†H†÷1‚0‚0_0R10	UUS10UFlorida10U
 
-Magic Leap10UMagic Leap Internal	 ˆö‚*Ù’‡0	`†He0	*†H†÷ ‚€×‡»eçlód˜¤³cdÊ^Z¯«—yr<ëíÖ(pF•GèkUùñéïí;#sp€çwq?±¼øhWWmê¥Ã œ¥yĞt¾*Œ~ö!Ù?ªEİÚ5ë‰©øŒ%~İëóf»w¶@f$Gœ›Ñ(}˜¼ÚÏ	¦òlÁò/û„#F~â]Ì‚xAyÍÓêä-DÙ•©ÆÂìUÊşôÅ#Å	gåmaÉkDhÑ¸B/Úe¢VËd®«©î]¨ŸE¾ÿØ¶—zÄ  ü½V1îhçviïç×³Ú´Í*+Úô‡x9¤$+@¦jj*¡˜oAÀi¨*ûöØŒuPü˜ÏtÆ³?Î$¢åù‹Tï-Ig¤ë²ªñ
-dY`$ŒïÇeÒMşCÄı„ßmtƒËßºbkDY‡^/_ewş`¶¯0$¢Óì ÛŞrÃlp 
-GQ\8`øÊ»]¦ùµä]¾‹nÍH/FKk«„#s         B~Module signature appended~
+Magic Leap10UMagic Leap Internal	 ˆö‚*Ù’‡0	`†He0	*†H†÷ ‚€'X.K‘²SiŠã°bÄêDR
+¬RBb+§oTU÷ZåÉiµ1êhí‚1‰J}VÊıç ºZÔÔİÎgøõÂQØFm[Î²“!'Ùdá>Ètw©~&×Ê*Y:)&3äÜlÓ]ö#ÿÍ4œnˆõIäÈi
+{!Ú6ÀÎ¤ö²ÊFO¿™ÈÛ[#:%£tŸÀ›NhÈKs8Yuşª•M­:³¼Ğ÷¯G*™y„{ˆ™‹!IqÍ%‡ƒÂ¨:“­FIóå}\¦Ç¥Ç˜´¾7²”½¦²üÜÏ:t¹ÎÄÌÓµª]%ª®«³×E”Ê2K%‡ÑœÆıXDq´-n3(	lÜš´¯¥, LĞ²ÆeëfÌ;©8Ï|¸$lëŸÎş&àó>„D—#}:¼ñ9æ÷=ĞÌù¾KÂ©¥æuãêEÕ(.ÚâÇğÊ]TDÊ6,SÔj¿ËEKil•$¡&>HÀŠç‚áS^±™5C–EXôÌàû‡‹         B~Module signature appended~

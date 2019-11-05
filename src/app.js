@@ -20,7 +20,9 @@ export default class MyApp extends React.Component {
       currentMinTemp:       "undefined",
       currentMaxTemp:       "undefined",
       currentTime:          fakeData.hours[0],
-      useMetricUnits:       false
+      useMetricUnits:       false,
+      modelPath:            undefined,
+      timeIntervalFinished: false
     };
   }
 
@@ -44,11 +46,45 @@ export default class MyApp extends React.Component {
   componentDidMount = async () => {
 
     // Plantation: 4168782
-
+    // debugger;
     const newState = await this.getAppData(this.getCity(), this.getTempUnits());
 
     print("componentDidMount works", JSON.stringify(newState));
     this.setState( newState );
+    this.timeOutForModel();
+  }
+
+  timeOutForModel = () => {
+
+    setTimeout(() => {
+      
+      print("this.state.currentCondition before condition: " + this.state.currentCondition);
+
+      if ((this.state.currentCondition === 'scattered clouds') || (this.state.currentCondition === 'broken clouds')) {
+
+        this.setState({
+          timeIntervalFinished: true,
+          modelPath: 'res/cloudy_plantation.glb'
+        })
+
+      } else if ((this.state.currentCondition === 'few clouds') || (this.state.currentCondition === 'clear sky')) {
+        this.setState({
+          timeIntervalFinished: true,
+          modelPath: 'res/sunny_plantation.glb'
+        })
+
+      } else if ((this.state.currentCondition === 'shower rain') || (this.state.currentCondition === 'rain') || (this.state.currentCondition === 'thunderstorm') || (this.state.currentCondition === 'mist')) {
+        this.setState({
+          timeIntervalFinished: true,
+          modelPath: 'res/rainy_plantation.glb'
+        })
+
+      } else {
+        print("There is no snow in Florida");
+    
+      }
+      print("this.state.currentCondition after condition: " + this.state.currentCondition);
+    }, 2000);
   }
 
   onToggleChangedHandler = async () => {
@@ -77,39 +113,18 @@ export default class MyApp extends React.Component {
 
     return newDate;
   }
-
-  setModelIcon = () => {
-
-    let result = "";
-
-    if ((this.state.currentCondition === 'scattered clouds') || (this.state.currentCondition === 'broken clouds')) {
-      result = 'res/cloudy_plantation.glb';
-
-    } else if ((this.state.currentCondition === 'few clouds') || (this.state.currentCondition === 'clear sky')) {
-      result = 'res/sunny_plantation.glb';
-
-    } else if ((this.state.currentCondition === 'shower rain') || (this.state.currentCondition === 'rain') || (this.state.currentCondition === 'thunderstorm') || (this.state.currentCondition === 'mist')) {
-      result = 'res/rainy_plantation.glb';
   
-    } else {
-      print("There is no snow in Florida");
-  
-    }
-    print("setModelIcon Result: " + result);
-    return result;
-  }
-
   render() {
 
-    const aabb = {
-      min: [-0.45, -0.15, -0.1],
-      max: [0.45, 0.15, 0.1]
-    };
+    // const aabb = {
+    //   min: [-0.45, -0.15, -0.1],
+    //   max: [0.45, 0.15, 0.1]
+    // };
 
     // const time = ['1pm', '2pm', '3pm', '4pm', '5pm', '6pm', '7pm', '8pm', '9pm', '10pm', '11pm', '12pm'];
 
     let flooredTemp = Math.floor(this.state.currentTemp);
-
+    print('Model path = ' + this.state.modelPath);
     return (
       <View name="main-view">
         <GridLayout
@@ -122,12 +137,15 @@ export default class MyApp extends React.Component {
             name="model-grid"
             defaultItemAlignment="center-center"
             >
-            <Model
-              modelPath={`${this.setModelIcon()}`}
-              importScale={20}
-              localScale={[0.0020, 0.0020, 0.0020]}
-            ></Model>
-          </GridLayout>
+              { 
+                this.state.modelPath !== undefined ? 
+                <Model
+                  modelPath={this.state.modelPath}
+                  importScale={20}
+                  localScale={[0.0020, 0.0020, 0.0020]}
+                ></Model> : null 
+              }
+            </GridLayout>
           <GridLayout
             name="content-grid"
             rows={2}

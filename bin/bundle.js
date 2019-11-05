@@ -152,9 +152,38 @@ var _ = (function (React) {
 
       _defineProperty(this, "componentDidMount", async () => {
         // Plantation: 4168782
+        // debugger;
         const newState = await this.getAppData(this.getCity(), this.getTempUnits());
         print("componentDidMount works", JSON.stringify(newState));
         this.setState(newState);
+        this.timeOutForModel();
+      });
+
+      _defineProperty(this, "timeOutForModel", () => {
+        setTimeout(() => {
+          print("this.state.currentCondition before condition: " + this.state.currentCondition);
+
+          if (this.state.currentCondition === 'scattered clouds' || this.state.currentCondition === 'broken clouds') {
+            this.setState({
+              timeIntervalFinished: true,
+              modelPath: 'res/cloudy_plantation.glb'
+            });
+          } else if (this.state.currentCondition === 'few clouds' || this.state.currentCondition === 'clear sky') {
+            this.setState({
+              timeIntervalFinished: true,
+              modelPath: 'res/sunny_plantation.glb'
+            });
+          } else if (this.state.currentCondition === 'shower rain' || this.state.currentCondition === 'rain' || this.state.currentCondition === 'thunderstorm' || this.state.currentCondition === 'mist') {
+            this.setState({
+              timeIntervalFinished: true,
+              modelPath: 'res/rainy_plantation.glb'
+            });
+          } else {
+            print("There is no snow in Florida");
+          }
+
+          print("this.state.currentCondition after condition: " + this.state.currentCondition);
+        }, 2000);
       });
 
       _defineProperty(this, "onToggleChangedHandler", async () => {
@@ -181,23 +210,6 @@ var _ = (function (React) {
         return newDate;
       });
 
-      _defineProperty(this, "setModelIcon", () => {
-        let result = "";
-
-        if (this.state.currentCondition === 'scattered clouds' || this.state.currentCondition === 'broken clouds') {
-          result = 'res/cloudy_plantation.glb';
-        } else if (this.state.currentCondition === 'few clouds' || this.state.currentCondition === 'clear sky') {
-          result = 'res/sunny_plantation.glb';
-        } else if (this.state.currentCondition === 'shower rain' || this.state.currentCondition === 'rain' || this.state.currentCondition === 'thunderstorm' || this.state.currentCondition === 'mist') {
-          result = 'res/rainy_plantation.glb';
-        } else {
-          print("There is no snow in Florida");
-        }
-
-        print("setModelIcon Result: " + result);
-        return result;
-      });
-
       this.data = new Data();
       const fakeData = new FakeData();
       this.state = {
@@ -208,13 +220,20 @@ var _ = (function (React) {
         currentMinTemp: "undefined",
         currentMaxTemp: "undefined",
         currentTime: fakeData.hours[0],
-        useMetricUnits: false
+        useMetricUnits: false,
+        modelPath: undefined,
+        timeIntervalFinished: false
       };
     }
 
     render() {
-
+      // const aabb = {
+      //   min: [-0.45, -0.15, -0.1],
+      //   max: [0.45, 0.15, 0.1]
+      // };
+      // const time = ['1pm', '2pm', '3pm', '4pm', '5pm', '6pm', '7pm', '8pm', '9pm', '10pm', '11pm', '12pm'];
       let flooredTemp = Math.floor(this.state.currentTemp);
+      print('Model path = ' + this.state.modelPath);
       return React.createElement(View, {
         name: "main-view"
       }, React.createElement(GridLayout, {
@@ -226,11 +245,11 @@ var _ = (function (React) {
       }, React.createElement(GridLayout, {
         name: "model-grid",
         defaultItemAlignment: "center-center"
-      }, React.createElement(Model, {
-        modelPath: `${this.setModelIcon()}`,
+      }, this.state.modelPath !== undefined ? React.createElement(Model, {
+        modelPath: this.state.modelPath,
         importScale: 20,
         localScale: [0.0020, 0.0020, 0.0020]
-      })), React.createElement(GridLayout, {
+      }) : null), React.createElement(GridLayout, {
         name: "content-grid",
         rows: 2,
         columns: 3,
