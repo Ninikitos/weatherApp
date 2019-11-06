@@ -12,6 +12,6 @@ import MyApp from "./app.js";
 mxs.bootstrap(
   <MyApp
     type="landscape"
-    volumeSize={[2, 2, 2]}
+    volumeSize={[1.2, 1.2, 1.2]}
   />
 );

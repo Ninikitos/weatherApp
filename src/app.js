@@ -1,17 +1,15 @@
 //
 import React from "react";
 import Data from "./data.js";
-import FakeData from "./fakeData.js";
 
 import { View, Text, Model, ScrollView, ScrollBar, LinearLayout, Toggle, GridLayout, Button, Audio } from "magic-script-components";
-import { vec3, quat } from "gl-matrix";
+
 
 export default class MyApp extends React.Component {
   constructor(props) {
     super(props);
 
     this.data = new Data();
-    const fakeData = new FakeData();
 
     this.state = {
       currentTemp:          "undefined",
@@ -20,7 +18,6 @@ export default class MyApp extends React.Component {
       currentHumidity:      "undefined",
       currentMinTemp:       "undefined",
       currentMaxTemp:       "undefined",
-      currentTime:          fakeData.hours[0],
       useMetricUnits:       false,
       modelPath:            undefined,
       audioPath:            undefined,
@@ -35,6 +32,7 @@ export default class MyApp extends React.Component {
   getAppData = async (cityId, units) => { 
 
     const data = await this.data.getData(cityId, units);
+    print("Whole Data set", JSON.stringify(data));
     return {
       currentTemp:          data.temperature,
       currentCity:          data.city,
@@ -137,26 +135,22 @@ export default class MyApp extends React.Component {
   
   render() {
 
-    // const aabb = {
-    //   min: [-0.45, -0.15, -0.1],
-    //   max: [0.45, 0.15, 0.1]
-    // };
+    const aabb = {
+      min: [-0.45, -0.15, -0.1],
+      max: [0.45, 0.15, 0.1]
+    };
 
-    // const time = ['1pm', '2pm', '3pm', '4pm', '5pm', '6pm', '7pm', '8pm', '9pm', '10pm', '11pm', '12pm'];
+    const time = ['1pm', '2pm', '3pm', '4pm', '5pm', '6pm', '7pm', '8pm', '9pm', '10pm', '11pm', '12pm', 
+                  '1am', '2am', '3am', '4am', 'am', '6am', '7am', '8am', '9am', '10am', '11am', '12am'];
 
     let flooredTemp = Math.floor(this.state.currentTemp);
     print('Model path = ' + this.state.modelPath);
     return (
       <View name="main-view">
-        <GridLayout
-          name="content-grid"
-          rows={2}
-          defaultItemPadding={[0, 0, 0.1, 0.5]}
-          localPosition={[-1.05, 0.4, 0]}
-          defaultItemAlignment="center-center">
-          <GridLayout
+          <LinearLayout
             name="model-grid"
             defaultItemAlignment="center-center"
+            localPosition={[-0.150, 0.6, 0]}
             >
               { 
                 this.state.modelPath !== undefined ? 
@@ -173,11 +167,12 @@ export default class MyApp extends React.Component {
                   ></Audio>
                 </View> : null 
               }
-            </GridLayout>
+          </LinearLayout>
           <GridLayout
             name="content-grid"
             rows={2}
             columns={3}
+            localPosition={[-0.550, 0.250, 0]}
             defaultItemAlignment="center-left"
             defaultItemPadding={[0, 0.005, 0, 0.1]} 
           >
@@ -189,24 +184,28 @@ export default class MyApp extends React.Component {
               {/* <Text textSize={0.05} weight='medium' textAlignment={'center'}>{this.state.currentCity}</Text> */}
             <Text textSize={0.05} weight='medium'   textAlignment={'center'}>{this.state.currentHumidity}% Humidity</Text>
           </GridLayout>
-        </GridLayout>
         
-        {/* <ScrollView scrollBarVisibility="always" scrollBounds={aabb} localPosition={[0, -0.3, 0]} scrollDirection="horizontal">
+        <ScrollView scrollBarVisibility="always" scrollBounds={aabb} localPosition={[0, -0.3, 0]} scrollDirection="horizontal">
           <ScrollBar width={0.4} thumbSize={0.04} orientation="horizontal"/>
           <LinearLayout
-            defaultItemAlignment="center-center"
-            defaultItemPadding={[0.02, 0.07, 0.02, 0.07]}
+            localPosition={[-0.2, -0.2, 0]}
+            defaultItemAlignment="center-left"
+            defaultItemPadding={[0.02, 0.0, 0.02, 0.06]}
             orientation="horizontal"
           >
              {time.map((hour, index) => (
-              <Text
-                textSize={0.07}
-                key={index}
-                text={`${hour}`}
-              />
+               <View>
+                  <Text localPosition={[0, 0.1, 0]} textSize={0.04} key={index}>24 Cel</Text>
+                  <Text
+                    textSize={0.07}
+                    key={index}
+                    text={`${hour}`}
+                  />
+               </View>
+               
             ))}
           </LinearLayout>
-        </ScrollView> */}
+        </ScrollView>
       </View>
     );
   }

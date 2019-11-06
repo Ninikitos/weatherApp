@@ -7,5 +7,5 @@ import MyApp from './app.js';
 // Add support for things like setTimeout, setInterval and fetch.
 mxs.bootstrap(React.createElement(MyApp, {
   type: "landscape",
-  volumeSize: [2, 2, 2]
+  volumeSize: [1.2, 1.2, 1.2]
 }));

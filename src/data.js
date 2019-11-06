@@ -1,4 +1,5 @@
 const baseURL = 'http://api.openweathermap.org/data/2.5/weather?';
+// const baseURL = 'https://samples.openweathermap.org/data/2.5/forecast/hourly?zip=33313&';
 const appId = '0f4670104e656aa457f158cbe7631c18';
 
 export default class Data {
@@ -21,7 +22,7 @@ export default class Data {
       let result;
       try {
         // 'id=4168782&&units=imperial'
-        result = await fetch(`${baseURL}&id=${cityId}&units=${units}&appid=${appId}`); 
+        result = await fetch(`${baseURL}&id=${cityId}&units=${units}&appid=${appId}&`); 
       } catch(error) {
         print(`API Data Fetch error: ${error.message}`);
       }

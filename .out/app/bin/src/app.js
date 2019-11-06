@@ -1,15 +1,7 @@
 import React from '../node_modules/react/index.js';
 import { defineProperty as _defineProperty } from '../_virtual/_rollupPluginBabelHelpers.js';
 import Data from './data.js';
-import FakeData from './fakeData.js';
-import { View, GridLayout, Model, Audio, Text, Toggle } from '../node_modules/magic-script-components/src/components.js';
-import '../node_modules/gl-matrix/esm/common.js';
-import '../node_modules/gl-matrix/esm/mat3.js';
-import '../node_modules/gl-matrix/esm/vec3.js';
-import '../node_modules/gl-matrix/esm/vec4.js';
-import '../node_modules/gl-matrix/esm/quat.js';
-import '../node_modules/gl-matrix/esm/quat2.js';
-import '../node_modules/gl-matrix/esm/vec2.js';
+import { View, LinearLayout, Model, Audio, GridLayout, Text, Toggle, ScrollView, ScrollBar } from '../node_modules/magic-script-components/src/components.js';
 
 class MyApp extends React.Component {
   constructor(props) {
@@ -21,6 +13,7 @@ class MyApp extends React.Component {
 
     _defineProperty(this, "getAppData", async (cityId, units) => {
       const data = await this.data.getData(cityId, units);
+      print("Whole Data set", JSON.stringify(data));
       return {
         currentTemp: data.temperature,
         currentCity: data.city,
@@ -95,7 +88,6 @@ class MyApp extends React.Component {
     });
 
     this.data = new Data();
-    const fakeData = new FakeData();
     this.state = {
       currentTemp: "undefined",
       currentCity: "undefined",
@@ -103,7 +95,6 @@ class MyApp extends React.Component {
       currentHumidity: "undefined",
       currentMinTemp: "undefined",
       currentMaxTemp: "undefined",
-      currentTime: fakeData.hours[0],
       useMetricUnits: false,
       modelPath: undefined,
       audioPath: undefined,
@@ -122,24 +113,19 @@ class MyApp extends React.Component {
   //   return tempArr;
   // }
   render() {
-    // const aabb = {
-    //   min: [-0.45, -0.15, -0.1],
-    //   max: [0.45, 0.15, 0.1]
-    // };
-    // const time = ['1pm', '2pm', '3pm', '4pm', '5pm', '6pm', '7pm', '8pm', '9pm', '10pm', '11pm', '12pm'];
+    const aabb = {
+      min: [-0.45, -0.15, -0.1],
+      max: [0.45, 0.15, 0.1]
+    };
+    const time = ['1pm', '2pm', '3pm', '4pm', '5pm', '6pm', '7pm', '8pm', '9pm', '10pm', '11pm', '12pm', '1am', '2am', '3am', '4am', 'am', '6am', '7am', '8am', '9am', '10am', '11am', '12am'];
     let flooredTemp = Math.floor(this.state.currentTemp);
     print('Model path = ' + this.state.modelPath);
     return React.createElement(View, {
       name: "main-view"
-    }, React.createElement(GridLayout, {
-      name: "content-grid",
-      rows: 2,
-      defaultItemPadding: [0, 0, 0.1, 0.5],
-      localPosition: [-1.05, 0.4, 0],
-      defaultItemAlignment: "center-center"
-    }, React.createElement(GridLayout, {
+    }, React.createElement(LinearLayout, {
       name: "model-grid",
-      defaultItemAlignment: "center-center"
+      defaultItemAlignment: "center-center",
+      localPosition: [-0.150, 0.6, 0]
     }, this.state.modelPath !== undefined ? React.createElement(View, null, React.createElement(Model, {
       modelPath: this.state.modelPath,
       importScale: 20,
@@ -148,15 +134,11 @@ class MyApp extends React.Component {
       fileName: this.state.audioPath,
       loadFile: true,
       action: "start"
-    }), React.createElement(Model, {
-      localRotation: [0, 1, 0, 0],
-      modelPath: "res/panels.fbx",
-      importScale: 3,
-      localScale: [0.0010, 0.0010, 0.0010]
     })) : null), React.createElement(GridLayout, {
       name: "content-grid",
       rows: 2,
       columns: 3,
+      localPosition: [-0.550, 0.250, 0],
       defaultItemAlignment: "center-left",
       defaultItemPadding: [0, 0.005, 0, 0.1]
     }, React.createElement(Text, {
@@ -183,7 +165,29 @@ class MyApp extends React.Component {
       textSize: 0.05,
       weight: "medium",
       textAlignment: 'center'
-    }, this.state.currentHumidity, "% Humidity"))));
+    }, this.state.currentHumidity, "% Humidity")), React.createElement(ScrollView, {
+      scrollBarVisibility: "always",
+      scrollBounds: aabb,
+      localPosition: [0, -0.3, 0],
+      scrollDirection: "horizontal"
+    }, React.createElement(ScrollBar, {
+      width: 0.4,
+      thumbSize: 0.04,
+      orientation: "horizontal"
+    }), React.createElement(LinearLayout, {
+      localPosition: [-0.2, -0.2, 0],
+      defaultItemAlignment: "center-left",
+      defaultItemPadding: [0.02, 0.0, 0.02, 0.06],
+      orientation: "horizontal"
+    }, time.map((hour, index) => React.createElement(View, null, React.createElement(Text, {
+      localPosition: [0, 0.1, 0],
+      textSize: 0.04,
+      key: index
+    }, "24 Cel"), React.createElement(Text, {
+      textSize: 0.07,
+      key: index,
+      text: `${hour}`
+    }))))));
   }
 
 }

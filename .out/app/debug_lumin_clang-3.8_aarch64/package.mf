@@ -114,9 +114,9 @@
   },
   {
    "compression": 8,
-   "hash": "45bb5f2534ccbbd2f36b894d6e4e95b82c79b3ac",
+   "hash": "cfb532e161af65286f776225da591a00635bc630",
    "pkgpath": "bin/bundle.js",
-   "size": 52728,
+   "size": 10108,
    "src": "C:/Users/nilin/Desktop/weatherApp/bin/bundle.js"
   },
   {
@@ -1101,9 +1101,9 @@
   },
   {
    "compression": 8,
-   "hash": "ee3296a31209c18050803f904eb6615e5053f732",
+   "hash": "917f19be510a1326fcd5d4f4ea623410d94ecc11",
    "pkgpath": "bin/node_modules/magic-script-components/src/components.js",
-   "size": 784,
+   "size": 1226,
    "src": "C:/Users/nilin/Desktop/weatherApp/bin/node_modules/magic-script-components/src/components.js"
   },
   {
@@ -1360,16 +1360,16 @@
   },
   {
    "compression": 8,
-   "hash": "2f8e692a27839ed57b0859e9f8967e7debc4ce10",
+   "hash": "fda829a096f1cf7c896958e4e852def3032088c5",
    "pkgpath": "bin/src/app.js",
-   "size": 7135,
+   "size": 7318,
    "src": "C:/Users/nilin/Desktop/weatherApp/bin/src/app.js"
   },
   {
    "compression": 8,
-   "hash": "af7fbd3a4e1a15c1103e0d052ce4d98a3f05d24c",
+   "hash": "afc2d30ca2863ca09c29c4b60c5f90db0004c311",
    "pkgpath": "bin/src/data.js",
-   "size": 1159,
+   "size": 1254,
    "src": "C:/Users/nilin/Desktop/weatherApp/bin/src/data.js"
   },
   {
@@ -1388,9 +1388,9 @@
   },
   {
    "compression": 8,
-   "hash": "f0cc173822a1388ba792e753d42ff43956175403",
+   "hash": "98b393989296fe95672e980e4d74fa694173b1c5",
    "pkgpath": "bin/src/main.js",
-   "size": 410,
+   "size": 416,
    "src": "C:/Users/nilin/Desktop/weatherApp/bin/src/main.js"
   },
   {
@@ -1402,7 +1402,7 @@
   },
   {
    "compression": 8,
-   "hash": "221d0c7e5209e1efce8d562bd0b663d072f67e6b",
+   "hash": "5fb92fa6c18263184eb15020f7fc4d286aefe23c",
    "pkgpath": "./digest.sha512.signed",
    "size": 43752,
    "src": "C:/Users/nilin/Desktop/weatherApp/digest.sha512.signed"
@@ -1451,10 +1451,10 @@
   },
   {
    "compression": 8,
-   "hash": "6d053207530fc59869f55007493a3a1669273e07",
-   "pkgpath": "res/panels.fbx",
-   "size": 27100,
-   "src": "C:/Users/nilin/Desktop/weatherApp/res/panels.fbx"
+   "hash": "f807394cb5a11a863f37547a95d6996d7834a280",
+   "pkgpath": "res/cube.fbx",
+   "size": 14956,
+   "src": "C:/Users/nilin/Desktop/weatherApp/res/cube.fbx"
   },
   {
    "compression": 8,
