@@ -32,6 +32,7 @@ class Data {
       try {
         // 'id=4168782&&units=imperial'
         result = await fetch(`${baseURL}&zip=${cityByZipId}&units=${units}&appid=${appId}`);
+        print(JSON.stringify(result));
       } catch (error) {
         print(`API Data Fetch error: ${error.message}`);
       }

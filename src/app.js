@@ -2,7 +2,7 @@
 import React from "react";
 import Data from "./data.js";
 
-import { View, Text, Model, ScrollView, ScrollBar, LinearLayout, Toggle, GridLayout, Button, Audio } from "magic-script-components";
+import { View, Text, Model, ScrollView, ScrollBar, LinearLayout, Toggle, GridLayout, Button, Audio, Slider } from "magic-script-components";
 
 
 export default class MyApp extends React.Component {
@@ -15,6 +15,7 @@ export default class MyApp extends React.Component {
       currentTemp:          "undefined",
       currentCityByZip:     "undefined",
       currentCondition:     "undefined",
+      isConditionChanged:   true,
       currentHumidity:      "undefined",
       currentMinTemp:       "undefined",
       currentMaxTemp:       "undefined",
@@ -33,7 +34,7 @@ export default class MyApp extends React.Component {
   getAppData = async (cityByZipId, units) => { 
 
     const data = await this.data.getData(cityByZipId, units);
-    print("getAppData: " + units);
+
     return {
       currentTemp:          data.temperature,
       currentCityByZip:     data.cityByZipId,
@@ -56,37 +57,27 @@ export default class MyApp extends React.Component {
   }
 
   componentDidMount = async () => {
-
-    // Plantation: 4168782
-    // debugger;
     const newState = await this.getAppData(this.getCityZip(), this.getTempUnits());
-    print('componentDidMount: ' + this.getTempUnits());
-
-    print("componentDidMount works", JSON.stringify(newState));
     this.setState( newState );
     this.timeOutForModel();
   }
 
   timeOutForModel = () => {
-
+    this.isConditionUpdated();
     setTimeout(() => {
-      
-      print("this.state.currentCondition before condition: " + this.state.currentCondition);
+      if ((this.state.currentCondition === 'few clouds') || (this.state.currentCondition === 'clear sky')) {
+        this.setState({
+          timeIntervalFinished: true,
+          modelPath: 'res/sunny_plantation.glb',
+          audioPath: !this.state.isConditionChanged ? 'res/ES_Sunny Field With Birds - Organic Nature Sounds.mp3' : null
+          
+        })
 
-      if ((this.state.currentCondition === 'scattered clouds') || (this.state.currentCondition === 'broken clouds')) {
+      } else if ((this.state.currentCondition === 'scattered clouds') || (this.state.currentCondition === 'broken clouds')) {
         this.setState({
           timeIntervalFinished: true,
           modelPath: 'res/cloudy_plantation.glb',
           audioPath: 'res/ES_Wind Storm Forest 1 - SFX Producer.mp3'
-          
-        })
-
-
-      } else if ((this.state.currentCondition === 'few clouds') || (this.state.currentCondition === 'clear sky')) {
-        this.setState({
-          timeIntervalFinished: true,
-          modelPath: 'res/sunny_plantation.glb',
-          audioPath: 'res/ES_Sunny Field With Birds - Organic Nature Sounds.mp3'
           
         })
 
@@ -99,19 +90,38 @@ export default class MyApp extends React.Component {
 
       } else {
         print("There is no snow in Florida");
-    
       }
-      print("this.state.currentCondition after condition: " + this.state.currentCondition);
     }, 2000);
   }
 
-  onToggleChangedHandler = async () => {
+  isConditionUpdated = () => { 
+    let currentCondition = this.state.currentCondition;
+    let weatherChanged = this.state.isConditionChanged
 
+    if((currentCondition === 'few clouds') || (currentCondition === 'clear sky')) {
+      this.setState({
+        isConditionChanged: !weatherChanged
+      })
+      print('It is still sunny');
+    } else if ((currentCondition === 'scattered clouds') || (currentCondition === 'broken clouds') ) {
+      this.setState({
+        isConditionChanged: !weatherChanged
+      })
+      print('It is still clouds');
+    } else if ((currentCondition === 'shower rain') || (currentCondition === 'rain') || (currentCondition === 'rain') || (currentCondition === 'thunderstorm')) {
+      this.setState({
+        isConditionChanged: !weatherChanged
+      })
+      print('It is still rain');
+    }
+  }
+
+  onToggleChangedHandler = async () => {
     const tempUnit = this.state.useMetricUnits ? 'imperial' : 'metric';
     const newState = await this.getAppData(this.getCityZip(), tempUnit);
-    print('onToggleChangedHandler' + tempUnit);
-
+    this.isConditionUpdated(this.state.currentCondition);
     this.setState( state => ({...newState, useMetricUnits: !state.useMetricUnits}));
+
   }
 
   getCurrentDay = () => {
@@ -123,7 +133,6 @@ export default class MyApp extends React.Component {
   }
 
   getCurrentMonthAndDay = () => {
-
     let date = new Date();
     let currentDay = date.getDate();
     let currentMonth = date.getMonth();
@@ -134,16 +143,24 @@ export default class MyApp extends React.Component {
   }
   
   render() {
-
     const aabb = {
       min: [-0.45, -0.15, -0.1],
       max: [0.45, 0.15, 0.1]
     };
 
     let flooredTemp = Math.floor(this.state.currentTemp);
-    print('Model path = ' + this.state.modelPath);
+
     return (
       <View name="main-view">
+        <Button 
+          localPosition={[-0.5, 0.4, 0]}
+          type="icon"
+          iconType="exit"
+          height={0.1}
+          width={0.1}
+          roundness={0.02}
+          textSize={0.03}
+          ></Button>
           <LinearLayout
             name="model-grid"
             defaultItemAlignment="center-center"
@@ -162,6 +179,7 @@ export default class MyApp extends React.Component {
                     loadFile={true}
                     action="start"
                     soundLooping={true}
+                    spatialSoundEnable={true}
                   ></Audio>
                 </View> : null 
               }
@@ -179,12 +197,17 @@ export default class MyApp extends React.Component {
             <Text textSize={0.05} weight='medium'   textAlignment={'center'}>{this.state.currentCondition}</Text>
             <Text textSize={0.05} weight='medium'   textAlignment={'center'}>{this.getCurrentMonthAndDay()}</Text>
             <Toggle textSize={0.03} text="F / °C"   onToggleChanged={this.onToggleChangedHandler}></Toggle>
-              {/* <Text textSize={0.05} weight='medium' textAlignment={'center'}>{this.state.currentCity}</Text> */}
             <Text textSize={0.05} weight='medium'   textAlignment={'center'}>{this.state.currentHumidity}% Humidity</Text>
           </GridLayout>
-        
-        <ScrollView scrollBarVisibility="always" scrollBounds={aabb} localPosition={[0, -0.3, 0]} scrollDirection="horizontal">
-          <ScrollBar width={0.4} thumbSize={0.04} orientation="horizontal"/>
+        <ScrollView 
+          scrollBarVisibility="always" 
+          scrollBounds={aabb} 
+          localPosition={[0, -0.3, 0]} 
+          scrollDirection="horizontal">
+          <ScrollBar 
+            width={0.4} 
+            thumbSize={0.04} 
+            orientation="horizontal"/>
           <LinearLayout
             localPosition={[-0.3, -0.2, 0]}
             defaultItemAlignment="center-center"

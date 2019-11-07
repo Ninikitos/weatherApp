@@ -3,8 +3,6 @@ const baseURL = 'https://api.openweathermap.org/data/2.5/forecast?';
 const appId = '0f4670104e656aa457f158cbe7631c18';
 
 export default class Data {
-
-    // My class has following "properies" and one method requestData()
   getData = async (...parameters) => {
       const data = await this.requestData(...parameters);
       return {
@@ -27,11 +25,11 @@ export default class Data {
   }
 
   requestData = async (cityByZipId, units) => {
-
       let result;
       try {
         // 'id=4168782&&units=imperial'
         result = await fetch(`${baseURL}&zip=${cityByZipId}&units=${units}&appid=${appId}`); 
+        print(JSON.stringify(result));
       } catch(error) {
         print(`API Data Fetch error: ${error.message}`);
       }
@@ -43,6 +41,6 @@ export default class Data {
         print(`JSON conversion error: ${error.message}`);
       }
   
-        return jsonData;
+      return jsonData;
   }    
 }

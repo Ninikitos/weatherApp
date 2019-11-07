@@ -1,7 +1,7 @@
 import React from '../node_modules/react/index.js';
 import { defineProperty as _defineProperty } from '../_virtual/_rollupPluginBabelHelpers.js';
 import Data from './data.js';
-import { View, LinearLayout, Model, Audio, GridLayout, Text, Toggle, ScrollView, ScrollBar } from '../node_modules/magic-script-components/src/components.js';
+import { View, Button, LinearLayout, Model, Audio, GridLayout, Text, Toggle, ScrollView, ScrollBar } from '../node_modules/magic-script-components/src/components.js';
 
 class MyApp extends React.Component {
   constructor(props) {
@@ -13,7 +13,6 @@ class MyApp extends React.Component {
 
     _defineProperty(this, "getAppData", async (cityByZipId, units) => {
       const data = await this.data.getData(cityByZipId, units);
-      print("getAppData: " + units);
       return {
         currentTemp: data.temperature,
         currentCityByZip: data.cityByZipId,
@@ -53,30 +52,25 @@ class MyApp extends React.Component {
     });
 
     _defineProperty(this, "componentDidMount", async () => {
-      // Plantation: 4168782
-      // debugger;
       const newState = await this.getAppData(this.getCityZip(), this.getTempUnits());
-      print('componentDidMount: ' + this.getTempUnits());
-      print("componentDidMount works", JSON.stringify(newState));
       this.setState(newState);
       this.timeOutForModel();
     });
 
     _defineProperty(this, "timeOutForModel", () => {
+      this.isConditionUpdated();
       setTimeout(() => {
-        print("this.state.currentCondition before condition: " + this.state.currentCondition);
-
-        if (this.state.currentCondition === 'scattered clouds' || this.state.currentCondition === 'broken clouds') {
+        if (this.state.currentCondition === 'few clouds' || this.state.currentCondition === 'clear sky') {
+          this.setState({
+            timeIntervalFinished: true,
+            modelPath: 'res/sunny_plantation.glb',
+            audioPath: !this.state.isConditionChanged ? 'res/ES_Sunny Field With Birds - Organic Nature Sounds.mp3' : null
+          });
+        } else if (this.state.currentCondition === 'scattered clouds' || this.state.currentCondition === 'broken clouds') {
           this.setState({
             timeIntervalFinished: true,
             modelPath: 'res/cloudy_plantation.glb',
             audioPath: 'res/ES_Wind Storm Forest 1 - SFX Producer.mp3'
-          });
-        } else if (this.state.currentCondition === 'few clouds' || this.state.currentCondition === 'clear sky') {
-          this.setState({
-            timeIntervalFinished: true,
-            modelPath: 'res/sunny_plantation.glb',
-            audioPath: 'res/ES_Sunny Field With Birds - Organic Nature Sounds.mp3'
           });
         } else if (this.state.currentCondition === 'shower rain' || this.state.currentCondition === 'rain' || this.state.currentCondition === 'thunderstorm' || this.state.currentCondition === 'mist' || this.state.currentCondition === 'light rain') {
           this.setState({
@@ -87,15 +81,35 @@ class MyApp extends React.Component {
         } else {
           print("There is no snow in Florida");
         }
-
-        print("this.state.currentCondition after condition: " + this.state.currentCondition);
       }, 2000);
+    });
+
+    _defineProperty(this, "isConditionUpdated", () => {
+      let currentCondition = this.state.currentCondition;
+      let weatherChanged = this.state.isConditionChanged;
+
+      if (currentCondition === 'few clouds' || currentCondition === 'clear sky') {
+        this.setState({
+          isConditionChanged: !weatherChanged
+        });
+        print('It is still sunny');
+      } else if (currentCondition === 'scattered clouds' || currentCondition === 'broken clouds') {
+        this.setState({
+          isConditionChanged: !weatherChanged
+        });
+        print('It is still clouds');
+      } else if (currentCondition === 'shower rain' || currentCondition === 'rain' || currentCondition === 'rain' || currentCondition === 'thunderstorm') {
+        this.setState({
+          isConditionChanged: !weatherChanged
+        });
+        print('It is still rain');
+      }
     });
 
     _defineProperty(this, "onToggleChangedHandler", async () => {
       const tempUnit = this.state.useMetricUnits ? 'imperial' : 'metric';
       const newState = await this.getAppData(this.getCityZip(), tempUnit);
-      print('onToggleChangedHandler' + tempUnit);
+      this.isConditionUpdated(this.state.currentCondition);
       this.setState(state => ({ ...newState,
         useMetricUnits: !state.useMetricUnits
       }));
@@ -122,6 +136,7 @@ class MyApp extends React.Component {
       currentTemp: "undefined",
       currentCityByZip: "undefined",
       currentCondition: "undefined",
+      isConditionChanged: true,
       currentHumidity: "undefined",
       currentMinTemp: "undefined",
       currentMaxTemp: "undefined",
@@ -139,10 +154,17 @@ class MyApp extends React.Component {
       max: [0.45, 0.15, 0.1]
     };
     let flooredTemp = Math.floor(this.state.currentTemp);
-    print('Model path = ' + this.state.modelPath);
     return React.createElement(View, {
       name: "main-view"
-    }, React.createElement(LinearLayout, {
+    }, React.createElement(Button, {
+      localPosition: [-0.5, 0.4, 0],
+      type: "icon",
+      iconType: "exit",
+      height: 0.1,
+      width: 0.1,
+      roundness: 0.02,
+      textSize: 0.03
+    }), React.createElement(LinearLayout, {
       name: "model-grid",
       defaultItemAlignment: "center-center",
       localPosition: [-0.150, 0.6, 0]
@@ -154,7 +176,8 @@ class MyApp extends React.Component {
       fileName: this.state.audioPath,
       loadFile: true,
       action: "start",
-      soundLooping: true
+      soundLooping: true,
+      spatialSoundEnable: true
     })) : null), React.createElement(GridLayout, {
       name: "content-grid",
       rows: 2,
