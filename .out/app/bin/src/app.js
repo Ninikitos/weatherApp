@@ -9,25 +9,54 @@ class MyApp extends React.Component {
 
     _defineProperty(this, "getTempUnits", () => this.state.useMetricUnits ? 'metric' : 'imperial');
 
-    _defineProperty(this, "getCity", () => '4168782');
+    _defineProperty(this, "getCityZip", () => '33313');
 
-    _defineProperty(this, "getAppData", async (cityId, units) => {
-      const data = await this.data.getData(cityId, units);
-      print("Whole Data set", JSON.stringify(data));
+    _defineProperty(this, "getAppData", async (cityByZipId, units) => {
+      const data = await this.data.getData(cityByZipId, units);
+      print("getAppData: " + units);
       return {
         currentTemp: data.temperature,
-        currentCity: data.city,
+        currentCityByZip: data.cityByZipId,
         currentCondition: data.condition,
         currentHumidity: data.humidity,
         currentMinTemp: data.temp_min,
-        currentMaxTemp: data.temp_max
+        currentMaxTemp: data.temp_max,
+        timeOfDay: [{
+          time: '12am',
+          temp: data.timeOfDay12am
+        }, {
+          time: '3am',
+          temp: data.timeOfDay3am
+        }, {
+          time: '6am',
+          temp: data.timeOfDay6am
+        }, {
+          time: '9am',
+          temp: data.timeOfDay9am
+        }, {
+          time: '12pm',
+          temp: data.timeOfDay12pm
+        }, {
+          time: '3pm',
+          temp: data.timeOfDay3pm
+        }, {
+          time: '6pm',
+          temp: data.timeOfDay6pm
+        }, {
+          time: '9pm',
+          temp: data.timeOfDay9pm
+        }, {
+          time: '12am',
+          temp: data.timeOfDay12am
+        }]
       };
     });
 
     _defineProperty(this, "componentDidMount", async () => {
       // Plantation: 4168782
       // debugger;
-      const newState = await this.getAppData(this.getCity(), this.getTempUnits());
+      const newState = await this.getAppData(this.getCityZip(), this.getTempUnits());
+      print('componentDidMount: ' + this.getTempUnits());
       print("componentDidMount works", JSON.stringify(newState));
       this.setState(newState);
       this.timeOutForModel();
@@ -65,7 +94,8 @@ class MyApp extends React.Component {
 
     _defineProperty(this, "onToggleChangedHandler", async () => {
       const tempUnit = this.state.useMetricUnits ? 'imperial' : 'metric';
-      const newState = await this.getAppData(this.getCity(), tempUnit);
+      const newState = await this.getAppData(this.getCityZip(), tempUnit);
+      print('onToggleChangedHandler' + tempUnit);
       this.setState(state => ({ ...newState,
         useMetricUnits: !state.useMetricUnits
       }));
@@ -90,11 +120,12 @@ class MyApp extends React.Component {
     this.data = new Data();
     this.state = {
       currentTemp: "undefined",
-      currentCity: "undefined",
+      currentCityByZip: "undefined",
       currentCondition: "undefined",
       currentHumidity: "undefined",
       currentMinTemp: "undefined",
       currentMaxTemp: "undefined",
+      timeOfDay: [],
       useMetricUnits: false,
       modelPath: undefined,
       audioPath: undefined,
@@ -102,22 +133,11 @@ class MyApp extends React.Component {
     };
   }
 
-  // calcRotation = () => {
-  //   const tempArr = new Array(4);
-  //   const rot = quat.fromEuler([], 0, 180, 0);
-  //   tempArr[0] = rot[0];
-  //   tempArr[1] = rot[1];
-  //   tempArr[2] = rot[2];
-  //   tempArr[3] = rot[3];
-  //   print(tempArr + rot);
-  //   return tempArr;
-  // }
   render() {
     const aabb = {
       min: [-0.45, -0.15, -0.1],
       max: [0.45, 0.15, 0.1]
     };
-    const time = ['1pm', '2pm', '3pm', '4pm', '5pm', '6pm', '7pm', '8pm', '9pm', '10pm', '11pm', '12pm', '1am', '2am', '3am', '4am', 'am', '6am', '7am', '8am', '9am', '10am', '11am', '12am'];
     let flooredTemp = Math.floor(this.state.currentTemp);
     print('Model path = ' + this.state.modelPath);
     return React.createElement(View, {
@@ -133,7 +153,8 @@ class MyApp extends React.Component {
     }), React.createElement(Audio, {
       fileName: this.state.audioPath,
       loadFile: true,
-      action: "start"
+      action: "start",
+      soundLooping: true
     })) : null), React.createElement(GridLayout, {
       name: "content-grid",
       rows: 2,
@@ -175,18 +196,18 @@ class MyApp extends React.Component {
       thumbSize: 0.04,
       orientation: "horizontal"
     }), React.createElement(LinearLayout, {
-      localPosition: [-0.2, -0.2, 0],
-      defaultItemAlignment: "center-left",
-      defaultItemPadding: [0.02, 0.0, 0.02, 0.06],
+      localPosition: [-0.3, -0.2, 0],
+      defaultItemAlignment: "center-center",
+      defaultItemPadding: [0.02, 0.06, 0.04, 0.06],
       orientation: "horizontal"
-    }, time.map((hour, index) => React.createElement(View, null, React.createElement(Text, {
+    }, this.state.timeOfDay.map((data, index) => React.createElement(LinearLayout, null, React.createElement(Text, {
       localPosition: [0, 0.1, 0],
       textSize: 0.04,
       key: index
-    }, "24 Cel"), React.createElement(Text, {
+    }, Math.floor(data.temp)), React.createElement(Text, {
       textSize: 0.07,
       key: index,
-      text: `${hour}`
+      text: `${data.time}`
     }))))));
   }
 

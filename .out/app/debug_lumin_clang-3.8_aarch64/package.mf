@@ -114,9 +114,9 @@
   },
   {
    "compression": 8,
-   "hash": "cfb532e161af65286f776225da591a00635bc630",
+   "hash": "0a025b1b0a7aadd818e35733421f486c428a78c4",
    "pkgpath": "bin/bundle.js",
-   "size": 10108,
+   "size": 11024,
    "src": "C:/Users/nilin/Desktop/weatherApp/bin/bundle.js"
   },
   {
@@ -1360,16 +1360,16 @@
   },
   {
    "compression": 8,
-   "hash": "fda829a096f1cf7c896958e4e852def3032088c5",
+   "hash": "3b7ba536ca324b4a00bf2f92cd287ef3968613c3",
    "pkgpath": "bin/src/app.js",
-   "size": 7318,
+   "size": 7715,
    "src": "C:/Users/nilin/Desktop/weatherApp/bin/src/app.js"
   },
   {
    "compression": 8,
-   "hash": "afc2d30ca2863ca09c29c4b60c5f90db0004c311",
+   "hash": "b34299e4f40ca13fc2e6452dd2c3398091a1603f",
    "pkgpath": "bin/src/data.js",
-   "size": 1254,
+   "size": 1711,
    "src": "C:/Users/nilin/Desktop/weatherApp/bin/src/data.js"
   },
   {
@@ -1402,7 +1402,7 @@
   },
   {
    "compression": 8,
-   "hash": "5fb92fa6c18263184eb15020f7fc4d286aefe23c",
+   "hash": "0b4df17148f85fc1c0142fcdde7055edd59afc52",
    "pkgpath": "./digest.sha512.signed",
    "size": 43752,
    "src": "C:/Users/nilin/Desktop/weatherApp/digest.sha512.signed"

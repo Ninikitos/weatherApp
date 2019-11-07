@@ -13,11 +13,12 @@ export default class MyApp extends React.Component {
 
     this.state = {
       currentTemp:          "undefined",
-      currentCity:          "undefined",
+      currentCityByZip:     "undefined",
       currentCondition:     "undefined",
       currentHumidity:      "undefined",
       currentMinTemp:       "undefined",
       currentMaxTemp:       "undefined",
+      timeOfDay:            [],
       useMetricUnits:       false,
       modelPath:            undefined,
       audioPath:            undefined,
@@ -27,19 +28,30 @@ export default class MyApp extends React.Component {
 
   getTempUnits = () => this.state.useMetricUnits ? 'metric' : 'imperial'
 
-  getCity = () => '4168782'
+  getCityZip = () => '33313'
 
-  getAppData = async (cityId, units) => { 
+  getAppData = async (cityByZipId, units) => { 
 
-    const data = await this.data.getData(cityId, units);
-    print("Whole Data set", JSON.stringify(data));
+    const data = await this.data.getData(cityByZipId, units);
+    print("getAppData: " + units);
     return {
       currentTemp:          data.temperature,
-      currentCity:          data.city,
+      currentCityByZip:     data.cityByZipId,
       currentCondition:     data.condition,
       currentHumidity:      data.humidity,
       currentMinTemp:       data.temp_min,
       currentMaxTemp:       data.temp_max,
+      timeOfDay:            [
+        { time: '12am', temp: data.timeOfDay12am },
+        { time: '3am', temp: data.timeOfDay3am },
+        { time: '6am', temp: data.timeOfDay6am },
+        { time: '9am', temp: data.timeOfDay9am },
+        { time: '12pm', temp: data.timeOfDay12pm },
+        { time: '3pm', temp: data.timeOfDay3pm },
+        { time: '6pm', temp: data.timeOfDay6pm },
+        { time: '9pm', temp: data.timeOfDay9pm },
+        { time: '12am', temp: data.timeOfDay12am }
+      ]
     };
   }
 
@@ -47,7 +59,8 @@ export default class MyApp extends React.Component {
 
     // Plantation: 4168782
     // debugger;
-    const newState = await this.getAppData(this.getCity(), this.getTempUnits());
+    const newState = await this.getAppData(this.getCityZip(), this.getTempUnits());
+    print('componentDidMount: ' + this.getTempUnits());
 
     print("componentDidMount works", JSON.stringify(newState));
     this.setState( newState );
@@ -95,7 +108,8 @@ export default class MyApp extends React.Component {
   onToggleChangedHandler = async () => {
 
     const tempUnit = this.state.useMetricUnits ? 'imperial' : 'metric';
-    const newState = await this.getAppData(this.getCity(), tempUnit);
+    const newState = await this.getAppData(this.getCityZip(), tempUnit);
+    print('onToggleChangedHandler' + tempUnit);
 
     this.setState( state => ({...newState, useMetricUnits: !state.useMetricUnits}));
   }
@@ -118,20 +132,6 @@ export default class MyApp extends React.Component {
 
     return newDate;
   }
-
-  // calcRotation = () => {
-  //   const tempArr = new Array(4);
-
-  //   const rot = quat.fromEuler([], 0, 180, 0);
-  //   tempArr[0] = rot[0];
-  //   tempArr[1] = rot[1];
-  //   tempArr[2] = rot[2];
-  //   tempArr[3] = rot[3];
-
-  //   print(tempArr + rot);
-
-  //   return tempArr;
-  // }
   
   render() {
 
@@ -139,9 +139,6 @@ export default class MyApp extends React.Component {
       min: [-0.45, -0.15, -0.1],
       max: [0.45, 0.15, 0.1]
     };
-
-    const time = ['1pm', '2pm', '3pm', '4pm', '5pm', '6pm', '7pm', '8pm', '9pm', '10pm', '11pm', '12pm', 
-                  '1am', '2am', '3am', '4am', 'am', '6am', '7am', '8am', '9am', '10am', '11am', '12am'];
 
     let flooredTemp = Math.floor(this.state.currentTemp);
     print('Model path = ' + this.state.modelPath);
@@ -164,6 +161,7 @@ export default class MyApp extends React.Component {
                     fileName={this.state.audioPath}
                     loadFile={true}
                     action="start"
+                    soundLooping={true}
                   ></Audio>
                 </View> : null 
               }
@@ -188,21 +186,20 @@ export default class MyApp extends React.Component {
         <ScrollView scrollBarVisibility="always" scrollBounds={aabb} localPosition={[0, -0.3, 0]} scrollDirection="horizontal">
           <ScrollBar width={0.4} thumbSize={0.04} orientation="horizontal"/>
           <LinearLayout
-            localPosition={[-0.2, -0.2, 0]}
-            defaultItemAlignment="center-left"
-            defaultItemPadding={[0.02, 0.0, 0.02, 0.06]}
+            localPosition={[-0.3, -0.2, 0]}
+            defaultItemAlignment="center-center"
+            defaultItemPadding={[0.02, 0.06, 0.04, 0.06]}
             orientation="horizontal"
           >
-             {time.map((hour, index) => (
-               <View>
-                  <Text localPosition={[0, 0.1, 0]} textSize={0.04} key={index}>24 Cel</Text>
+             {this.state.timeOfDay.map((data, index) => (
+               <LinearLayout>
+                  <Text localPosition={[0, 0.1, 0]} textSize={0.04} key={index}>{Math.floor(data.temp)}</Text>
                   <Text
                     textSize={0.07}
                     key={index}
-                    text={`${hour}`}
+                    text={`${data.time}`}
                   />
-               </View>
-               
+               </LinearLayout>
             ))}
           </LinearLayout>
         </ScrollView>
