@@ -1,8 +1,7 @@
-//
 import React from "react";
 import Data from "./data.js";
 
-import { View, Text, Model, ScrollView, ScrollBar, LinearLayout, Toggle, GridLayout, Button, Audio, Slider } from "magic-script-components";
+import { View, Text, Model, ScrollView, ScrollBar, LinearLayout, Toggle, GridLayout, Button, Audio } from "magic-script-components";
 
 
 export default class MyApp extends React.Component {
@@ -63,13 +62,12 @@ export default class MyApp extends React.Component {
   }
 
   timeOutForModel = () => {
-    this.isConditionUpdated();
     setTimeout(() => {
       if ((this.state.currentCondition === 'few clouds') || (this.state.currentCondition === 'clear sky')) {
         this.setState({
           timeIntervalFinished: true,
           modelPath: 'res/sunny_plantation.glb',
-          audioPath: !this.state.isConditionChanged ? 'res/ES_Sunny Field With Birds - Organic Nature Sounds.mp3' : null
+          audioPath: 'res/ES_Sunny Field With Birds - Organic Nature Sounds.mp3'
           
         })
 
@@ -94,32 +92,9 @@ export default class MyApp extends React.Component {
     }, 2000);
   }
 
-  isConditionUpdated = () => { 
-    let currentCondition = this.state.currentCondition;
-    let weatherChanged = this.state.isConditionChanged
-
-    if((currentCondition === 'few clouds') || (currentCondition === 'clear sky')) {
-      this.setState({
-        isConditionChanged: !weatherChanged
-      })
-      print('It is still sunny');
-    } else if ((currentCondition === 'scattered clouds') || (currentCondition === 'broken clouds') ) {
-      this.setState({
-        isConditionChanged: !weatherChanged
-      })
-      print('It is still clouds');
-    } else if ((currentCondition === 'shower rain') || (currentCondition === 'rain') || (currentCondition === 'rain') || (currentCondition === 'thunderstorm')) {
-      this.setState({
-        isConditionChanged: !weatherChanged
-      })
-      print('It is still rain');
-    }
-  }
-
   onToggleChangedHandler = async () => {
     const tempUnit = this.state.useMetricUnits ? 'imperial' : 'metric';
     const newState = await this.getAppData(this.getCityZip(), tempUnit);
-    this.isConditionUpdated(this.state.currentCondition);
     this.setState( state => ({...newState, useMetricUnits: !state.useMetricUnits}));
 
   }

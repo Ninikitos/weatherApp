@@ -114,9 +114,9 @@
   },
   {
    "compression": 8,
-   "hash": "38150897c18b3d97d27824a64dbb71c50db1e5a5",
+   "hash": "0033f14989f3b5524d3294b1a6b9b2acb350d060",
    "pkgpath": "bin/bundle.js",
-   "size": 12020,
+   "size": 10960,
    "src": "C:/Users/nilin/Desktop/weatherApp/bin/bundle.js"
   },
   {
@@ -226,9 +226,9 @@
   },
   {
    "compression": 8,
-   "hash": "a65d4e1f024c0b50542e48ea696a7d5ed32ad958",
+   "hash": "d1beb9174a210f1020679163e7129832c2a2922e",
    "pkgpath": "bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/elements/builders/audio-builder.js",
-   "size": 11353,
+   "size": 11532,
    "src": "C:/Users/nilin/Desktop/weatherApp/bin/node_modules/magic-script-components-lumin/src/platform/lumin-runtime/elements/builders/audio-builder.js"
   },
   {
@@ -1360,9 +1360,9 @@
   },
   {
    "compression": 8,
-   "hash": "bfd1f21da800687264acba2cfadc0a3c9c8aab99",
+   "hash": "99fc9e8e8e97a973fc19ddf03ada3f9e70d10bf3",
    "pkgpath": "bin/src/app.js",
-   "size": 8502,
+   "size": 7486,
    "src": "C:/Users/nilin/Desktop/weatherApp/bin/src/app.js"
   },
   {
@@ -1402,7 +1402,7 @@
   },
   {
    "compression": 8,
-   "hash": "136426dd2369b504eb792d11cfecacb1e78c4843",
+   "hash": "87a0814a8ea91fff5ff22c5735a648193e17d99d",
    "pkgpath": "./digest.sha512.signed",
    "size": 43752,
    "src": "C:/Users/nilin/Desktop/weatherApp/digest.sha512.signed"
@@ -1434,6 +1434,13 @@
    "pkgpath": "res/ES_Wind Storm Forest 1 - SFX Producer.mp3",
    "size": 7202880,
    "src": "C:/Users/nilin/Desktop/weatherApp/res/ES_Wind Storm Forest 1 - SFX Producer.mp3"
+  },
+  {
+   "compression": 8,
+   "hash": "a86a044af351fe56c4725bd8e0f4cdc2172a6116",
+   "pkgpath": "res/city.list.json",
+   "size": 29687560,
+   "src": "C:/Users/nilin/Desktop/weatherApp/res/city.list.json"
   },
   {
    "compression": 8,

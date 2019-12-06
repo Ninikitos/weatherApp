@@ -1,9 +1,0 @@
-<manifest xmlns:ml="magicleap" ml:developer_id="f68d2647-c86b-4719-85b2-cbb5865289f9" ml:package="com.mxs.weatherapp" ml:version_code="1" ml:version_name="0.0.1">
-  <application ml:min_api_level="2" ml:sdk_version="1.0" ml:visible_name="weatherApp">
-    <component ml:binary_name="bin/index.js" ml:name=".universe" ml:type="Universe" ml:visible_name="weatherApp">
-      <mode ml:shareable="true" />
-      <icon ml:model_folder="" ml:portal_folder="" />
-    </component>
-    <uses-privilege ml:name="MagicScript" />
-  </application>
-</manifest>

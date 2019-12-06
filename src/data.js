@@ -1,6 +1,7 @@
 // const baseURL = 'http://api.openweathermap.org/data/2.5/weather?';
 const baseURL = 'https://api.openweathermap.org/data/2.5/forecast?';
 const appId = '0f4670104e656aa457f158cbe7631c18';
+;
 
 export default class Data {
   getData = async (...parameters) => {
