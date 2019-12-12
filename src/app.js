@@ -1,7 +1,7 @@
 import React from "react";
 import Data from "./data.js";
 
-import { View, Text, Model, ScrollView, ScrollBar, LinearLayout, Toggle, GridLayout, Button, Audio } from "magic-script-components";
+import { View, Text, Model, ScrollView, ScrollBar, LinearLayout, Toggle, GridLayout, Button, Audio, DropdownList, DropdownListItem } from "magic-script-components";
 
 
 export default class MyApp extends React.Component {
@@ -20,15 +20,68 @@ export default class MyApp extends React.Component {
       currentMaxTemp:       "undefined",
       timeOfDay:            [],
       useMetricUnits:       false,
+      weatherMeasureType:   "imperial",
       modelPath:            undefined,
       audioPath:            undefined,
-      timeIntervalFinished: false
+      timeIntervalFinished: false,
+      cityZipCode:          "33313"
+      // rainnyAnim:           {
+      //                         resourceId: 1,
+      //                         name: "rain",
+      //                         paused: false,
+      //                         loops: 20
+      //                       }
+      // rainnyAnimTexture:    {
+      //                         textureId: 1,
+      //                         textureSlot: "slot",
+      //                         materialName: ""
+      //                       }
     };
   }
 
   getTempUnits = () => this.state.useMetricUnits ? 'metric' : 'imperial'
 
-  getCityZip = () => '33313'
+  changeWeatherMetrics = () => {
+    if(this.state.weatherMeasureType === 'imperial') {
+      this.setState({
+        weatherMeasureType: 'metric'
+      })
+    } else if (this.state.weatherMeasureType === 'metric') {
+      this.setState({
+        weatherMeasureType: 'imperial'
+      })
+    }
+  }
+
+  getAustinZip = () => {
+    this.setState({
+      cityZipCode: '73301'
+    })
+  }
+
+  getLosAngelesZip = () => {
+    this.setState({
+      cityZipCode: '90001'
+    })
+  }
+
+  getPlantationZip = () => {
+    this.setState({
+      cityZipCode: '33313'
+    })
+  }
+
+  getSunnyvaleZip = () => {
+    this.setState({
+      cityZipCode: '94043'
+    })
+  }
+  
+  getTorontoZip = () => {
+    this.setState({
+      cityZipCode: '94043'
+    })
+  }
 
   getAppData = async (cityByZipId, units) => { 
 
@@ -56,7 +109,7 @@ export default class MyApp extends React.Component {
   }
 
   componentDidMount = async () => {
-    const newState = await this.getAppData(this.getCityZip(), this.getTempUnits());
+    const newState = await this.getAppData(this.state.cityZipCode, this.state.weatherMeasureType);
     this.setState( newState );
     this.timeOutForModel();
   }
@@ -66,7 +119,7 @@ export default class MyApp extends React.Component {
       if ((this.state.currentCondition === 'few clouds') || (this.state.currentCondition === 'clear sky')) {
         this.setState({
           timeIntervalFinished: true,
-          modelPath: 'res/sunny_plantation.glb',
+          modelPath: 'res/sunny_new.fbx',
           audioPath: 'res/ES_Sunny Field With Birds - Organic Nature Sounds.mp3'
           
         })
@@ -74,7 +127,7 @@ export default class MyApp extends React.Component {
       } else if ((this.state.currentCondition === 'scattered clouds') || (this.state.currentCondition === 'broken clouds')) {
         this.setState({
           timeIntervalFinished: true,
-          modelPath: 'res/cloudy_plantation.glb',
+          modelPath: 'res/Partly_cloudy_test.fbx',
           audioPath: 'res/ES_Wind Storm Forest 1 - SFX Producer.mp3'
           
         })
@@ -82,7 +135,7 @@ export default class MyApp extends React.Component {
       } else if ((this.state.currentCondition === 'shower rain') || (this.state.currentCondition === 'rain') || (this.state.currentCondition === 'thunderstorm') || (this.state.currentCondition === 'mist') || (this.state.currentCondition === 'light rain')) {
         this.setState({
           timeIntervalFinished: true,
-          modelPath: 'res/rainy_plantation.glb',
+          modelPath: 'res/Rainy.fbx',
           audioPath: 'res/ES_Rain Heavy 4 - SFX Producer.mp3'
         })
 
@@ -94,9 +147,9 @@ export default class MyApp extends React.Component {
 
   onToggleChangedHandler = async () => {
     const tempUnit = this.state.useMetricUnits ? 'imperial' : 'metric';
-    const newState = await this.getAppData(this.getCityZip(), tempUnit);
+    this.changeWeatherMetrics();
+    const newState = await this.getAppData(this.state.cityZipCode, tempUnit);
     this.setState( state => ({...newState, useMetricUnits: !state.useMetricUnits}));
-
   }
 
   getCurrentDay = () => {
@@ -116,7 +169,44 @@ export default class MyApp extends React.Component {
 
     return newDate;
   }
-  
+
+  getAustinWeatherHandler = async () => {
+    this.getAustinZip();
+    const newState = await this.getAppData(this.state.cityZipCode, this.state.weatherMeasureType);
+    print("this.state.weatherMeasureType ", this.state.weatherMeasureType);
+    this.setState( state => ({...newState}));
+   }
+
+   getLosAngelesWeatherHandler = async () => {
+    this.getLosAngelesZip();
+    const newState = await this.getAppData(this.state.cityZipCode, this.state.weatherMeasureType);
+    print("this.state.weatherMeasureType ", this.state.weatherMeasureType);
+    this.setState( state => ({...newState}));
+   }
+
+   getPlantationWeatherHandler = async () => {
+    this.getPlantationZip();
+    const newState = await this.getAppData(this.state.cityZipCode, this.state.weatherMeasureType);
+    print("this.state.weatherMeasureType ", this.state.weatherMeasureType);
+    this.setState( state => ({...newState}));
+   }
+
+   getSunnyvalWeatherHandler = async () => {
+    this.getSunnyvaleZip();
+    const newState = await this.getAppData(this.state.cityZipCode, this.state.weatherMeasureType);
+    print("this.state.weatherMeasureType ", this.state.weatherMeasureType);
+    this.setState( state => ({...newState}));
+   }
+
+   getTorontoWeatherHandler = async () => {
+    this.getAustinZip();
+    const newState = await this.getAppData(this.state.cityZipCode, this.state.weatherMeasureType);
+    print("this.state.weatherMeasureType ", this.state.weatherMeasureType);
+    this.setState( state => ({...newState}));
+   }
+
+  // onSelection = eventData => { print("Selected items:", eventData.SelectedItems); };
+
   render() {
     const aabb = {
       min: [-0.45, -0.15, -0.1],
@@ -125,29 +215,112 @@ export default class MyApp extends React.Component {
 
     let flooredTemp = Math.floor(this.state.currentTemp);
 
+    const cities = [
+      "Austin, TX",
+      "Boulder, CO",
+      "Culver City, CA",
+      "Dallas, TX",
+      "Guadalajara, Mexico",
+      "Haifa, Israel",
+      "Hong Kong, Chine",
+      "Lausanne, Switzerland",
+      "Los Angeles, CA",
+      "New York, NY",
+      "Plantation, FL(HQ)",
+      "San Francisco, CA, Israel",
+      "Seattle, WA",
+      "Sunnyvale, CA",
+      "Tel Aviv, Israel",
+      "Tokyo, Japan",
+      "Wellington, New Zealand",
+      "Zurich, Switzerland"
+    ];
+
     return (
       <View name="main-view">
-        <Button 
-          localPosition={[-0.5, 0.4, 0]}
-          type="icon"
-          iconType="exit"
-          height={0.1}
-          width={0.1}
-          roundness={0.02}
-          textSize={0.03}
-          ></Button>
+         
+        {/* <DropdownList
+            text="Select Moon"
+            onSelectionChanged={this.onSelection}
+          >
+            {cities.map((city, index) => (
+              <DropdownListItem id={index} label={city} />
+            ))}
+        </DropdownList> */}
+        <GridLayout
+            name="content-grid"
+            rows={1}
+            columns={1}
+            localPosition={[-1, 0.1750, 0]}
+            defaultItemAlignment="center-left"
+            defaultItemPadding={[0, 0.005, 0, 0.1]} 
+          ><Text
+              localPosition={[0, 0.5, 0]}
+              textSize={0.05}
+              weight='medium'
+            >Cities list</Text>
+            <Button 
+              localPosition={[-0.7, 0.3, 0]}
+              type="text"
+              height={0.1}
+              width={0.2}
+              roundness={0.02}
+              textSize={0.03}
+              onClick={this.getAustinWeatherHandler}
+              >Austin, TX</Button>
+            <Button 
+              localPosition={[-0.7, 0.1, 0]}
+              type="text"
+              height={0.1}
+              width={0.2}
+              roundness={0.02}
+              textSize={0.03}
+              onClick={this.getLosAngelesWeatherHandler}
+              >Los Angeles, CA</Button>
+            <Button 
+              localPosition={[-0.7, -0.1, 0]}
+              type="text"
+              height={0.1}
+              width={0.2}
+              roundness={0.02}
+              textSize={0.03}
+              onClick={this.getPlantationWeatherHandler}
+              >Plantation, FL</Button>
+            <Button 
+              localPosition={[-0.7, -0.3, 0]}
+              type="text"
+              height={0.1}
+              width={0.2}
+              roundness={0.02}
+              textSize={0.03}
+              onClick={this.getSunnyvalWeatherHandler}
+              >Sunnyvale, CA</Button>
+            <Button 
+              localPosition={[-0.7, -0.5, 0]}
+              type="text"
+              height={0.1}
+              width={0.2}
+              roundness={0.02}
+              textSize={0.03}
+              onClick={this.getTorontoWeatherHandler}
+              >Toronto, ON</Button>
+        </GridLayout>
           <LinearLayout
             name="model-grid"
             defaultItemAlignment="center-center"
-            localPosition={[-0.150, 0.6, 0]}
+            localPosition={[-0.150, 0.5, 0]}
             >
               { 
                 this.state.modelPath !== undefined ? 
                 <View>
                   <Model
                     modelPath={this.state.modelPath}
-                    importScale={20}
-                    localScale={[0.0020, 0.0020, 0.0020]}
+                    importScale={1}
+                    animationPauseState={false}
+                    animationTime={10}
+                    animation={{ name: "Take 001", loops: 100 }}
+                    animationPlaybackSpeed={1}
+                    localScale={[0.0003, 0.0003, 0.0003]}
                   ></Model>
                   <Audio
                     fileName={this.state.audioPath}

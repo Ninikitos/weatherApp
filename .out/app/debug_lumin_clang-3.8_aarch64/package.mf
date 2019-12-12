@@ -114,9 +114,9 @@
   },
   {
    "compression": 8,
-   "hash": "0033f14989f3b5524d3294b1a6b9b2acb350d060",
+   "hash": "81d88aa6f0cf919f212573ef6c5ab2d8296a3af4",
    "pkgpath": "bin/bundle.js",
-   "size": 10960,
+   "size": 16019,
    "src": "C:/Users/nilin/Desktop/weatherApp/bin/bundle.js"
   },
   {
@@ -1360,9 +1360,9 @@
   },
   {
    "compression": 8,
-   "hash": "99fc9e8e8e97a973fc19ddf03ada3f9e70d10bf3",
+   "hash": "807bbc8672abc8009de8701192c96e51e18051e9",
    "pkgpath": "bin/src/app.js",
-   "size": 7486,
+   "size": 12277,
    "src": "C:/Users/nilin/Desktop/weatherApp/bin/src/app.js"
   },
   {
@@ -1388,9 +1388,9 @@
   },
   {
    "compression": 8,
-   "hash": "245e601cc29fe22dd9c2f790b8478f51b504a128",
+   "hash": "d21c19c917b9fe4940acbb96c782418909696226",
    "pkgpath": "bin/src/main.js",
-   "size": 416,
+   "size": 414,
    "src": "C:/Users/nilin/Desktop/weatherApp/bin/src/main.js"
   },
   {
@@ -1402,7 +1402,7 @@
   },
   {
    "compression": 8,
-   "hash": "87a0814a8ea91fff5ff22c5735a648193e17d99d",
+   "hash": "f9f6a981f6944e31516527a85b715505f38705ac",
    "pkgpath": "./digest.sha512.signed",
    "size": 43752,
    "src": "C:/Users/nilin/Desktop/weatherApp/digest.sha512.signed"
@@ -1434,6 +1434,20 @@
    "pkgpath": "res/ES_Wind Storm Forest 1 - SFX Producer.mp3",
    "size": 7202880,
    "src": "C:/Users/nilin/Desktop/weatherApp/res/ES_Wind Storm Forest 1 - SFX Producer.mp3"
+  },
+  {
+   "compression": 8,
+   "hash": "8d21e38f62a2c6e57cf07bc1f97e6e2b99ea84a5",
+   "pkgpath": "res/Partly_cloudy_test.fbx",
+   "size": 162832,
+   "src": "C:/Users/nilin/Desktop/weatherApp/res/Partly_cloudy_test.fbx"
+  },
+  {
+   "compression": 8,
+   "hash": "81cf08348f5e002bc91d0b756bce77ba3385820a",
+   "pkgpath": "res/Rainy.fbx",
+   "size": 335088,
+   "src": "C:/Users/nilin/Desktop/weatherApp/res/Rainy.fbx"
   },
   {
    "compression": 8,
@@ -1476,6 +1490,13 @@
    "pkgpath": "res/rainy_plantation2.glb",
    "size": 220608,
    "src": "C:/Users/nilin/Desktop/weatherApp/res/rainy_plantation2.glb"
+  },
+  {
+   "compression": 8,
+   "hash": "6d3374b9059bba7fb9f977f237f941e42718bd86",
+   "pkgpath": "res/sunny_new.fbx",
+   "size": 71984,
+   "src": "C:/Users/nilin/Desktop/weatherApp/res/sunny_new.fbx"
   },
   {
    "compression": 8,

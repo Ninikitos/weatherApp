@@ -15,7 +15,7 @@ cc8107d363e4d3a271d6bcd4b0032c5d8b6b6c7b6bfa3a4a105924fc418c3e1d4f4473978669612c
 f0f57dcf8128194c2d9496f3ab64667dcc9eba013e55c815e4ec2f204664f7567bff09e1e61ab5939d099dac45002ce5ecd33f3df3fdfe587c310523bf68c894  bin/_virtual/scheduler.development.js
 ec1e67e8f349cedef600ab4d404c0bda49c0c298a929d1fb730fdc209d28997437c2e3a4d4bb5446d1f065a1d6af9ebc51a7a0a7d0da5c60565431a595045aac  bin/_virtual/scheduler.production.min.js
 9ee08bfe7e9564b0eeae3e6c4d9d974d3e930b012f091f409b1d165065a7bda627aab42135a55756cdf5bbedc40fcf014d4e653064a7a1cc5f564b0454ffeee4  bin/_virtual/tracing.js
-6e3fc67ce371243e913bca30e36ee482aec55583ac8ce81cf01977e8a99918dda30f4d8943689b84e58afc8e3709f100a6d37adc9e21bdbf3c58730e09f54d40  bin/bundle.js
+0d295e6ea1e18f0f55339836d35549dc69dd312d2721b68fd05b12af55302b377b7171c293d642bbfbcc2de79f5817152b03e3a84ecb1ccd32de27aff46501ac  bin/bundle.js
 bb2b7b516c7370bc1db88055185cc09b88e335d5a6e8d015d11dbddc4cfcb4f24406ac349e22afbab7489ef9da6b03b278025335e6ecafe374f3b8134083f41d  bin/index.js
 3a886376e7ea8ad56c14b7d445fdceb4510f5f10aff2693d881a655b8895b98ed8901a7eebe831c0c96deed7453acfb8beffb05ba360cdf2acb1e12861614923  bin/node_modules/gl-matrix/esm/common.js
 fcafa5ec6560cf8d6de10bdb03917b30b43c8c9c693fe2cdb49fd63993c39f94dd7a5015247d02fee026d1df5dfe9f5c564b1b5b376003f86e4fd100ecb9f613  bin/node_modules/gl-matrix/esm/mat3.js
@@ -193,12 +193,13 @@ b1d9647528bd491f42cfdd7be9298ec2a265d87ca3d7f44e5a98043a4cb98ef3782f3895c78ebdfc
 8202209af7121092739300bf10771a94dd58e579c6bb8f226c6f18a2269092f972708465c9453e75ece7a657e23b6aef22ac30c9ddd2d159d9f4bc8dc5b22e61  bin/node_modules/scheduler/cjs/scheduler.production.min.js
 68e2e1f000416c50f37a3428a11e6f51b2804d3eea6bc8b5962ad44739a8c846dcb7f48a6b2b33e21e4e3e924c582481d83a8fd584055513ded0db812f467fec  bin/node_modules/scheduler/index.js
 f9d50f92dd77c8bafbd4860a48228648dc86e6606cec1e46457b87bb6d4dd9e97ca672f7605b7cac292dd8ab6da79f0b27cc7d59fae563af93e440cdb5a7f288  bin/node_modules/scheduler/tracing.js
-b14270368311fb32aefb7bc9258d628262f233f8d5b5b2c2dd3ee0dd9b292da2d7609f2214644b6f4f08f5d8585b6237bcbef090380bfd45229584268dc83551  bin/src/app.js
+61a3f67d558bf4e9f9f47e89a4f45a8130c8b371e082bf05d01a18d5d3b159636fce5f976b143f16228e96d370d3807b19f40c66789053b537c0189ff6cb2975  bin/src/app.js
 f9642f54bd7c5195c52d4d5cda318bbed49d4fb4a6abd5e1616c22dbc744ef246b0f5f893e70a94a45abb94b81cd5b211d12a76a247d650f14b1ab49502c12d5  bin/src/data.js
 25fa8aa40fe6f7cef4c3b5ba911f2ece53f0fb86d13d6d376f4da12408694b88fa362da0eb6d5f176d24d1bf2b56f759d7beef3d8aa9ab8e90c1458addeb64e9  bin/src/fakeData.js
 7fb17c55901fcb763b232012a636bf773533683495d9a494c910fc654a1071d4a9f8aaf96728c016cdd4e2dcb39d570f0b3f239bd287c6c2aca47a2638cd59e4  bin/src/global-scope.js
-989eb9974fa2cd7d30a8efa531e340aa0df2d249d0b138f20ae2de4e6588e792987b2be9e3f9fbb408a5331e6179e0f668775c6870107909d76b3fe887162b99  bin/src/main.js
+fc601aaa6b54270b73f0305b2a6057c2dff160908619042645d67a0e8e718bc64b7d192b361a6cf37da28b7bf6ddb090c462e92fa1e3fd6472d9e2279b1911ca  bin/src/main.js
 5ef34b8d6c14d9553595cc17ee8f115b444941da36ea58e7dc16c39f65a3a7c3a3048096cb6e2a5a241b1e840a766e62bed2b80d2318aa0c919a0656d1709fde  bin/src/realData.js
 #     USER                                                                       TAILDATA0‚>	*†H†÷ ‚/0‚+10	`†He0	*†H†÷1‚0‚0_0R10	UUS10UFlorida10U
 
-Magic Leap10UMagic Leap Internal	 ˆö‚*Ù’‡0	`†He0	*†H†÷ ‚€ŞgI6B[]k¾:<;YWµıá•D›1ÿHÈ²v~.`¬ÈŸ°ş$ÒZ¡‡Êû±¤¯,fÃ&µ%ê v(‰Š¾ûôîavü¥y=å…6Æ5¶1}ñeø [xı&˜†Äî†]¼Ñ FıÇ ¯øû°ñ;@’uõEÈÍİ^Ş†’:AÕS8¹äyl’æ*N|c~‹‚ÓËDY¯¬Äh©˜ÈìA„O/KËÁ ¢ïr4p€ôÊ“½ÇÎ›O8!CfÛ‹NşùwåÍºÓJæ–4gÒŞvu7ì ÿ2ĞáCjy^  H=½­ô bÏpÜûv*~í©mo34³^ÿ H<—sk§UR3åX×¸‡\"Ã¨ƒİ;‡‰'>ÆÖYq%QQêEÌ`{ÅõĞn½ë2£¼0r€Ï•4½à]ó¢¼Ê¦?Kb,‚ZöndÄÇÙíRHã¦ˆnz3ŞÖÏ~[°rÁÜcÒÈ­â@ çBÎÊ§¼|¿Ó°ÅEqÚÚ…7         B~Module signature appended~
+Magic Leap10UMagic Leap Internal	 ˆö‚*Ù’‡0	`†He0	*†H†÷ ‚€KÖö¡`„bpyñÊSPN38ğ’KÕ5ŞŠNK>P€…L(ù²İ[Ä?¿ôØknÉù«( VN,ñvYCC'~±¿°N2/h'Í°“ÖÑ ¡¾îŸ¯••}È¬ µ«®ğ ñLÌ]_Pw2¬^HÊ×p®-Š[¨ğ~SÕÁÉO0â—NCHš$İUdÀç­ê§úO=ŸŞéy¬+nÊ×2õfÃËÇ•Ü8XÇÏ-ZüÜ”F³?›PÇç×»Ãz(!&•ªcq	=œ| 	Ğb
+÷´¡êÕ?àŠ5 ªÁGéÙï%ı’Îól0(8›²ÇÚ‘ô±6ogÎ=ë­ËÉ?""÷`„=&/¥¡¥W“ˆ´m:4NJ€’Ú£eBŞå\uƒ›Å8ûyÿ³º8­ƒ/×7ÏŸ[xåàİÓgygr,÷âß¶³ûu{kö”	Êß™¸,0	ÒCM”…®é§[ˆğ¹êúÓ’x/         B~Module signature appended~
