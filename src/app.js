@@ -45,39 +45,29 @@ export default class MyApp extends React.Component {
   }
 
   getAustinZip = () => {
-    this.setState({
-      cityZipCode: '73301'
-    })
+    return '73301';
   }
 
   getLosAngelesZip = () => {
-    this.setState({
-      cityZipCode: '90001'
-    })
+    return '90001';
   }
 
   getPlantationZip = () => {
-    this.setState({
-      cityZipCode: '33313'
-    })
+    return '33313';
   }
 
   getSunnyvaleZip = () => {
-    this.setState({
-      cityZipCode: '94043'
-    })
+    return '94087';
   }
   
   getTorontoCityId = () => {
-    this.setState({
-      currentCityById: "6167865"
-    })
+    return "6167865";
   }
 
   getAppData = async (cityByZipId, units) => { 
 
     const data = await this.data.getData(cityByZipId, units);
-
+    print("data all cities: ", data);
     return {
       currentTemp:          data.temperature,
       currentCityByZip:     data.cityByZipId,
@@ -104,6 +94,7 @@ export default class MyApp extends React.Component {
 
     const data = await this.data.getDataForTor(cityId, units);
     print("getWeatherDataForToronto called");
+    print("data all cities: ", data);
     return {
       currentTemp:          data.temperature,
       currentCityById:      data.cityId,
@@ -133,8 +124,12 @@ export default class MyApp extends React.Component {
   }
 
   timeOutForModel = () => {
+    print("didMount: " + this.state.currentCondition );
     setTimeout(() => {
-      if ((this.state.currentCondition === 'few clouds') || (this.state.currentCondition === 'clear sky')) {
+      print("didMafter 2 sec : " + this.state.currentCondition );
+      if ((this.state.currentCondition === 'few clouds') || 
+          (this.state.currentCondition === 'clear sky')) {
+          
         this.setState({
           timeIntervalFinished: true,
           modelPath: 'res/sunny.fbx',
@@ -142,7 +137,10 @@ export default class MyApp extends React.Component {
           
         })
 
-      } else if ((this.state.currentCondition === 'scattered clouds') || (this.state.currentCondition === 'broken clouds') || (this.state.currentCondition === 'overcast clouds')) {
+      } else if ((this.state.currentCondition === 'scattered clouds') || 
+                (this.state.currentCondition === 'broken clouds') || 
+                (this.state.currentCondition === 'overcast clouds')) {
+
         this.setState({
           timeIntervalFinished: true,
           modelPath: 'res/cloudy.fbx',
@@ -150,7 +148,12 @@ export default class MyApp extends React.Component {
        
         })
 
-      } else if ((this.state.currentCondition === 'shower rain') || (this.state.currentCondition === 'rain') || (this.state.currentCondition === 'thunderstorm') || (this.state.currentCondition === 'mist') || (this.state.currentCondition === 'light rain')) {
+      } else if ((this.state.currentCondition === 'shower rain') || 
+                 (this.state.currentCondition === 'rain') || 
+                 (this.state.currentCondition === 'thunderstorm') || 
+                 (this.state.currentCondition === 'mist') || 
+                 (this.state.currentCondition === 'light rain')) {
+                  
         this.setState({
           timeIntervalFinished: true,
           modelPath: 'res/Rainy.fbx',
@@ -162,6 +165,34 @@ export default class MyApp extends React.Component {
         print("There is no snow in Florida");
       }
     }, 2000);
+  }
+
+  setModelAndAudio = (state) => {
+    const data = {...state};
+    print("didMafter 2 sec : " + data.currentCondition );
+    if ((data.currentCondition === 'few clouds') || 
+        (data.currentCondition === 'clear sky')) {
+      data.modelPath = 'res/sunny.fbx';
+      data.audioPath = 'res/ES_Sunny Field With Birds - Organic Nature Sounds.mp3';
+
+    } else if ((data.currentCondition === 'scattered clouds') || 
+               (data.currentCondition === 'broken clouds') || 
+               (data.currentCondition === 'overcast clouds')) {
+      data.modelPath = 'res/cloudy.fbx';
+      data.audioPath = 'res/ES_Wind Storm Forest 1 - SFX Producer.mp3';
+
+    } else if ((data.currentCondition === 'shower rain') || 
+               (data.currentCondition === 'rain') || 
+               (data.currentCondition === 'thunderstorm') || 
+               (data.currentCondition === 'mist') || 
+               (data.currentCondition === 'light rain')) {
+      data.modelPath = 'res/Rainy.fbx';
+      data.audioPath = 'res/ES_Rain Heavy 4 - SFX Producer.mp3';
+
+    } else {
+      print("There is no snow in Florida");
+    }
+    return data;
   }
 
   onToggleChangedHandler = async () => {
@@ -196,38 +227,33 @@ export default class MyApp extends React.Component {
   }
 
   getAustinWeatherHandler = async () => {
-    this.getAustinZip();
-    const newState = await this.getAppData(this.state.cityZipCode, this.state.weatherMeasureType);
-    print("getAustinWeatherHandler: " + JSON.stringify(this.state));
-    this.setState( state => ({...newState}));
+    const newState = await this.getAppData(this.getAustinZip(), this.state.weatherMeasureType);
+    this.setState(this.setModelAndAudio(newState));
+    print("getLosAngelesWeatherHandler: " + JSON.stringify(this.state));
    }
 
   getLosAngelesWeatherHandler = async () => {
-    this.getLosAngelesZip();
-    const newState = await this.getAppData(this.state.cityZipCode, this.state.weatherMeasureType);
+    const newState = await this.getAppData(this.getLosAngelesZip(), this.state.weatherMeasureType);
+    this.setState(this.setModelAndAudio(newState));
     print("getLosAngelesWeatherHandler: " + JSON.stringify(this.state));
-    this.setState( state => ({...newState}));
    }
 
   getPlantationWeatherHandler = async () => {
-    this.getPlantationZip();
-    const newState = await this.getAppData(this.state.cityZipCode, this.state.weatherMeasureType);
-    print("getPlantationWeatherHandler: " + JSON.stringify(this.state));
-    this.setState( state => ({...newState}));
+    const newState = await this.getAppData(this.getPlantationZip(), this.state.weatherMeasureType);
+    this.setState(this.setModelAndAudio(newState));
+    print("getLosAngelesWeatherHandler: " + JSON.stringify(this.state));
    }
 
   getSunnyvalWeatherHandler = async () => {
-    this.getSunnyvaleZip();
-    const newState = await this.getAppData(this.state.cityZipCode, this.state.weatherMeasureType);
-    print("getSunnyvalWeatherHandler: " + JSON.stringify(this.state));
-    this.setState( state => ({...newState}));
+    const newState = await this.getAppData(this.getSunnyvaleZip(), this.state.weatherMeasureType);
+    this.setState(this.setModelAndAudio(newState));
+    print("getLosAngelesWeatherHandler: " + JSON.stringify(this.state));
    }
 
   getTorontoWeatherHandler = async () => {
-    this.getTorontoCityId();
-    const torontoState = await this.getWeatherDataForToronto(this.state.currentCityById, this.state.weatherMeasureType);
-    print("getTorontoWeatherHandler: " + JSON.stringify(this.state));
-    this.setState( state => ({...torontoState}));
+    const newState = await this.getWeatherDataForToronto(this.getTorontoCityId(), this.state.weatherMeasureType);
+    this.setState(this.setModelAndAudio(newState));
+    print("getLosAngelesWeatherHandler: " + JSON.stringify(this.state));
    }
 
   render() {
@@ -258,7 +284,7 @@ export default class MyApp extends React.Component {
     //   "Wellington, New Zealand",
     //   "Zurich, Switzerland"
     // ];
-
+    print("Model path: " + JSON.stringify(this.state.modelPath));
     return (
       <View name="main-view">
         <GridLayout
@@ -322,21 +348,23 @@ export default class MyApp extends React.Component {
           <LinearLayout
             name="model-grid"
             defaultItemAlignment="center-center"
-            localPosition={[-0.150, 0.5, 0]}
+            localPosition={[-0.350, 0.5, -0.4]}
             >
               { 
                 this.state.modelPath !== undefined ? 
                 <View>
                   <Model
+                    key={this.state.modelPath}
                     modelPath={this.state.modelPath}
                     importScale={1}
                     animationPauseState={false}
                     animationTime={10}
                     animation={{ name: "Take 001", loops: 100 }}
                     animationPlaybackSpeed={1}
-                    localScale={[0.0003, 0.0003, 0.0003]}
+                    localScale={[0.001, 0.001, 0.001]}
                   ></Model>
                   <Audio
+                    key={this.state.audioPath}
                     fileName={this.state.audioPath}
                     loadFile={true}
                     action="start"

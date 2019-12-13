@@ -179,37 +179,28 @@ var _ = (function (React) {
       });
 
       _defineProperty(this, "getAustinZip", () => {
-        this.setState({
-          cityZipCode: '73301'
-        });
+        return '73301';
       });
 
       _defineProperty(this, "getLosAngelesZip", () => {
-        this.setState({
-          cityZipCode: '90001'
-        });
+        return '90001';
       });
 
       _defineProperty(this, "getPlantationZip", () => {
-        this.setState({
-          cityZipCode: '33313'
-        });
+        return '33313';
       });
 
       _defineProperty(this, "getSunnyvaleZip", () => {
-        this.setState({
-          cityZipCode: '94043'
-        });
+        return '94087';
       });
 
       _defineProperty(this, "getTorontoCityId", () => {
-        this.setState({
-          currentCityById: "6167865"
-        });
+        return "6167865";
       });
 
       _defineProperty(this, "getAppData", async (cityByZipId, units) => {
         const data = await this.data.getData(cityByZipId, units);
+        print("data all cities: ", data);
         return {
           currentTemp: data.temperature,
           currentCityByZip: data.cityByZipId,
@@ -252,6 +243,7 @@ var _ = (function (React) {
       _defineProperty(this, "getWeatherDataForToronto", async (cityId, units) => {
         const data = await this.data.getDataForTor(cityId, units);
         print("getWeatherDataForToronto called");
+        print("data all cities: ", data);
         return {
           currentTemp: data.temperature,
           currentCityById: data.cityId,
@@ -298,7 +290,10 @@ var _ = (function (React) {
       });
 
       _defineProperty(this, "timeOutForModel", () => {
+        print("didMount: " + this.state.currentCondition);
         setTimeout(() => {
+          print("didMafter 2 sec : " + this.state.currentCondition);
+
           if (this.state.currentCondition === 'few clouds' || this.state.currentCondition === 'clear sky') {
             this.setState({
               timeIntervalFinished: true,
@@ -321,6 +316,27 @@ var _ = (function (React) {
             print("There is no snow in Florida");
           }
         }, 2000);
+      });
+
+      _defineProperty(this, "setModelAndAudio", state => {
+        const data = { ...state
+        };
+        print("didMafter 2 sec : " + data.currentCondition);
+
+        if (data.currentCondition === 'few clouds' || data.currentCondition === 'clear sky') {
+          data.modelPath = 'res/sunny.fbx';
+          data.audioPath = 'res/ES_Sunny Field With Birds - Organic Nature Sounds.mp3';
+        } else if (data.currentCondition === 'scattered clouds' || data.currentCondition === 'broken clouds' || data.currentCondition === 'overcast clouds') {
+          data.modelPath = 'res/cloudy.fbx';
+          data.audioPath = 'res/ES_Wind Storm Forest 1 - SFX Producer.mp3';
+        } else if (data.currentCondition === 'shower rain' || data.currentCondition === 'rain' || data.currentCondition === 'thunderstorm' || data.currentCondition === 'mist' || data.currentCondition === 'light rain') {
+          data.modelPath = 'res/Rainy.fbx';
+          data.audioPath = 'res/ES_Rain Heavy 4 - SFX Producer.mp3';
+        } else {
+          print("There is no snow in Florida");
+        }
+
+        return data;
       });
 
       _defineProperty(this, "onToggleChangedHandler", async () => {
@@ -357,43 +373,33 @@ var _ = (function (React) {
       });
 
       _defineProperty(this, "getAustinWeatherHandler", async () => {
-        this.getAustinZip();
-        const newState = await this.getAppData(this.state.cityZipCode, this.state.weatherMeasureType);
-        print("getAustinWeatherHandler: " + JSON.stringify(this.state));
-        this.setState(state => ({ ...newState
-        }));
+        const newState = await this.getAppData(this.getAustinZip(), this.state.weatherMeasureType);
+        this.setState(this.setModelAndAudio(newState));
+        print("getLosAngelesWeatherHandler: " + JSON.stringify(this.state));
       });
 
       _defineProperty(this, "getLosAngelesWeatherHandler", async () => {
-        this.getLosAngelesZip();
-        const newState = await this.getAppData(this.state.cityZipCode, this.state.weatherMeasureType);
+        const newState = await this.getAppData(this.getLosAngelesZip(), this.state.weatherMeasureType);
+        this.setState(this.setModelAndAudio(newState));
         print("getLosAngelesWeatherHandler: " + JSON.stringify(this.state));
-        this.setState(state => ({ ...newState
-        }));
       });
 
       _defineProperty(this, "getPlantationWeatherHandler", async () => {
-        this.getPlantationZip();
-        const newState = await this.getAppData(this.state.cityZipCode, this.state.weatherMeasureType);
-        print("getPlantationWeatherHandler: " + JSON.stringify(this.state));
-        this.setState(state => ({ ...newState
-        }));
+        const newState = await this.getAppData(this.getPlantationZip(), this.state.weatherMeasureType);
+        this.setState(this.setModelAndAudio(newState));
+        print("getLosAngelesWeatherHandler: " + JSON.stringify(this.state));
       });
 
       _defineProperty(this, "getSunnyvalWeatherHandler", async () => {
-        this.getSunnyvaleZip();
-        const newState = await this.getAppData(this.state.cityZipCode, this.state.weatherMeasureType);
-        print("getSunnyvalWeatherHandler: " + JSON.stringify(this.state));
-        this.setState(state => ({ ...newState
-        }));
+        const newState = await this.getAppData(this.getSunnyvaleZip(), this.state.weatherMeasureType);
+        this.setState(this.setModelAndAudio(newState));
+        print("getLosAngelesWeatherHandler: " + JSON.stringify(this.state));
       });
 
       _defineProperty(this, "getTorontoWeatherHandler", async () => {
-        this.getTorontoCityId();
-        const torontoState = await this.getWeatherDataForToronto(this.state.currentCityById, this.state.weatherMeasureType);
-        print("getTorontoWeatherHandler: " + JSON.stringify(this.state));
-        this.setState(state => ({ ...torontoState
-        }));
+        const newState = await this.getWeatherDataForToronto(this.getTorontoCityId(), this.state.weatherMeasureType);
+        this.setState(this.setModelAndAudio(newState));
+        print("getLosAngelesWeatherHandler: " + JSON.stringify(this.state));
       });
 
       this.data = new Data();
@@ -443,6 +449,7 @@ var _ = (function (React) {
       //   "Zurich, Switzerland"
       // ];
 
+      print("Model path: " + JSON.stringify(this.state.modelPath));
       return React.createElement(View, {
         name: "main-view"
       }, React.createElement(GridLayout, {
@@ -499,8 +506,9 @@ var _ = (function (React) {
       }, "Toronto, ON")), React.createElement(LinearLayout, {
         name: "model-grid",
         defaultItemAlignment: "center-center",
-        localPosition: [-0.150, 0.5, 0]
+        localPosition: [-0.350, 0.5, -0.4]
       }, this.state.modelPath !== undefined ? React.createElement(View, null, React.createElement(Model, {
+        key: this.state.modelPath,
         modelPath: this.state.modelPath,
         importScale: 1,
         animationPauseState: false,
@@ -510,8 +518,9 @@ var _ = (function (React) {
           loops: 100
         },
         animationPlaybackSpeed: 1,
-        localScale: [0.0003, 0.0003, 0.0003]
+        localScale: [0.001, 0.001, 0.001]
       }), React.createElement(Audio, {
+        key: this.state.audioPath,
         fileName: this.state.audioPath,
         loadFile: true,
         action: "start",
