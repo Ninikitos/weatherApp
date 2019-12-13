@@ -71,6 +71,7 @@ export default class MyApp extends React.Component {
     return {
       currentTemp:          data.temperature,
       currentCityByZip:     data.cityByZipId,
+      currentCityById:      undefined,
       currentCondition:     data.condition,
       currentHumidity:      data.humidity,
       currentMinTemp:       data.temp_min,
@@ -97,7 +98,8 @@ export default class MyApp extends React.Component {
     print("data all cities: ", data);
     return {
       currentTemp:          data.temperature,
-      currentCityById:      data.cityId,
+      currentCityById:      "Toronto",
+      currentCityByZip:     undefined,
       currentCondition:     data.condition,
       currentHumidity:      data.humidity,
       currentMinTemp:       data.temp_min,
@@ -241,19 +243,16 @@ export default class MyApp extends React.Component {
   getPlantationWeatherHandler = async () => {
     const newState = await this.getAppData(this.getPlantationZip(), this.state.weatherMeasureType);
     this.setState(this.setModelAndAudio(newState));
-    print("getLosAngelesWeatherHandler: " + JSON.stringify(this.state));
    }
 
   getSunnyvalWeatherHandler = async () => {
     const newState = await this.getAppData(this.getSunnyvaleZip(), this.state.weatherMeasureType);
     this.setState(this.setModelAndAudio(newState));
-    print("getLosAngelesWeatherHandler: " + JSON.stringify(this.state));
    }
 
   getTorontoWeatherHandler = async () => {
     const newState = await this.getWeatherDataForToronto(this.getTorontoCityId(), this.state.weatherMeasureType);
     this.setState(this.setModelAndAudio(newState));
-    print("getLosAngelesWeatherHandler: " + JSON.stringify(this.state));
    }
 
   render() {
@@ -263,7 +262,6 @@ export default class MyApp extends React.Component {
     };
 
     let flooredTemp = Math.floor(this.state.currentTemp);
-
     // const cities = [
     //   "Austin, TX",
     //   "Boulder, CO",
@@ -284,7 +282,6 @@ export default class MyApp extends React.Component {
     //   "Wellington, New Zealand",
     //   "Zurich, Switzerland"
     // ];
-    print("Model path: " + JSON.stringify(this.state.modelPath));
     return (
       <View name="main-view">
         <GridLayout
@@ -298,7 +295,7 @@ export default class MyApp extends React.Component {
               localPosition={[0, 0.5, 0]}
               textSize={0.05}
               weight='medium'
-            >Cities list</Text>
+            >Cities</Text>
             <Button 
               localPosition={[-0.7, 0.3, 0]}
               type="text"
@@ -325,7 +322,7 @@ export default class MyApp extends React.Component {
               roundness={0.02}
               textSize={0.03}
               onClick={this.getPlantationWeatherHandler}
-              >Plantation, FL</Button>
+              >Fort Lauderdale, FL</Button>
             <Button 
               localPosition={[-0.7, -0.3, 0]}
               type="text"
@@ -348,7 +345,7 @@ export default class MyApp extends React.Component {
           <LinearLayout
             name="model-grid"
             defaultItemAlignment="center-center"
-            localPosition={[-0.350, 0.5, -0.4]}
+            localPosition={[-0.350, 0.4, -0.3]}
             >
               { 
                 this.state.modelPath !== undefined ? 
@@ -416,6 +413,14 @@ export default class MyApp extends React.Component {
             ))}
           </LinearLayout>
         </ScrollView>
+        <LinearLayout
+          localPosition={[-0.44, -0.4, 0]}>
+          <Text 
+            textSize={0.1}
+            weight='bold'
+            textAlignment={'center'}
+          >{this.state.currentCityByZip ? this.state.currentCityByZip : this.state.currentCityById}</Text>
+        </LinearLayout>
       </View>
     );
   }

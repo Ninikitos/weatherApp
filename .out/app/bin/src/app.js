@@ -47,6 +47,7 @@ class MyApp extends React.Component {
       return {
         currentTemp: data.temperature,
         currentCityByZip: data.cityByZipId,
+        currentCityById: undefined,
         currentCondition: data.condition,
         currentHumidity: data.humidity,
         currentMinTemp: data.temp_min,
@@ -89,7 +90,8 @@ class MyApp extends React.Component {
       print("data all cities: ", data);
       return {
         currentTemp: data.temperature,
-        currentCityById: data.cityId,
+        currentCityById: "Toronto",
+        currentCityByZip: undefined,
         currentCondition: data.condition,
         currentHumidity: data.humidity,
         currentMinTemp: data.temp_min,
@@ -230,19 +232,16 @@ class MyApp extends React.Component {
     _defineProperty(this, "getPlantationWeatherHandler", async () => {
       const newState = await this.getAppData(this.getPlantationZip(), this.state.weatherMeasureType);
       this.setState(this.setModelAndAudio(newState));
-      print("getLosAngelesWeatherHandler: " + JSON.stringify(this.state));
     });
 
     _defineProperty(this, "getSunnyvalWeatherHandler", async () => {
       const newState = await this.getAppData(this.getSunnyvaleZip(), this.state.weatherMeasureType);
       this.setState(this.setModelAndAudio(newState));
-      print("getLosAngelesWeatherHandler: " + JSON.stringify(this.state));
     });
 
     _defineProperty(this, "getTorontoWeatherHandler", async () => {
       const newState = await this.getWeatherDataForToronto(this.getTorontoCityId(), this.state.weatherMeasureType);
       this.setState(this.setModelAndAudio(newState));
-      print("getLosAngelesWeatherHandler: " + JSON.stringify(this.state));
     });
 
     this.data = new Data();
@@ -292,7 +291,6 @@ class MyApp extends React.Component {
     //   "Zurich, Switzerland"
     // ];
 
-    print("Model path: " + JSON.stringify(this.state.modelPath));
     return React.createElement(View, {
       name: "main-view"
     }, React.createElement(GridLayout, {
@@ -306,7 +304,7 @@ class MyApp extends React.Component {
       localPosition: [0, 0.5, 0],
       textSize: 0.05,
       weight: "medium"
-    }, "Cities list"), React.createElement(Button, {
+    }, "Cities"), React.createElement(Button, {
       localPosition: [-0.7, 0.3, 0],
       type: "text",
       height: 0.1,
@@ -330,7 +328,7 @@ class MyApp extends React.Component {
       roundness: 0.02,
       textSize: 0.03,
       onClick: this.getPlantationWeatherHandler
-    }, "Plantation, FL"), React.createElement(Button, {
+    }, "Fort Lauderdale, FL"), React.createElement(Button, {
       localPosition: [-0.7, -0.3, 0],
       type: "text",
       height: 0.1,
@@ -349,7 +347,7 @@ class MyApp extends React.Component {
     }, "Toronto, ON")), React.createElement(LinearLayout, {
       name: "model-grid",
       defaultItemAlignment: "center-center",
-      localPosition: [-0.350, 0.5, -0.4]
+      localPosition: [-0.350, 0.4, -0.3]
     }, this.state.modelPath !== undefined ? React.createElement(View, null, React.createElement(Model, {
       key: this.state.modelPath,
       modelPath: this.state.modelPath,
@@ -422,7 +420,13 @@ class MyApp extends React.Component {
       textSize: 0.07,
       key: index,
       text: `${data.time}`
-    }))))));
+    }))))), React.createElement(LinearLayout, {
+      localPosition: [-0.44, -0.4, 0]
+    }, React.createElement(Text, {
+      textSize: 0.1,
+      weight: "bold",
+      textAlignment: 'center'
+    }, this.state.currentCityByZip ? this.state.currentCityByZip : this.state.currentCityById)));
   }
 
 }
