@@ -13,29 +13,20 @@ export default class MyApp extends React.Component {
     this.state = {
       currentTemp:          "undefined",
       currentCityByZip:     "undefined",
+      currentCityById:      "undefined",
+      modelPath:            undefined,
+      audioPath:            undefined,
       currentCondition:     "undefined",
       isConditionChanged:   true,
       currentHumidity:      "undefined",
       currentMinTemp:       "undefined",
       currentMaxTemp:       "undefined",
+      isAPICallTor:         true,
       timeOfDay:            [],
       useMetricUnits:       false,
       weatherMeasureType:   "imperial",
-      modelPath:            undefined,
-      audioPath:            undefined,
       timeIntervalFinished: false,
       cityZipCode:          "33313"
-      // rainnyAnim:           {
-      //                         resourceId: 1,
-      //                         name: "rain",
-      //                         paused: false,
-      //                         loops: 20
-      //                       }
-      // rainnyAnimTexture:    {
-      //                         textureId: 1,
-      //                         textureSlot: "slot",
-      //                         materialName: ""
-      //                       }
     };
   }
 
@@ -77,9 +68,9 @@ export default class MyApp extends React.Component {
     })
   }
   
-  getTorontoZip = () => {
+  getTorontoCityId = () => {
     this.setState({
-      cityZipCode: '94043'
+      currentCityById: "6167865"
     })
   }
 
@@ -94,6 +85,33 @@ export default class MyApp extends React.Component {
       currentHumidity:      data.humidity,
       currentMinTemp:       data.temp_min,
       currentMaxTemp:       data.temp_max,
+      isAPICallTor:         false,
+      timeOfDay:            [
+        { time: '12am', temp: data.timeOfDay12am },
+        { time: '3am', temp: data.timeOfDay3am },
+        { time: '6am', temp: data.timeOfDay6am },
+        { time: '9am', temp: data.timeOfDay9am },
+        { time: '12pm', temp: data.timeOfDay12pm },
+        { time: '3pm', temp: data.timeOfDay3pm },
+        { time: '6pm', temp: data.timeOfDay6pm },
+        { time: '9pm', temp: data.timeOfDay9pm },
+        { time: '12am', temp: data.timeOfDay12am }
+      ]
+    };
+  }
+
+  getWeatherDataForToronto = async (cityId, units) => { 
+
+    const data = await this.data.getDataForTor(cityId, units);
+    print("getWeatherDataForToronto called");
+    return {
+      currentTemp:          data.temperature,
+      currentCityById:      data.cityId,
+      currentCondition:     data.condition,
+      currentHumidity:      data.humidity,
+      currentMinTemp:       data.temp_min,
+      currentMaxTemp:       data.temp_max,
+      isAPICallTor:         true,
       timeOfDay:            [
         { time: '12am', temp: data.timeOfDay12am },
         { time: '3am', temp: data.timeOfDay3am },
@@ -119,17 +137,17 @@ export default class MyApp extends React.Component {
       if ((this.state.currentCondition === 'few clouds') || (this.state.currentCondition === 'clear sky')) {
         this.setState({
           timeIntervalFinished: true,
-          modelPath: 'res/sunny_new.fbx',
+          modelPath: 'res/sunny.fbx',
           audioPath: 'res/ES_Sunny Field With Birds - Organic Nature Sounds.mp3'
           
         })
 
-      } else if ((this.state.currentCondition === 'scattered clouds') || (this.state.currentCondition === 'broken clouds')) {
+      } else if ((this.state.currentCondition === 'scattered clouds') || (this.state.currentCondition === 'broken clouds') || (this.state.currentCondition === 'overcast clouds')) {
         this.setState({
           timeIntervalFinished: true,
-          modelPath: 'res/Partly_cloudy_test.fbx',
+          modelPath: 'res/cloudy.fbx',
           audioPath: 'res/ES_Wind Storm Forest 1 - SFX Producer.mp3'
-          
+       
         })
 
       } else if ((this.state.currentCondition === 'shower rain') || (this.state.currentCondition === 'rain') || (this.state.currentCondition === 'thunderstorm') || (this.state.currentCondition === 'mist') || (this.state.currentCondition === 'light rain')) {
@@ -137,6 +155,7 @@ export default class MyApp extends React.Component {
           timeIntervalFinished: true,
           modelPath: 'res/Rainy.fbx',
           audioPath: 'res/ES_Rain Heavy 4 - SFX Producer.mp3'
+
         })
 
       } else {
@@ -148,8 +167,14 @@ export default class MyApp extends React.Component {
   onToggleChangedHandler = async () => {
     const tempUnit = this.state.useMetricUnits ? 'imperial' : 'metric';
     this.changeWeatherMetrics();
-    const newState = await this.getAppData(this.state.cityZipCode, tempUnit);
-    this.setState( state => ({...newState, useMetricUnits: !state.useMetricUnits}));
+    if(this.state.isAPICallTor === false) {
+      const newState = await this.getAppData(this.state.cityZipCode, tempUnit);
+      this.setState( state => ({...newState, useMetricUnits: !state.useMetricUnits}));
+
+    } else if (this.state.isAPICallTor === true) {
+      const torontoState = await this.getWeatherDataForToronto(this.state.currentCityById, tempUnit);
+      this.setState( state => ({...torontoState, useMetricUnits: !state.useMetricUnits}));
+    }
   }
 
   getCurrentDay = () => {
@@ -173,39 +198,37 @@ export default class MyApp extends React.Component {
   getAustinWeatherHandler = async () => {
     this.getAustinZip();
     const newState = await this.getAppData(this.state.cityZipCode, this.state.weatherMeasureType);
-    print("this.state.weatherMeasureType ", this.state.weatherMeasureType);
+    print("getAustinWeatherHandler: " + JSON.stringify(this.state));
     this.setState( state => ({...newState}));
    }
 
-   getLosAngelesWeatherHandler = async () => {
+  getLosAngelesWeatherHandler = async () => {
     this.getLosAngelesZip();
     const newState = await this.getAppData(this.state.cityZipCode, this.state.weatherMeasureType);
-    print("this.state.weatherMeasureType ", this.state.weatherMeasureType);
+    print("getLosAngelesWeatherHandler: " + JSON.stringify(this.state));
     this.setState( state => ({...newState}));
    }
 
-   getPlantationWeatherHandler = async () => {
+  getPlantationWeatherHandler = async () => {
     this.getPlantationZip();
     const newState = await this.getAppData(this.state.cityZipCode, this.state.weatherMeasureType);
-    print("this.state.weatherMeasureType ", this.state.weatherMeasureType);
+    print("getPlantationWeatherHandler: " + JSON.stringify(this.state));
     this.setState( state => ({...newState}));
    }
 
-   getSunnyvalWeatherHandler = async () => {
+  getSunnyvalWeatherHandler = async () => {
     this.getSunnyvaleZip();
     const newState = await this.getAppData(this.state.cityZipCode, this.state.weatherMeasureType);
-    print("this.state.weatherMeasureType ", this.state.weatherMeasureType);
+    print("getSunnyvalWeatherHandler: " + JSON.stringify(this.state));
     this.setState( state => ({...newState}));
    }
 
-   getTorontoWeatherHandler = async () => {
-    this.getAustinZip();
-    const newState = await this.getAppData(this.state.cityZipCode, this.state.weatherMeasureType);
-    print("this.state.weatherMeasureType ", this.state.weatherMeasureType);
-    this.setState( state => ({...newState}));
+  getTorontoWeatherHandler = async () => {
+    this.getTorontoCityId();
+    const torontoState = await this.getWeatherDataForToronto(this.state.currentCityById, this.state.weatherMeasureType);
+    print("getTorontoWeatherHandler: " + JSON.stringify(this.state));
+    this.setState( state => ({...torontoState}));
    }
-
-  // onSelection = eventData => { print("Selected items:", eventData.SelectedItems); };
 
   render() {
     const aabb = {
@@ -215,38 +238,29 @@ export default class MyApp extends React.Component {
 
     let flooredTemp = Math.floor(this.state.currentTemp);
 
-    const cities = [
-      "Austin, TX",
-      "Boulder, CO",
-      "Culver City, CA",
-      "Dallas, TX",
-      "Guadalajara, Mexico",
-      "Haifa, Israel",
-      "Hong Kong, Chine",
-      "Lausanne, Switzerland",
-      "Los Angeles, CA",
-      "New York, NY",
-      "Plantation, FL(HQ)",
-      "San Francisco, CA, Israel",
-      "Seattle, WA",
-      "Sunnyvale, CA",
-      "Tel Aviv, Israel",
-      "Tokyo, Japan",
-      "Wellington, New Zealand",
-      "Zurich, Switzerland"
-    ];
+    // const cities = [
+    //   "Austin, TX",
+    //   "Boulder, CO",
+    //   "Culver City, CA",
+    //   "Dallas, TX",
+    //   "Guadalajara, Mexico",
+    //   "Haifa, Israel",
+    //   "Hong Kong, Chine",
+    //   "Lausanne, Switzerland",
+    //   "Los Angeles, CA",
+    //   "New York, NY",
+    //   "Plantation, FL(HQ)",
+    //   "San Francisco, CA, Israel",
+    //   "Seattle, WA",
+    //   "Sunnyvale, CA",
+    //   "Tel Aviv, Israel",
+    //   "Tokyo, Japan",
+    //   "Wellington, New Zealand",
+    //   "Zurich, Switzerland"
+    // ];
 
     return (
       <View name="main-view">
-         
-        {/* <DropdownList
-            text="Select Moon"
-            onSelectionChanged={this.onSelection}
-          >
-            {cities.map((city, index) => (
-              <DropdownListItem id={index} label={city} />
-            ))}
-        </DropdownList> */}
         <GridLayout
             name="content-grid"
             rows={1}

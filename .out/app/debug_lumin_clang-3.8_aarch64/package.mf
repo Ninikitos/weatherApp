@@ -114,9 +114,9 @@
   },
   {
    "compression": 8,
-   "hash": "81d88aa6f0cf919f212573ef6c5ab2d8296a3af4",
+   "hash": "d88a262a7b370c5d25b0a2761156785bb551e2fd",
    "pkgpath": "bin/bundle.js",
-   "size": 16019,
+   "size": 19246,
    "src": "C:/Users/nilin/Desktop/weatherApp/bin/bundle.js"
   },
   {
@@ -1360,16 +1360,16 @@
   },
   {
    "compression": 8,
-   "hash": "807bbc8672abc8009de8701192c96e51e18051e9",
+   "hash": "37c5a18f4c3c63b259b91f617e9ed7f10f58f222",
    "pkgpath": "bin/src/app.js",
-   "size": 12277,
+   "size": 13892,
    "src": "C:/Users/nilin/Desktop/weatherApp/bin/src/app.js"
   },
   {
    "compression": 8,
-   "hash": "76a9ed6e943b8bdbe44beaa4af33600ad55cea26",
+   "hash": "262150e6db0ae26486697259b87da5bb52b050ff",
    "pkgpath": "bin/src/data.js",
-   "size": 1750,
+   "size": 3174,
    "src": "C:/Users/nilin/Desktop/weatherApp/bin/src/data.js"
   },
   {
@@ -1402,7 +1402,7 @@
   },
   {
    "compression": 8,
-   "hash": "f9f6a981f6944e31516527a85b715505f38705ac",
+   "hash": "3969fa963bf81a1ee472380de06cdbebfcbf243a",
    "pkgpath": "./digest.sha512.signed",
    "size": 43752,
    "src": "C:/Users/nilin/Desktop/weatherApp/digest.sha512.signed"
@@ -1458,6 +1458,13 @@
   },
   {
    "compression": 8,
+   "hash": "bdf1446edbdac91b66b168c2cce44449cecb5a3f",
+   "pkgpath": "res/cloudy.fbx",
+   "size": 217744,
+   "src": "C:/Users/nilin/Desktop/weatherApp/res/cloudy.fbx"
+  },
+  {
+   "compression": 8,
    "hash": "f595d37f19f8bb3b9268f375069c48ecce150c6e",
    "pkgpath": "res/cloudy_plantation.glb",
    "size": 231672,
@@ -1490,6 +1497,13 @@
    "pkgpath": "res/rainy_plantation2.glb",
    "size": 220608,
    "src": "C:/Users/nilin/Desktop/weatherApp/res/rainy_plantation2.glb"
+  },
+  {
+   "compression": 8,
+   "hash": "0305995ef2c1199af2414d9d6a50b33aa8a50b8b",
+   "pkgpath": "res/sunny.fbx",
+   "size": 149472,
+   "src": "C:/Users/nilin/Desktop/weatherApp/res/sunny.fbx"
   },
   {
    "compression": 8,

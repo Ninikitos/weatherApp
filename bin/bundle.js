@@ -20,7 +20,8 @@ var _ = (function (React) {
 
   // const baseURL = 'http://api.openweathermap.org/data/2.5/weather?';
   const baseURL = 'https://api.openweathermap.org/data/2.5/forecast?';
-  const appId = '0f4670104e656aa457f158cbe7631c18';
+  const appId = '0f4670104e656aa457f158cbe7631c18'; //6167865
+
   class Data {
     constructor() {
       _defineProperty(this, "getData", async (...parameters) => {
@@ -48,9 +49,50 @@ var _ = (function (React) {
         let result;
 
         try {
-          // 'id=4168782&&units=imperial'
           result = await fetch(`${baseURL}&zip=${cityByZipId}&units=${units}&appid=${appId}`);
-          print(JSON.stringify(result));
+          print("requestData " + JSON.stringify(result));
+        } catch (error) {
+          print(`API Data Fetch error: ${error.message}`);
+        }
+
+        let jsonData;
+
+        try {
+          jsonData = await result.json();
+        } catch (error) {
+          print(`JSON conversion error: ${error.message}`);
+        }
+
+        return jsonData;
+      });
+
+      _defineProperty(this, "getDataForTor", async (...parameters) => {
+        const dataTor = await this.requestDataForToronto(...parameters);
+        return {
+          temperature: dataTor.list[0].main.temp,
+          cityId: dataTor.city.id,
+          condition: dataTor.list[0].weather[0].description,
+          humidity: dataTor.list[0].main.humidity,
+          tempMin: dataTor.list[0].main.temp_min,
+          tempMax: dataTor.list[0].main.temp_max,
+          timeOfDay12am: dataTor.list[0].main.temp,
+          timeOfDay3am: dataTor.list[1].main.temp,
+          timeOfDay6am: dataTor.list[2].main.temp,
+          timeOfDay9am: dataTor.list[3].main.temp,
+          timeOfDay12pm: dataTor.list[4].main.temp,
+          timeOfDay3pm: dataTor.list[5].main.temp,
+          timeOfDay6pm: dataTor.list[6].main.temp,
+          timeOfDay9pm: dataTor.list[7].main.temp,
+          timeOfDay12am: dataTor.list[8].main.temp
+        };
+      });
+
+      _defineProperty(this, "requestDataForToronto", async (cityId, units) => {
+        let result;
+
+        try {
+          result = await fetch(`${baseURL}&id=${cityId}&units=${units}&appid=${appId}`);
+          print("Toronto " + JSON.stringify(result));
         } catch (error) {
           print(`API Data Fetch error: ${error.message}`);
         }
@@ -160,9 +202,9 @@ var _ = (function (React) {
         });
       });
 
-      _defineProperty(this, "getTorontoZip", () => {
+      _defineProperty(this, "getTorontoCityId", () => {
         this.setState({
-          cityZipCode: '94043'
+          currentCityById: "6167865"
         });
       });
 
@@ -175,6 +217,49 @@ var _ = (function (React) {
           currentHumidity: data.humidity,
           currentMinTemp: data.temp_min,
           currentMaxTemp: data.temp_max,
+          isAPICallTor: false,
+          timeOfDay: [{
+            time: '12am',
+            temp: data.timeOfDay12am
+          }, {
+            time: '3am',
+            temp: data.timeOfDay3am
+          }, {
+            time: '6am',
+            temp: data.timeOfDay6am
+          }, {
+            time: '9am',
+            temp: data.timeOfDay9am
+          }, {
+            time: '12pm',
+            temp: data.timeOfDay12pm
+          }, {
+            time: '3pm',
+            temp: data.timeOfDay3pm
+          }, {
+            time: '6pm',
+            temp: data.timeOfDay6pm
+          }, {
+            time: '9pm',
+            temp: data.timeOfDay9pm
+          }, {
+            time: '12am',
+            temp: data.timeOfDay12am
+          }]
+        };
+      });
+
+      _defineProperty(this, "getWeatherDataForToronto", async (cityId, units) => {
+        const data = await this.data.getDataForTor(cityId, units);
+        print("getWeatherDataForToronto called");
+        return {
+          currentTemp: data.temperature,
+          currentCityById: data.cityId,
+          currentCondition: data.condition,
+          currentHumidity: data.humidity,
+          currentMinTemp: data.temp_min,
+          currentMaxTemp: data.temp_max,
+          isAPICallTor: true,
           timeOfDay: [{
             time: '12am',
             temp: data.timeOfDay12am
@@ -217,13 +302,13 @@ var _ = (function (React) {
           if (this.state.currentCondition === 'few clouds' || this.state.currentCondition === 'clear sky') {
             this.setState({
               timeIntervalFinished: true,
-              modelPath: 'res/sunny_new.fbx',
+              modelPath: 'res/sunny.fbx',
               audioPath: 'res/ES_Sunny Field With Birds - Organic Nature Sounds.mp3'
             });
-          } else if (this.state.currentCondition === 'scattered clouds' || this.state.currentCondition === 'broken clouds') {
+          } else if (this.state.currentCondition === 'scattered clouds' || this.state.currentCondition === 'broken clouds' || this.state.currentCondition === 'overcast clouds') {
             this.setState({
               timeIntervalFinished: true,
-              modelPath: 'res/Partly_cloudy_test.fbx',
+              modelPath: 'res/cloudy.fbx',
               audioPath: 'res/ES_Wind Storm Forest 1 - SFX Producer.mp3'
             });
           } else if (this.state.currentCondition === 'shower rain' || this.state.currentCondition === 'rain' || this.state.currentCondition === 'thunderstorm' || this.state.currentCondition === 'mist' || this.state.currentCondition === 'light rain') {
@@ -241,10 +326,18 @@ var _ = (function (React) {
       _defineProperty(this, "onToggleChangedHandler", async () => {
         const tempUnit = this.state.useMetricUnits ? 'imperial' : 'metric';
         this.changeWeatherMetrics();
-        const newState = await this.getAppData(this.state.cityZipCode, tempUnit);
-        this.setState(state => ({ ...newState,
-          useMetricUnits: !state.useMetricUnits
-        }));
+
+        if (this.state.isAPICallTor === false) {
+          const newState = await this.getAppData(this.state.cityZipCode, tempUnit);
+          this.setState(state => ({ ...newState,
+            useMetricUnits: !state.useMetricUnits
+          }));
+        } else if (this.state.isAPICallTor === true) {
+          const torontoState = await this.getWeatherDataForToronto(this.state.currentCityById, tempUnit);
+          this.setState(state => ({ ...torontoState,
+            useMetricUnits: !state.useMetricUnits
+          }));
+        }
       });
 
       _defineProperty(this, "getCurrentDay", () => {
@@ -266,7 +359,7 @@ var _ = (function (React) {
       _defineProperty(this, "getAustinWeatherHandler", async () => {
         this.getAustinZip();
         const newState = await this.getAppData(this.state.cityZipCode, this.state.weatherMeasureType);
-        print("this.state.weatherMeasureType ", this.state.weatherMeasureType);
+        print("getAustinWeatherHandler: " + JSON.stringify(this.state));
         this.setState(state => ({ ...newState
         }));
       });
@@ -274,7 +367,7 @@ var _ = (function (React) {
       _defineProperty(this, "getLosAngelesWeatherHandler", async () => {
         this.getLosAngelesZip();
         const newState = await this.getAppData(this.state.cityZipCode, this.state.weatherMeasureType);
-        print("this.state.weatherMeasureType ", this.state.weatherMeasureType);
+        print("getLosAngelesWeatherHandler: " + JSON.stringify(this.state));
         this.setState(state => ({ ...newState
         }));
       });
@@ -282,7 +375,7 @@ var _ = (function (React) {
       _defineProperty(this, "getPlantationWeatherHandler", async () => {
         this.getPlantationZip();
         const newState = await this.getAppData(this.state.cityZipCode, this.state.weatherMeasureType);
-        print("this.state.weatherMeasureType ", this.state.weatherMeasureType);
+        print("getPlantationWeatherHandler: " + JSON.stringify(this.state));
         this.setState(state => ({ ...newState
         }));
       });
@@ -290,16 +383,16 @@ var _ = (function (React) {
       _defineProperty(this, "getSunnyvalWeatherHandler", async () => {
         this.getSunnyvaleZip();
         const newState = await this.getAppData(this.state.cityZipCode, this.state.weatherMeasureType);
-        print("this.state.weatherMeasureType ", this.state.weatherMeasureType);
+        print("getSunnyvalWeatherHandler: " + JSON.stringify(this.state));
         this.setState(state => ({ ...newState
         }));
       });
 
       _defineProperty(this, "getTorontoWeatherHandler", async () => {
-        this.getAustinZip();
-        const newState = await this.getAppData(this.state.cityZipCode, this.state.weatherMeasureType);
-        print("this.state.weatherMeasureType ", this.state.weatherMeasureType);
-        this.setState(state => ({ ...newState
+        this.getTorontoCityId();
+        const torontoState = await this.getWeatherDataForToronto(this.state.currentCityById, this.state.weatherMeasureType);
+        print("getTorontoWeatherHandler: " + JSON.stringify(this.state));
+        this.setState(state => ({ ...torontoState
         }));
       });
 
@@ -307,39 +400,49 @@ var _ = (function (React) {
       this.state = {
         currentTemp: "undefined",
         currentCityByZip: "undefined",
+        currentCityById: "undefined",
+        modelPath: undefined,
+        audioPath: undefined,
         currentCondition: "undefined",
         isConditionChanged: true,
         currentHumidity: "undefined",
         currentMinTemp: "undefined",
         currentMaxTemp: "undefined",
+        isAPICallTor: true,
         timeOfDay: [],
         useMetricUnits: false,
         weatherMeasureType: "imperial",
-        modelPath: undefined,
-        audioPath: undefined,
         timeIntervalFinished: false,
-        cityZipCode: "33313" // rainnyAnim:           {
-        //                         resourceId: 1,
-        //                         name: "rain",
-        //                         paused: false,
-        //                         loops: 20
-        //                       }
-        // rainnyAnimTexture:    {
-        //                         textureId: 1,
-        //                         textureSlot: "slot",
-        //                         materialName: ""
-        //                       }
-
+        cityZipCode: "33313"
       };
     }
 
-    // onSelection = eventData => { print("Selected items:", eventData.SelectedItems); };
     render() {
       const aabb = {
         min: [-0.45, -0.15, -0.1],
         max: [0.45, 0.15, 0.1]
       };
-      let flooredTemp = Math.floor(this.state.currentTemp);
+      let flooredTemp = Math.floor(this.state.currentTemp); // const cities = [
+      //   "Austin, TX",
+      //   "Boulder, CO",
+      //   "Culver City, CA",
+      //   "Dallas, TX",
+      //   "Guadalajara, Mexico",
+      //   "Haifa, Israel",
+      //   "Hong Kong, Chine",
+      //   "Lausanne, Switzerland",
+      //   "Los Angeles, CA",
+      //   "New York, NY",
+      //   "Plantation, FL(HQ)",
+      //   "San Francisco, CA, Israel",
+      //   "Seattle, WA",
+      //   "Sunnyvale, CA",
+      //   "Tel Aviv, Israel",
+      //   "Tokyo, Japan",
+      //   "Wellington, New Zealand",
+      //   "Zurich, Switzerland"
+      // ];
+
       return React.createElement(View, {
         name: "main-view"
       }, React.createElement(GridLayout, {
