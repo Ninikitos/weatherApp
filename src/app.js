@@ -134,7 +134,7 @@ export default class MyApp extends React.Component {
           
         this.setState({
           timeIntervalFinished: true,
-          modelPath: 'res/sunny.fbx',
+          modelPath: 'res/Sunny_01.fbx',
           audioPath: 'res/ES_Sunny Field With Birds - Organic Nature Sounds.mp3'
           
         })
@@ -145,7 +145,7 @@ export default class MyApp extends React.Component {
 
         this.setState({
           timeIntervalFinished: true,
-          modelPath: 'res/cloudy.fbx',
+          modelPath: 'res/cloudy_01.fbx',
           audioPath: 'res/ES_Wind Storm Forest 1 - SFX Producer.mp3'
        
         })
@@ -158,7 +158,7 @@ export default class MyApp extends React.Component {
                   
         this.setState({
           timeIntervalFinished: true,
-          modelPath: 'res/Rainy.fbx',
+          modelPath: 'res/Rainy_01.fbx',
           audioPath: 'res/ES_Rain Heavy 4 - SFX Producer.mp3'
 
         })
@@ -174,13 +174,13 @@ export default class MyApp extends React.Component {
     print("didMafter 2 sec : " + data.currentCondition );
     if ((data.currentCondition === 'few clouds') || 
         (data.currentCondition === 'clear sky')) {
-      data.modelPath = 'res/sunny.fbx';
+      data.modelPath = 'res/Sunny_01.fbx';
       data.audioPath = 'res/ES_Sunny Field With Birds - Organic Nature Sounds.mp3';
 
     } else if ((data.currentCondition === 'scattered clouds') || 
                (data.currentCondition === 'broken clouds') || 
                (data.currentCondition === 'overcast clouds')) {
-      data.modelPath = 'res/cloudy.fbx';
+      data.modelPath = 'res/cloudy_01.fbx';
       data.audioPath = 'res/ES_Wind Storm Forest 1 - SFX Producer.mp3';
 
     } else if ((data.currentCondition === 'shower rain') || 
@@ -188,7 +188,7 @@ export default class MyApp extends React.Component {
                (data.currentCondition === 'thunderstorm') || 
                (data.currentCondition === 'mist') || 
                (data.currentCondition === 'light rain')) {
-      data.modelPath = 'res/Rainy.fbx';
+      data.modelPath = 'res/Rainy_01.fbx';
       data.audioPath = 'res/ES_Rain Heavy 4 - SFX Producer.mp3';
 
     } else {
@@ -345,7 +345,7 @@ export default class MyApp extends React.Component {
           <LinearLayout
             name="model-grid"
             defaultItemAlignment="center-center"
-            localPosition={[-0.350, 0.4, -0.3]}
+            localPosition={[-0.030, 0.46, 0]}
             >
               { 
                 this.state.modelPath !== undefined ? 
@@ -358,7 +358,7 @@ export default class MyApp extends React.Component {
                     animationTime={10}
                     animation={{ name: "Take 001", loops: 100 }}
                     animationPlaybackSpeed={1}
-                    localScale={[0.001, 0.001, 0.001]}
+                    localScale={[0.0003, 0.0003, 0.0003]}
                   ></Model>
                   <Audio
                     key={this.state.audioPath}

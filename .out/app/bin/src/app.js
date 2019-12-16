@@ -142,19 +142,19 @@ class MyApp extends React.Component {
         if (this.state.currentCondition === 'few clouds' || this.state.currentCondition === 'clear sky') {
           this.setState({
             timeIntervalFinished: true,
-            modelPath: 'res/sunny.fbx',
+            modelPath: 'res/Sunny_01.fbx',
             audioPath: 'res/ES_Sunny Field With Birds - Organic Nature Sounds.mp3'
           });
         } else if (this.state.currentCondition === 'scattered clouds' || this.state.currentCondition === 'broken clouds' || this.state.currentCondition === 'overcast clouds') {
           this.setState({
             timeIntervalFinished: true,
-            modelPath: 'res/cloudy.fbx',
+            modelPath: 'res/cloudy_01.fbx',
             audioPath: 'res/ES_Wind Storm Forest 1 - SFX Producer.mp3'
           });
         } else if (this.state.currentCondition === 'shower rain' || this.state.currentCondition === 'rain' || this.state.currentCondition === 'thunderstorm' || this.state.currentCondition === 'mist' || this.state.currentCondition === 'light rain') {
           this.setState({
             timeIntervalFinished: true,
-            modelPath: 'res/Rainy.fbx',
+            modelPath: 'res/Rainy_01.fbx',
             audioPath: 'res/ES_Rain Heavy 4 - SFX Producer.mp3'
           });
         } else {
@@ -169,13 +169,13 @@ class MyApp extends React.Component {
       print("didMafter 2 sec : " + data.currentCondition);
 
       if (data.currentCondition === 'few clouds' || data.currentCondition === 'clear sky') {
-        data.modelPath = 'res/sunny.fbx';
+        data.modelPath = 'res/Sunny_01.fbx';
         data.audioPath = 'res/ES_Sunny Field With Birds - Organic Nature Sounds.mp3';
       } else if (data.currentCondition === 'scattered clouds' || data.currentCondition === 'broken clouds' || data.currentCondition === 'overcast clouds') {
-        data.modelPath = 'res/cloudy.fbx';
+        data.modelPath = 'res/cloudy_01.fbx';
         data.audioPath = 'res/ES_Wind Storm Forest 1 - SFX Producer.mp3';
       } else if (data.currentCondition === 'shower rain' || data.currentCondition === 'rain' || data.currentCondition === 'thunderstorm' || data.currentCondition === 'mist' || data.currentCondition === 'light rain') {
-        data.modelPath = 'res/Rainy.fbx';
+        data.modelPath = 'res/Rainy_01.fbx';
         data.audioPath = 'res/ES_Rain Heavy 4 - SFX Producer.mp3';
       } else {
         print("There is no snow in Florida");
@@ -347,7 +347,7 @@ class MyApp extends React.Component {
     }, "Toronto, ON")), React.createElement(LinearLayout, {
       name: "model-grid",
       defaultItemAlignment: "center-center",
-      localPosition: [-0.350, 0.4, -0.3]
+      localPosition: [-0.030, 0.46, 0]
     }, this.state.modelPath !== undefined ? React.createElement(View, null, React.createElement(Model, {
       key: this.state.modelPath,
       modelPath: this.state.modelPath,
@@ -359,7 +359,7 @@ class MyApp extends React.Component {
         loops: 100
       },
       animationPlaybackSpeed: 1,
-      localScale: [0.001, 0.001, 0.001]
+      localScale: [0.0003, 0.0003, 0.0003]
     }), React.createElement(Audio, {
       key: this.state.audioPath,
       fileName: this.state.audioPath,
