@@ -1,0 +1,24 @@
+{
+  "global": {
+    "shaderName": "unlittextured",
+    "albedo": "res/Icon_Grid/Inside_Portal/SceneTest_Leaper.png",
+    "ambience": 1.0,
+    "color": [
+      1,
+      1,
+      1,
+      1
+    ]
+  },
+  "materials": [
+    {
+      "name": "SceneTest_Leaper",
+      "opaque": true
+    },
+    {
+      "name": "SceneTest_Brass",
+      "albedo": "res/Icon_Grid/Inside_Portal/brass_seamless.png",
+      "opaque": true
+    }
+  ]
+}

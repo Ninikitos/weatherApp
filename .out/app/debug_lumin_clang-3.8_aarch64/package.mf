@@ -114,9 +114,9 @@
   },
   {
    "compression": 8,
-   "hash": "01a6aa9987ccd450996a159d3512e7183a8ab3d7",
+   "hash": "8c87342f5f9f65512a92bb484219e14093bf773b",
    "pkgpath": "bin/bundle.js",
-   "size": 20398,
+   "size": 17730,
    "src": "C:/Users/nilin/Desktop/weatherApp/bin/bundle.js"
   },
   {
@@ -1360,16 +1360,16 @@
   },
   {
    "compression": 8,
-   "hash": "5c954b506f6fcc0159f1ab9570fdcd7b6afb41cf",
+   "hash": "f4c4a550af59ece7bdd4f2107d3f12ba80e894ae",
    "pkgpath": "bin/src/app.js",
-   "size": 15026,
+   "size": 13935,
    "src": "C:/Users/nilin/Desktop/weatherApp/bin/src/app.js"
   },
   {
    "compression": 8,
-   "hash": "262150e6db0ae26486697259b87da5bb52b050ff",
+   "hash": "e1915ebaa329d338701cca8b14d6f35cb3d8a014",
    "pkgpath": "bin/src/data.js",
-   "size": 3174,
+   "size": 1707,
    "src": "C:/Users/nilin/Desktop/weatherApp/bin/src/data.js"
   },
   {
@@ -1402,9 +1402,9 @@
   },
   {
    "compression": 8,
-   "hash": "70236e2e005eb630d23d664bc8ce11e67b0f21d1",
+   "hash": "a16d4ee88da1beb93126cc0045e03c7c23cde2a2",
    "pkgpath": "./digest.sha512.signed",
-   "size": 43752,
+   "size": 43803,
    "src": "C:/Users/nilin/Desktop/weatherApp/digest.sha512.signed"
   },
   {
@@ -1437,6 +1437,62 @@
   },
   {
    "compression": 8,
+   "hash": "19e882233fc444a7c10099d4f57ad81b84bb1afa",
+   "pkgpath": "res/Inside_Portal/IconBoundsBlockMesh.fbx",
+   "size": 140861,
+   "src": "C:/Users/nilin/Desktop/weatherApp/res/Inside_Portal/IconBoundsBlockMesh.fbx"
+  },
+  {
+   "compression": 8,
+   "hash": "c10ea4c72b8caf247e9e8a6d7d5312580e0a28d3",
+   "pkgpath": "res/Inside_Portal/InsidePortal_SkySphere_Albedo.png",
+   "size": 36786,
+   "src": "C:/Users/nilin/Desktop/weatherApp/res/Inside_Portal/InsidePortal_SkySphere_Albedo.png"
+  },
+  {
+   "compression": 8,
+   "hash": "83e6c9c318b0191fcbdfcdd3eaf49d653d90ad53",
+   "pkgpath": "res/Inside_Portal/InsidePortal_SkySphere_Mat.kmat",
+   "size": 281,
+   "src": "C:/Users/nilin/Desktop/weatherApp/res/Inside_Portal/InsidePortal_SkySphere_Mat.kmat"
+  },
+  {
+   "compression": 8,
+   "hash": "3ff2df485f640a3bee570df64d6918df73b83b79",
+   "pkgpath": "res/Inside_Portal/SceneTest_Leaper.png",
+   "size": 50993,
+   "src": "C:/Users/nilin/Desktop/weatherApp/res/Inside_Portal/SceneTest_Leaper.png"
+  },
+  {
+   "compression": 8,
+   "hash": "92c605d728ac07fb0e365cdcc976ed66e20dc709",
+   "pkgpath": "res/Inside_Portal/brass_seamless.png",
+   "size": 51282,
+   "src": "C:/Users/nilin/Desktop/weatherApp/res/Inside_Portal/brass_seamless.png"
+  },
+  {
+   "compression": 8,
+   "hash": "195810b2bc6622c6b9612e4536d58ca09173d2ef",
+   "pkgpath": "res/Inside_Portal/qa.fbx",
+   "size": 583488,
+   "src": "C:/Users/nilin/Desktop/weatherApp/res/Inside_Portal/qa.fbx"
+  },
+  {
+   "compression": 8,
+   "hash": "cff2fca8944e929350a94f051f493c745f8ec685",
+   "pkgpath": "res/Inside_Portal/qa.kmat",
+   "size": 446,
+   "src": "C:/Users/nilin/Desktop/weatherApp/res/Inside_Portal/qa.kmat"
+  },
+  {
+   "compression": 8,
+   "hash": "e34f2421fd316995c02c299352ed47c005cb7dae",
+   "pkgpath": "res/Outside_Portal/ML_SDK_Icon_Anim.fbx",
+   "size": 508000,
+   "src": "C:/Users/nilin/Desktop/weatherApp/res/Outside_Portal/ML_SDK_Icon_Anim.fbx"
+  },
+  {
+   "compression": 8,
    "hash": "7eca328d87d459c51878807e301c1e65febdbd90",
    "pkgpath": "res/Rainy_01.fbx",
    "size": 494912,
@@ -1465,29 +1521,29 @@
   },
   {
    "compression": 8,
-   "hash": "09c42434eb96a11cd484ee2834c305fe4fec971f",
+   "hash": "52163fd7cf16e3475a9bc921a7b721a0430952b1",
    "pkgpath": "manifest.xml",
-   "size": 626,
+   "size": 661,
    "src": "C:/Users/nilin/Desktop/weatherApp\\manifest.xml",
    "xfrm_flags": {
     "manifest": {
-     "cert_hash": "2e3ca398ab9ae604f77bd093d88da657221814f3",
-     "developer_id": "Magic Leap Internal",
+     "cert_hash": "9507513764e5c030611ff611ddfb864284d551f6",
+     "developer_id": "289c7e18-10c0-4a7b-b1f1-344335fe1586",
      "min_api_level": "2"
     }
    },
-   "xfrm_hash": "d5632a73b91b546ab56b58a02df28f3ea074cd58",
+   "xfrm_hash": "3a9983ce80459979a926a669fe93b5042010ddc3",
    "xfrm_path": "C:/Users/nilin/Desktop/weatherApp/.out/app/debug_lumin_clang-3.8_aarch64\\manifest.xml-0ec1cc8b35b3b891",
-   "xfrm_size": 577
+   "xfrm_size": 629
   }
  ],
  "pkgflags": {
   "signed": {
-   "cert": "C:\\Users\\nilin\\Desktop\\mlsdk_main\\internal\\ml_internal.cert"
+   "cert": "C:\\Users\\nilin\\Desktop\\prod_cert\\prod.cert"
   },
   "taildata": {
    "debuggable": true,
-   "devcert": "C:\\Users\\nilin\\Desktop\\mlsdk_main\\internal\\ml_internal.cert",
+   "devcert": "C:\\Users\\nilin\\Desktop\\prod_cert\\prod.cert",
    "sbox": "USER",
    "version": 3
   }

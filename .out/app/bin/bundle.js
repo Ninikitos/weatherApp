@@ -18,17 +18,15 @@ var _ = (function (React) {
     return obj;
   }
 
-  // const baseURL = 'http://api.openweathermap.org/data/2.5/weather?';
   const baseURL = 'https://api.openweathermap.org/data/2.5/forecast?';
-  const appId = '0f4670104e656aa457f158cbe7631c18'; //6167865
-
+  const appId = '0f4670104e656aa457f158cbe7631c18';
   class Data {
     constructor() {
       _defineProperty(this, "getData", async (...parameters) => {
         const data = await this.requestData(...parameters);
         return {
           temperature: data.list[0].main.temp,
-          cityByZipId: data.city.name,
+          cityId: data.city.id,
           condition: data.list[0].weather[0].description,
           humidity: data.list[0].main.humidity,
           tempMin: data.list[0].main.temp_min,
@@ -45,56 +43,16 @@ var _ = (function (React) {
         };
       });
 
-      _defineProperty(this, "requestData", async (cityByZipId, units) => {
-        let result;
-
-        try {
-          result = await fetch(`${baseURL}&zip=${cityByZipId}&units=${units}&appid=${appId}`);
-          print("requestData " + JSON.stringify(result));
-        } catch (error) {
-          print(`API Data Fetch error: ${error.message}`);
-        }
-
-        let jsonData;
-
-        try {
-          jsonData = await result.json();
-        } catch (error) {
-          print(`JSON conversion error: ${error.message}`);
-        }
-
-        return jsonData;
-      });
-
-      _defineProperty(this, "getDataForTor", async (...parameters) => {
-        const dataTor = await this.requestDataForToronto(...parameters);
-        return {
-          temperature: dataTor.list[0].main.temp,
-          cityId: dataTor.city.id,
-          condition: dataTor.list[0].weather[0].description,
-          humidity: dataTor.list[0].main.humidity,
-          tempMin: dataTor.list[0].main.temp_min,
-          tempMax: dataTor.list[0].main.temp_max,
-          timeOfDay12am: dataTor.list[0].main.temp,
-          timeOfDay3am: dataTor.list[1].main.temp,
-          timeOfDay6am: dataTor.list[2].main.temp,
-          timeOfDay9am: dataTor.list[3].main.temp,
-          timeOfDay12pm: dataTor.list[4].main.temp,
-          timeOfDay3pm: dataTor.list[5].main.temp,
-          timeOfDay6pm: dataTor.list[6].main.temp,
-          timeOfDay9pm: dataTor.list[7].main.temp,
-          timeOfDay12am: dataTor.list[8].main.temp
-        };
-      });
-
-      _defineProperty(this, "requestDataForToronto", async (cityId, units) => {
+      _defineProperty(this, "requestData", async (cityId, units) => {
         let result;
 
         try {
           result = await fetch(`${baseURL}&id=${cityId}&units=${units}&appid=${appId}`);
-          print("Toronto " + JSON.stringify(result));
+          print("try requestData(): " + JSON.stringify(result));
+          print(" ");
         } catch (error) {
           print(`API Data Fetch error: ${error.message}`);
+          print(" ");
         }
 
         let jsonData;
@@ -102,7 +60,8 @@ var _ = (function (React) {
         try {
           jsonData = await result.json();
         } catch (error) {
-          print(`JSON conversion error: ${error.message}`);
+          print(`jsonData message error: ${error.message}`);
+          print(" ");
         }
 
         return jsonData;
@@ -164,8 +123,6 @@ var _ = (function (React) {
     constructor(props) {
       super(props);
 
-      _defineProperty(this, "getTempUnits", () => this.state.useMetricUnits ? 'metric' : 'imperial');
-
       _defineProperty(this, "changeWeatherMetrics", () => {
         if (this.state.weatherMeasureType === 'imperial') {
           this.setState({
@@ -178,82 +135,37 @@ var _ = (function (React) {
         }
       });
 
-      _defineProperty(this, "getAustinZip", () => {
-        return '73301';
+      _defineProperty(this, "getAustinId", () => {
+        return '4671654';
       });
 
-      _defineProperty(this, "getLosAngelesZip", () => {
-        return '90001';
+      _defineProperty(this, "getLosAngelesId", () => {
+        return '5368361';
       });
 
-      _defineProperty(this, "getPlantationZip", () => {
-        return '33313';
+      _defineProperty(this, "getPlantationId", () => {
+        return '4168783';
       });
 
-      _defineProperty(this, "getSunnyvaleZip", () => {
-        return '94087';
+      _defineProperty(this, "getSunnyvaleId", () => {
+        return '5400075';
       });
 
       _defineProperty(this, "getTorontoCityId", () => {
         return "6167865";
       });
 
-      _defineProperty(this, "getAppData", async (cityByZipId, units) => {
-        const data = await this.data.getData(cityByZipId, units);
-        print("data all cities: ", data);
+      _defineProperty(this, "getAppData", async (cityId, units) => {
+        const data = await this.data.getData(cityId, units);
+        print("getAppData called");
+        print("-----------------");
         return {
           currentTemp: data.temperature,
-          currentCityByZip: data.cityByZipId,
-          currentCityById: undefined,
+          currentCityById: data.cityId,
           currentCondition: data.condition,
           currentHumidity: data.humidity,
           currentMinTemp: data.temp_min,
           currentMaxTemp: data.temp_max,
-          isAPICallTor: false,
-          timeOfDay: [{
-            time: '12am',
-            temp: data.timeOfDay12am
-          }, {
-            time: '3am',
-            temp: data.timeOfDay3am
-          }, {
-            time: '6am',
-            temp: data.timeOfDay6am
-          }, {
-            time: '9am',
-            temp: data.timeOfDay9am
-          }, {
-            time: '12pm',
-            temp: data.timeOfDay12pm
-          }, {
-            time: '3pm',
-            temp: data.timeOfDay3pm
-          }, {
-            time: '6pm',
-            temp: data.timeOfDay6pm
-          }, {
-            time: '9pm',
-            temp: data.timeOfDay9pm
-          }, {
-            time: '12am',
-            temp: data.timeOfDay12am
-          }]
-        };
-      });
-
-      _defineProperty(this, "getWeatherDataForToronto", async (cityId, units) => {
-        const data = await this.data.getDataForTor(cityId, units);
-        print("getWeatherDataForToronto called");
-        print("data all cities: ", data);
-        return {
-          currentTemp: data.temperature,
-          currentCityById: "Toronto",
-          currentCityByZip: undefined,
-          currentCondition: data.condition,
-          currentHumidity: data.humidity,
-          currentMinTemp: data.temp_min,
-          currentMaxTemp: data.temp_max,
-          isAPICallTor: true,
           timeOfDay: [{
             time: '12am',
             temp: data.timeOfDay12am
@@ -286,16 +198,15 @@ var _ = (function (React) {
       });
 
       _defineProperty(this, "componentDidMount", async () => {
-        const newState = await this.getAppData(this.state.cityZipCode, this.state.weatherMeasureType);
+        const newState = await this.getAppData(this.state.currentCityId, this.state.weatherMeasureType);
         this.setState(newState);
         this.timeOutForModel();
       });
 
       _defineProperty(this, "timeOutForModel", () => {
         print("didMount: " + this.state.currentCondition);
+        print("----------------------------------------");
         setTimeout(() => {
-          print("didMafter 2 sec : " + this.state.currentCondition);
-
           if (this.state.currentCondition === 'few clouds' || this.state.currentCondition === 'clear sky') {
             this.setState({
               timeIntervalFinished: true,
@@ -323,7 +234,6 @@ var _ = (function (React) {
       _defineProperty(this, "setModelAndAudio", state => {
         const data = { ...state
         };
-        print("didMafter 2 sec : " + data.currentCondition);
 
         if (data.currentCondition === 'few clouds' || data.currentCondition === 'clear sky') {
           data.modelPath = 'res/Sunny_01.fbx';
@@ -343,19 +253,12 @@ var _ = (function (React) {
 
       _defineProperty(this, "onToggleChangedHandler", async () => {
         const tempUnit = this.state.useMetricUnits ? 'imperial' : 'metric';
-        this.changeWeatherMetrics();
-
-        if (this.state.isAPICallTor === false) {
-          const newState = await this.getAppData(this.state.cityZipCode, tempUnit);
-          this.setState(state => ({ ...newState,
-            useMetricUnits: !state.useMetricUnits
-          }));
-        } else if (this.state.isAPICallTor === true) {
-          const torontoState = await this.getWeatherDataForToronto(this.state.currentCityById, tempUnit);
-          this.setState(state => ({ ...torontoState,
-            useMetricUnits: !state.useMetricUnits
-          }));
-        }
+        print("Toggle switches metrics: " + this.state.useMetricUnits);
+        const newState = await this.getAppData(this.state.currentCityById, tempUnit);
+        this.setState(state => ({ ...newState,
+          useMetricUnits: !state.useMetricUnits,
+          weatherMeasureType: tempUnit
+        }));
       });
 
       _defineProperty(this, "getCurrentDay", () => {
@@ -375,36 +278,59 @@ var _ = (function (React) {
       });
 
       _defineProperty(this, "getAustinWeatherHandler", async () => {
-        const newState = await this.getAppData(this.getAustinZip(), this.state.weatherMeasureType);
-        this.setState(this.setModelAndAudio(newState));
-        print("getLosAngelesWeatherHandler: " + JSON.stringify(this.state));
+        const newState = await this.getAppData(this.getAustinId(), this.state.weatherMeasureType);
+        this.setState({ ...this.setModelAndAudio(newState),
+          cityName: "Austin"
+        });
       });
 
       _defineProperty(this, "getLosAngelesWeatherHandler", async () => {
-        const newState = await this.getAppData(this.getLosAngelesZip(), this.state.weatherMeasureType);
-        this.setState(this.setModelAndAudio(newState));
-        print("getLosAngelesWeatherHandler: " + JSON.stringify(this.state));
+        const newState = await this.getAppData(this.getLosAngelesId(), this.state.weatherMeasureType);
+        this.setState({ ...this.setModelAndAudio(newState),
+          cityName: "Los Angeles"
+        });
       });
 
       _defineProperty(this, "getPlantationWeatherHandler", async () => {
-        const newState = await this.getAppData(this.getPlantationZip(), this.state.weatherMeasureType);
-        this.setState(this.setModelAndAudio(newState));
+        const newState = await this.getAppData(this.getPlantationId(), this.state.weatherMeasureType);
+        this.setState({ ...this.setModelAndAudio(newState),
+          cityName: "Plantation"
+        });
       });
 
       _defineProperty(this, "getSunnyvalWeatherHandler", async () => {
-        const newState = await this.getAppData(this.getSunnyvaleZip(), this.state.weatherMeasureType);
-        this.setState(this.setModelAndAudio(newState));
+        const newState = await this.getAppData(this.getSunnyvaleId(), this.state.weatherMeasureType);
+        this.setState({ ...this.setModelAndAudio(newState),
+          cityName: "Sunnyvale"
+        });
       });
 
       _defineProperty(this, "getTorontoWeatherHandler", async () => {
-        const newState = await this.getWeatherDataForToronto(this.getTorontoCityId(), this.state.weatherMeasureType);
-        this.setState(this.setModelAndAudio(newState));
+        const newState = await this.getAppData(this.getTorontoCityId(), this.state.weatherMeasureType);
+        this.setState({ ...this.setModelAndAudio(newState),
+          cityName: "Toronto"
+        });
+      });
+
+      _defineProperty(this, "volumeHandler", () => {
+        if (this.state.soundMute === false) {
+          this.setState({
+            volumeIcon: "volume-mute",
+            soundMute: true
+          });
+        } else {
+          this.setState({
+            volumeIcon: "volume",
+            soundMute: false
+          });
+        }
+
+        print(this.state.volumeIcon);
       });
 
       this.data = new Data();
       this.state = {
         currentTemp: "undefined",
-        currentCityByZip: "undefined",
         currentCityById: "undefined",
         modelPath: undefined,
         audioPath: undefined,
@@ -413,12 +339,14 @@ var _ = (function (React) {
         currentHumidity: "undefined",
         currentMinTemp: "undefined",
         currentMaxTemp: "undefined",
-        isAPICallTor: true,
         timeOfDay: [],
         useMetricUnits: false,
         weatherMeasureType: "imperial",
         timeIntervalFinished: false,
-        cityZipCode: "33313"
+        currentCityId: "4168783",
+        cityName: "Fort Lauderdale",
+        volumeIcon: "volume",
+        soundMute: false
       };
     }
 
@@ -439,7 +367,7 @@ var _ = (function (React) {
       //   "Los Angeles, CA",
       //   "New York, NY",
       //   "Plantation, FL(HQ)",
-      //   "San Francisco, CA, Israel",
+      //   "San Francisco, CA",
       //   "Seattle, WA",
       //   "Sunnyvale, CA",
       //   "Tel Aviv, Israel",
@@ -450,7 +378,14 @@ var _ = (function (React) {
 
       return React.createElement(View, {
         name: "main-view"
-      }, React.createElement(GridLayout, {
+      }, React.createElement(Button, {
+        localPosition: [0.6, 0.4, 0],
+        iconType: this.state.volumeIcon,
+        type: "icon",
+        height: 0.1,
+        visible: true,
+        onClick: this.volumeHandler
+      }), React.createElement(GridLayout, {
         name: "content-grid",
         rows: 1,
         columns: 1,
@@ -504,7 +439,7 @@ var _ = (function (React) {
       }, "Toronto, ON")), React.createElement(LinearLayout, {
         name: "model-grid",
         defaultItemAlignment: "center-center",
-        localPosition: [-0.030, 0.46, 0]
+        localPosition: [-0.13, 0.46, 0]
       }, this.state.modelPath !== undefined ? React.createElement(View, null, React.createElement(Model, {
         key: this.state.modelPath,
         modelPath: this.state.modelPath,
@@ -523,7 +458,8 @@ var _ = (function (React) {
         loadFile: true,
         action: "start",
         soundLooping: true,
-        spatialSoundEnable: true
+        spatialSoundEnable: true,
+        soundMute: this.state.soundMute
       })) : null), React.createElement(GridLayout, {
         name: "content-grid",
         rows: 2,
@@ -583,7 +519,7 @@ var _ = (function (React) {
         textSize: 0.1,
         weight: "bold",
         textAlignment: 'center'
-      }, this.state.currentCityByZip ? this.state.currentCityByZip : this.state.currentCityById)));
+      }, this.state.cityName)));
     }
 
   }

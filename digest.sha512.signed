@@ -15,7 +15,7 @@ cc8107d363e4d3a271d6bcd4b0032c5d8b6b6c7b6bfa3a4a105924fc418c3e1d4f4473978669612c
 f0f57dcf8128194c2d9496f3ab64667dcc9eba013e55c815e4ec2f204664f7567bff09e1e61ab5939d099dac45002ce5ecd33f3df3fdfe587c310523bf68c894  bin/_virtual/scheduler.development.js
 ec1e67e8f349cedef600ab4d404c0bda49c0c298a929d1fb730fdc209d28997437c2e3a4d4bb5446d1f065a1d6af9ebc51a7a0a7d0da5c60565431a595045aac  bin/_virtual/scheduler.production.min.js
 9ee08bfe7e9564b0eeae3e6c4d9d974d3e930b012f091f409b1d165065a7bda627aab42135a55756cdf5bbedc40fcf014d4e653064a7a1cc5f564b0454ffeee4  bin/_virtual/tracing.js
-ee7f5407bb406058564af74520fdc02aa037f629ad42416c250497471e91687caf78343a1fad83f74d59b4277ff526507ba8c8e0c48e5930b9cbd4267d26aa7c  bin/bundle.js
+3109eae01fde82a046a9d42a597ebedb6f6a511c33039a6774284d0391b11ec5b3ff9fa9900d34fd5c99c587f004681fed3d3f6d35bb72a097e715a7899a4981  bin/bundle.js
 bb2b7b516c7370bc1db88055185cc09b88e335d5a6e8d015d11dbddc4cfcb4f24406ac349e22afbab7489ef9da6b03b278025335e6ecafe374f3b8134083f41d  bin/index.js
 3a886376e7ea8ad56c14b7d445fdceb4510f5f10aff2693d881a655b8895b98ed8901a7eebe831c0c96deed7453acfb8beffb05ba360cdf2acb1e12861614923  bin/node_modules/gl-matrix/esm/common.js
 fcafa5ec6560cf8d6de10bdb03917b30b43c8c9c693fe2cdb49fd63993c39f94dd7a5015247d02fee026d1df5dfe9f5c564b1b5b376003f86e4fd100ecb9f613  bin/node_modules/gl-matrix/esm/mat3.js
@@ -193,13 +193,14 @@ b1d9647528bd491f42cfdd7be9298ec2a265d87ca3d7f44e5a98043a4cb98ef3782f3895c78ebdfc
 8202209af7121092739300bf10771a94dd58e579c6bb8f226c6f18a2269092f972708465c9453e75ece7a657e23b6aef22ac30c9ddd2d159d9f4bc8dc5b22e61  bin/node_modules/scheduler/cjs/scheduler.production.min.js
 68e2e1f000416c50f37a3428a11e6f51b2804d3eea6bc8b5962ad44739a8c846dcb7f48a6b2b33e21e4e3e924c582481d83a8fd584055513ded0db812f467fec  bin/node_modules/scheduler/index.js
 f9d50f92dd77c8bafbd4860a48228648dc86e6606cec1e46457b87bb6d4dd9e97ca672f7605b7cac292dd8ab6da79f0b27cc7d59fae563af93e440cdb5a7f288  bin/node_modules/scheduler/tracing.js
-3bc42fabc2b9fbc03be0cd9e82b2f200a3b64864272931afc8d63c51b79b2d92207e0d8a492f39c75b5d95ab765c18d97c29be41d4c141788b3566570fe2c054  bin/src/app.js
-571ef5f25dabfe2b23d1ddafd2ca0b765021c19a5f2c181e7b0d3835fd4f8b743ed578591b351928e9189d2d12336ccbc9f0c10fddc0773f6c7bf44adfb7ee5d  bin/src/data.js
+34c4ed46c7eaf23c0b7374ee43745d2ccf1e7880bd65dbf8ee47e6a01bfc62c75b05165434531e544465c0ea7a096aaf1a628d30b5e5d8c58ccfe645fb664326  bin/src/app.js
+2f36eaf77482c750e13f6ee2c29cce7f4955c1b2d169a91150e5c675f9c5aea9f6d59936e9c067253a4ca5ba9732288cf6a15b7c3da0ad1e04188dcb3c5dfc50  bin/src/data.js
 25fa8aa40fe6f7cef4c3b5ba911f2ece53f0fb86d13d6d376f4da12408694b88fa362da0eb6d5f176d24d1bf2b56f759d7beef3d8aa9ab8e90c1458addeb64e9  bin/src/fakeData.js
 7fb17c55901fcb763b232012a636bf773533683495d9a494c910fc654a1071d4a9f8aaf96728c016cdd4e2dcb39d570f0b3f239bd287c6c2aca47a2638cd59e4  bin/src/global-scope.js
 fc601aaa6b54270b73f0305b2a6057c2dff160908619042645d67a0e8e718bc64b7d192b361a6cf37da28b7bf6ddb090c462e92fa1e3fd6472d9e2279b1911ca  bin/src/main.js
 5ef34b8d6c14d9553595cc17ee8f115b444941da36ea58e7dc16c39f65a3a7c3a3048096cb6e2a5a241b1e840a766e62bed2b80d2318aa0c919a0656d1709fde  bin/src/realData.js
-#     USER                                                                       TAILDATA0‚>	*†H†÷ ‚/0‚+10	`†He0	*†H†÷1‚0‚0_0R10	UUS10UFlorida10U
-
-Magic Leap10UMagic Leap Internal	 ˆö‚*Ù’‡0	`†He0	*†H†÷ ‚€±=ã÷ƒ,ßþ°z&+¤'šAF²àçõÇ`„?â8 Ár¤=îCtP³kÀ"ÜÏ<V «h,œWW„ý>ìóWB§!†ËÆ<ÕÛ¹^‹(ö<=!XšO'±ùÆ‰÷q>Ü±äû.¢ý}öWû–©·ñì8›	jÎ…Jè&Tôú-?|@$$vESo%5Ù>ÃV¶·@¨HÑƒ4OCÞŽ­ËýÃG/8ÂæéÔ‰!§”¿ qz
-YÔh˜ë6Øèâñä=?Ø9 éàá–#*¯êÑ£‰Y!œ6=mÑ<ixÛè!}Ø‰>˜6çóßaŒmêßO‘îø@È^pdÆúxéùó?Éúëñ´ÖAð#Ñæƒôê­\¢ûÊå’ãÊÍ¼S©Aö¡m€ò‡N=VÑvYAÕß¾A_óÝ¤¥…Ã,Ãìè=;º¼wžã…´BDj1³ÙXt*RÀÜT¦^©Çiœ»;ŽœBóùIŠ)W`f^•#Ê¾t²‘¾         B~Module signature appended~
+#     USER                                                                       TAILDATA0‚q	*†H†÷ ‚b0‚^10	`†He0	*†H†÷1‚;0‚70‘0„10	UUS10UFlorida10U
+Plantation10U
+
+Magic Leap10UExternal Developer10UMagic Leap Root Dev°¦HSÞ1?0	`†He0	*†H†÷ ‚€.bìjPÍê=ßŠGUrÞùM4T8õÇ¬KÚÂ‰HÍÌ ‰˜Ÿ¬ùÌÚ)6½˜:ùŠªó¤ê—^…±¨¬O#¨m±Ö‘ê†*åÿOˆøy‰Iÿ¹yo÷EÒî­MŒï D7{ÆnðŸ^ñÁí‘E[~Êúâ‘¿ª]’Æé¿×ïÇ«Gví·¨òç$(¿ÂBB‹eŒ†]6Æ‰X
+éü1e·æÌ%|nçå¥‚T=7‚Jô\#.„2KŽT‘¶«¦NöQA·²@A—z!EÆÕ~%ýYÒtµ"0ðµ`¥;®€Ü”JêºHÖ–Yð÷€–Ýœag³ú³IF0æ:û~‡"úµiöÈ£˜‘é.”›jL)µg†|öbËZgÛ‚šAGñÕ9_€Ä9] ºKmPú…N/43SÆªÝXÓó‹xø=Ã{KF{uðfO¬qy²·‚-xëƒñ¢µÜ§<¨3ø—c’$Õ‘Yßqê+ü¦é£Ê         u~Module signature appended~

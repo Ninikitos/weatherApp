@@ -12,7 +12,6 @@ export default class MyApp extends React.Component {
 
     this.state = {
       currentTemp:          "undefined",
-      currentCityByZip:     "undefined",
       currentCityById:      "undefined",
       modelPath:            undefined,
       audioPath:            undefined,
@@ -21,16 +20,16 @@ export default class MyApp extends React.Component {
       currentHumidity:      "undefined",
       currentMinTemp:       "undefined",
       currentMaxTemp:       "undefined",
-      isAPICallTor:         true,
       timeOfDay:            [],
       useMetricUnits:       false,
       weatherMeasureType:   "imperial",
       timeIntervalFinished: false,
-      cityZipCode:          "33313"
+      currentCityId:        "4168783",
+      cityName:             "Fort Lauderdale",
+      volumeIcon:           "volume", 
+      soundMute:            false
     };
   }
-
-  getTempUnits = () => this.state.useMetricUnits ? 'metric' : 'imperial'
 
   changeWeatherMetrics = () => {
     if(this.state.weatherMeasureType === 'imperial') {
@@ -44,67 +43,38 @@ export default class MyApp extends React.Component {
     }
   }
 
-  getAustinZip = () => {
-    return '73301';
+  getAustinId = () => {
+    return '4671654';
   }
 
-  getLosAngelesZip = () => {
-    return '90001';
+  getLosAngelesId = () => {
+    return '5368361';
   }
 
-  getPlantationZip = () => {
-    return '33313';
+  getPlantationId = () => {
+    return '4168783';
   }
 
-  getSunnyvaleZip = () => {
-    return '94087';
+  getSunnyvaleId = () => {
+    return '5400075';
   }
   
   getTorontoCityId = () => {
     return "6167865";
   }
 
-  getAppData = async (cityByZipId, units) => { 
+  getAppData = async (cityId, units) => { 
 
-    const data = await this.data.getData(cityByZipId, units);
-    print("data all cities: ", data);
+    const data = await this.data.getData(cityId, units);
+    print("getAppData called");
+    print("-----------------");
     return {
       currentTemp:          data.temperature,
-      currentCityByZip:     data.cityByZipId,
-      currentCityById:      undefined,
+      currentCityById:      data.cityId,
       currentCondition:     data.condition,
       currentHumidity:      data.humidity,
       currentMinTemp:       data.temp_min,
       currentMaxTemp:       data.temp_max,
-      isAPICallTor:         false,
-      timeOfDay:            [
-        { time: '12am', temp: data.timeOfDay12am },
-        { time: '3am', temp: data.timeOfDay3am },
-        { time: '6am', temp: data.timeOfDay6am },
-        { time: '9am', temp: data.timeOfDay9am },
-        { time: '12pm', temp: data.timeOfDay12pm },
-        { time: '3pm', temp: data.timeOfDay3pm },
-        { time: '6pm', temp: data.timeOfDay6pm },
-        { time: '9pm', temp: data.timeOfDay9pm },
-        { time: '12am', temp: data.timeOfDay12am }
-      ]
-    };
-  }
-
-  getWeatherDataForToronto = async (cityId, units) => { 
-
-    const data = await this.data.getDataForTor(cityId, units);
-    print("getWeatherDataForToronto called");
-    print("data all cities: ", data);
-    return {
-      currentTemp:          data.temperature,
-      currentCityById:      "Toronto",
-      currentCityByZip:     undefined,
-      currentCondition:     data.condition,
-      currentHumidity:      data.humidity,
-      currentMinTemp:       data.temp_min,
-      currentMaxTemp:       data.temp_max,
-      isAPICallTor:         true,
       timeOfDay:            [
         { time: '12am', temp: data.timeOfDay12am },
         { time: '3am', temp: data.timeOfDay3am },
@@ -120,15 +90,15 @@ export default class MyApp extends React.Component {
   }
 
   componentDidMount = async () => {
-    const newState = await this.getAppData(this.state.cityZipCode, this.state.weatherMeasureType);
+    const newState = await this.getAppData(this.state.currentCityId, this.state.weatherMeasureType);
     this.setState( newState );
     this.timeOutForModel();
   }
 
   timeOutForModel = () => {
-    print("didMount: " + this.state.currentCondition );
+    print("didMount: " + this.state.currentCondition);
+    print("----------------------------------------");
     setTimeout(() => {
-      print("didMafter 2 sec : " + this.state.currentCondition );
       if ((this.state.currentCondition === 'few clouds') || 
           (this.state.currentCondition === 'clear sky')) {
           
@@ -136,7 +106,6 @@ export default class MyApp extends React.Component {
           timeIntervalFinished: true,
           modelPath: 'res/Sunny_01.fbx',
           audioPath: 'res/ES_Sunny Field With Birds - Organic Nature Sounds.mp3'
-          
         })
 
       } else if ((this.state.currentCondition === 'scattered clouds') || 
@@ -171,7 +140,6 @@ export default class MyApp extends React.Component {
 
   setModelAndAudio = (state) => {
     const data = {...state};
-    print("didMafter 2 sec : " + data.currentCondition );
     if ((data.currentCondition === 'few clouds') || 
         (data.currentCondition === 'clear sky')) {
       data.modelPath = 'res/Sunny_01.fbx';
@@ -199,15 +167,10 @@ export default class MyApp extends React.Component {
 
   onToggleChangedHandler = async () => {
     const tempUnit = this.state.useMetricUnits ? 'imperial' : 'metric';
-    this.changeWeatherMetrics();
-    if(this.state.isAPICallTor === false) {
-      const newState = await this.getAppData(this.state.cityZipCode, tempUnit);
-      this.setState( state => ({...newState, useMetricUnits: !state.useMetricUnits}));
+    print("Toggle switches metrics: " + this.state.useMetricUnits);
+    const newState = await this.getAppData(this.state.currentCityById, tempUnit);
 
-    } else if (this.state.isAPICallTor === true) {
-      const torontoState = await this.getWeatherDataForToronto(this.state.currentCityById, tempUnit);
-      this.setState( state => ({...torontoState, useMetricUnits: !state.useMetricUnits}));
-    }
+    this.setState( state => ({...newState, useMetricUnits: !state.useMetricUnits, weatherMeasureType: tempUnit}));
   }
 
   getCurrentDay = () => {
@@ -229,31 +192,44 @@ export default class MyApp extends React.Component {
   }
 
   getAustinWeatherHandler = async () => {
-    const newState = await this.getAppData(this.getAustinZip(), this.state.weatherMeasureType);
-    this.setState(this.setModelAndAudio(newState));
-    print("getLosAngelesWeatherHandler: " + JSON.stringify(this.state));
+    const newState = await this.getAppData(this.getAustinId(), this.state.weatherMeasureType);
+    this.setState({...this.setModelAndAudio(newState), cityName: "Austin"});
    }
 
   getLosAngelesWeatherHandler = async () => {
-    const newState = await this.getAppData(this.getLosAngelesZip(), this.state.weatherMeasureType);
-    this.setState(this.setModelAndAudio(newState));
-    print("getLosAngelesWeatherHandler: " + JSON.stringify(this.state));
+    const newState = await this.getAppData(this.getLosAngelesId(), this.state.weatherMeasureType);
+    this.setState({...this.setModelAndAudio(newState), cityName: "Los Angeles"});
    }
 
   getPlantationWeatherHandler = async () => {
-    const newState = await this.getAppData(this.getPlantationZip(), this.state.weatherMeasureType);
-    this.setState(this.setModelAndAudio(newState));
+    const newState = await this.getAppData(this.getPlantationId(), this.state.weatherMeasureType);
+    this.setState({...this.setModelAndAudio(newState), cityName: "Plantation"});
    }
 
   getSunnyvalWeatherHandler = async () => {
-    const newState = await this.getAppData(this.getSunnyvaleZip(), this.state.weatherMeasureType);
-    this.setState(this.setModelAndAudio(newState));
+    const newState = await this.getAppData(this.getSunnyvaleId(), this.state.weatherMeasureType);
+    this.setState({...this.setModelAndAudio(newState), cityName: "Sunnyvale"});
    }
 
   getTorontoWeatherHandler = async () => {
-    const newState = await this.getWeatherDataForToronto(this.getTorontoCityId(), this.state.weatherMeasureType);
-    this.setState(this.setModelAndAudio(newState));
+    const newState = await this.getAppData(this.getTorontoCityId(), this.state.weatherMeasureType);
+    this.setState({...this.setModelAndAudio(newState), cityName: "Toronto"});
    }
+  volumeHandler = () => {
+    
+    if(this.state.soundMute === false) {
+      this.setState({
+        volumeIcon: "volume-mute",
+        soundMute: true
+      });
+    } else {
+      this.setState({
+        volumeIcon: "volume",
+        soundMute: false
+      });
+    }
+    print(this.state.volumeIcon);
+  }
 
   render() {
     const aabb = {
@@ -262,6 +238,7 @@ export default class MyApp extends React.Component {
     };
 
     let flooredTemp = Math.floor(this.state.currentTemp);
+    
     // const cities = [
     //   "Austin, TX",
     //   "Boulder, CO",
@@ -274,7 +251,7 @@ export default class MyApp extends React.Component {
     //   "Los Angeles, CA",
     //   "New York, NY",
     //   "Plantation, FL(HQ)",
-    //   "San Francisco, CA, Israel",
+    //   "San Francisco, CA",
     //   "Seattle, WA",
     //   "Sunnyvale, CA",
     //   "Tel Aviv, Israel",
@@ -282,8 +259,17 @@ export default class MyApp extends React.Component {
     //   "Wellington, New Zealand",
     //   "Zurich, Switzerland"
     // ];
+
     return (
       <View name="main-view">
+        <Button 
+            localPosition={[0.6, 0.4, 0]} 
+            iconType={this.state.volumeIcon} 
+            type="icon"
+            height={0.1} 
+            visible={true} 
+            onClick={this.volumeHandler}
+          ></Button>
         <GridLayout
             name="content-grid"
             rows={1}
@@ -345,7 +331,7 @@ export default class MyApp extends React.Component {
           <LinearLayout
             name="model-grid"
             defaultItemAlignment="center-center"
-            localPosition={[-0.030, 0.46, 0]}
+            localPosition={[-0.13, 0.46, 0]}
             >
               { 
                 this.state.modelPath !== undefined ? 
@@ -367,6 +353,7 @@ export default class MyApp extends React.Component {
                     action="start"
                     soundLooping={true}
                     spatialSoundEnable={true}
+                    soundMute={this.state.soundMute}
                   ></Audio>
                 </View> : null 
               }
@@ -419,7 +406,7 @@ export default class MyApp extends React.Component {
             textSize={0.1}
             weight='bold'
             textAlignment={'center'}
-          >{this.state.currentCityByZip ? this.state.currentCityByZip : this.state.currentCityById}</Text>
+          >{this.state.cityName}</Text>
         </LinearLayout>
       </View>
     );

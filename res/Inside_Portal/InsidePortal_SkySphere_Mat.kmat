@@ -1,0 +1,17 @@
+{
+  "global": {
+    "albedo": "common/res/Icon_Grid/Inside_Portal/InsidePortal_SkySphere_Albedo.png",
+    "color": [
+      1,
+      1,
+      1,
+      1
+    ]
+  },
+  "materials": [
+    {
+      "name": "InsidePortal_SkySphere_Mat1",
+      "opaque": true
+    }
+  ]
+}
