@@ -1,8 +1,8 @@
-<manifest xmlns:ml="magicleap" ml:developer_id="289c7e18-10c0-4a7b-b1f1-344335fe1586" ml:package="com.mxs.weatherapp" ml:version_code="1" ml:version_name="0.0.1">
+<manifest xmlns:ml="magicleap" ml:developer_id="magicleapexperiments.7e99e9fe-4cd3-49bf-8e5e-54d531c45631" ml:package="com.mxs.weatherapp" ml:version_code="1" ml:version_name="0.0.1">
   <application ml:min_api_level="2" ml:sdk_version="1.0" ml:visible_name="weatherApp">
     <component ml:binary_name="bin/index.js" ml:name=".universe" ml:type="Universe" ml:visible_name="weatherApp">
       <mode ml:shareable="true" />
-      <icon ml:model_folder="res/Outside_Portal" ml:portal_folder="res/Inside_Portal" />
+      <icon ml:model_folder="assets/IconUFO/Model" ml:portal_folder="assets/IconUFO/Portal" />
     </component>
     <uses-privilege ml:name="MagicScript" />
     <uses-privilege ml:name="Internet" />
