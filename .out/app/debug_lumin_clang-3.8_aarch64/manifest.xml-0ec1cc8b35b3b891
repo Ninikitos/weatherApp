@@ -1,4 +1,4 @@
-<manifest xmlns:ml="magicleap" ml:developer_id="magicleapexperiments.7e99e9fe-4cd3-49bf-8e5e-54d531c45631" ml:package="com.mxs.weatherapp" ml:version_code="1" ml:version_name="0.0.1">
+<manifest xmlns:ml="magicleap" ml:developer_id="Magic Leap Internal" ml:package="com.mxs.weatherapp" ml:version_code="1" ml:version_name="0.0.1">
   <application ml:min_api_level="2" ml:sdk_version="1.0" ml:visible_name="weatherApp">
     <component ml:binary_name="bin/index.js" ml:name=".universe" ml:type="Universe" ml:visible_name="weatherApp">
       <mode ml:shareable="true" />

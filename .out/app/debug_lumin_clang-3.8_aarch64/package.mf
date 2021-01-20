@@ -1465,9 +1465,9 @@
   },
   {
    "compression": 8,
-   "hash": "cf587b3af38974bedfd6945f8e1385c483dad102",
+   "hash": "cac28561ff37ee7a239bbf5cc8a6f4dc1619a361",
    "pkgpath": "./digest.sha512.signed",
-   "size": 43810,
+   "size": 43752,
    "src": "C:/Users/nilin/Desktop/weatherApp/digest.sha512.signed"
   },
   {
@@ -1534,23 +1534,23 @@
    "src": "C:/Users/nilin/Desktop/weatherApp\\manifest.xml",
    "xfrm_flags": {
     "manifest": {
-     "cert_hash": "89da09271f6011022ba6b6fcf40749c15a4ab413",
-     "developer_id": "magicleapexperiments.7e99e9fe-4cd3-49bf-8e5e-54d531c45631",
+     "cert_hash": "2e3ca398ab9ae604f77bd093d88da657221814f3",
+     "developer_id": "Magic Leap Internal",
      "min_api_level": "2"
     }
    },
-   "xfrm_hash": "dcf58f76b7e7c0a8998c762853c917d64c1d34c9",
+   "xfrm_hash": "c7306335d6396cc1eb4443229376adc839c53bec",
    "xfrm_path": "C:/Users/nilin/Desktop/weatherApp/.out/app/debug_lumin_clang-3.8_aarch64\\manifest.xml-0ec1cc8b35b3b891",
-   "xfrm_size": 656
+   "xfrm_size": 618
   }
  ],
  "pkgflags": {
   "signed": {
-   "cert": "C:\\Users\\nilin\\Downloads\\privatekey\\weather-app-7e99e9fe.cert"
+   "cert": "C:\\Users\\nilin\\Desktop\\mlsdk\\internal\\ml_internal.cert"
   },
   "taildata": {
    "debuggable": true,
-   "devcert": "C:\\Users\\nilin\\Downloads\\privatekey\\weather-app-7e99e9fe.cert",
+   "devcert": "C:\\Users\\nilin\\Desktop\\mlsdk\\internal\\ml_internal.cert",
    "sbox": "USER",
    "version": 3
   }
